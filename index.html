@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Audit Ledger — Ghana's Public Accountability, Visualized</title>
+<meta name="description" content="Government audit and accountability reports from Ghana, turned into clear visual data. Starting with the Auditor-General's reports.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/dashboard.css?v=3">
+</head>
+<body>
+
+<div class="shell">
+  <aside class="sidebar">
+    <a class="brand" href="./">The Audit Ledger<span class="dot">.</span></a>
+    <div class="nav-group">
+      <div class="nav-label">Overview</div>
+      <a class="nav-link active" href="./">Dashboard</a>
+      <a class="nav-link" href="#about">About</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-label">Auditor-General — MDAs</div>
+      <a class="nav-link" href="reports/mda-2023/">2023 Report <span class="amt">GH¢2.40bn</span></a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-label">Coming next</div>
+      <a class="nav-link" href="#" style="opacity:.5; pointer-events:none;">District Assemblies</a>
+      <a class="nav-link" href="#" style="opacity:.5; pointer-events:none;">Public Boards &amp; SOEs</a>
+    </div>
+  </aside>
+
+  <div class="main">
+    <div class="topbar">
+      <div class="crumbs">Ghana &nbsp;/&nbsp; Accountability &amp; Governance</div>
+    </div>
+
+    <div class="content">
+      <div class="page-head">
+        <div class="eyebrow">Accountability &amp; Governance — Ghana</div>
+        <h1>Public money, made legible.</h1>
+        <div class="desc">Government audit and oversight reports are long, dense, and rarely read outside a small circle. The Audit Ledger turns them into clear visual data — what was found, how much money is involved, and what happened next. No sign-up required.</div>
+      </div>
+
+      <div class="section" id="reports">
+        <div class="section-head">
+          <h2>Reports</h2>
+          <div class="subhead">Starting with the Auditor-General's reports on Ministries, Departments and Agencies (MDAs)</div>
+        </div>
+        <div class="grid cols-3">
+          <a class="card report-card" href="reports/mda-2023/">
+            <span class="tag">Auditor-General — MDAs</span>
+            <h3>2023 Annual Report</h3>
+            <p>Financial irregularities across ministries, departments and agencies, with a five-year trend and seven-category breakdown.</p>
+            <div class="figure">GH¢2.40bn</div>
+          </a>
+          <div class="card report-card placeholder">
+            <span class="tag">Auditor-General — District Assemblies</span>
+            <h3>Coming next</h3>
+            <p>Local government (MMDA) audit report — more entities, more granular findings.</p>
+          </div>
+          <div class="card report-card placeholder">
+            <span class="tag">Auditor-General — Public Boards &amp; SOEs</span>
+            <h3>Coming next</h3>
+            <p>State-owned enterprises and statutory corporations audit findings.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="about">
+        <div class="section-head">
+          <h2>About this project</h2>
+          <div class="subhead">A sibling project to Labari Data</div>
+        </div>
+        <div class="card">
+          <p class="footnote">
+            Each report page is built from the official published document from the relevant institution
+            (currently the Ghana Audit Service). Figures are transcribed and checked against the source PDF;
+            where a breakdown hasn't been transcribed yet, it's marked as a placeholder rather than guessed at.
+          </p>
+        </div>
+      </div>
+
+      <div class="source-strip">
+        <span>Data sourced from the Ghana Audit Service (audit.gov.gh) and public reporting.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

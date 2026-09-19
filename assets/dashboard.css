@@ -165,3 +165,18 @@ table.data-table td.num{ font-family:'JetBrains Mono', monospace; text-align:rig
   .sidebar{ display:none; }
   .content{ padding: 20px 16px 48px; }
 }
+
+/* Government folder nav */
+.nav-folder{ margin-bottom:2px; }
+.nav-folder > summary{
+  display:flex; align-items:center; gap:8px; padding:8px 10px; border-radius:8px; cursor:pointer; list-style:none;
+  color: var(--slate); font-size:0.88rem; font-weight:500;
+}
+.nav-folder > summary::-webkit-details-marker{ display:none; }
+.nav-folder > summary::before{ content:"▸"; font-size:0.7rem; color: var(--muted); transition: transform .15s; }
+.nav-folder[open] > summary::before{ transform: rotate(90deg); }
+.nav-folder > summary:hover{ background: var(--bg); color: var(--text); }
+.nav-folder.active > summary{ color: var(--blue); }
+.nav-folder .nav-link{ margin-left:16px; font-size:0.84rem; }
+.nav-link.soon{ opacity:.5; pointer-events:none; }
+.nav-link .soon-tag{ margin-left:auto; font-size:0.65rem; color: var(--muted); }

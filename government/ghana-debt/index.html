@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ghana Debt — The Audit Ledger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/dashboard.css?v=4">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<style>
+:root{ --ink:var(--text); --ink-dim:var(--muted); --paper:var(--card); --paper-2:var(--bg); --rule:var(--line); --gold:var(--amber); --rust:var(--red); }
+.debt-stats{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:16px; }
+.debt-stats .num{ font-family:'JetBrains Mono',monospace; font-weight:700; font-size:1.6rem; color:var(--navy); }
+.debt-stats .num.gold{ color:var(--amber); } .debt-stats .num.green{ color:var(--green); }
+.debt-stats .lbl{ font-size:.8rem; color:var(--muted); margin-top:8px; line-height:1.4; }
+.updated-badge{ display:inline-flex; align-items:center; gap:7px; font-family:'JetBrains Mono',monospace; font-size:.72rem; color:var(--muted); margin-top:14px; }
+.updated-badge .dot{ width:6px; height:6px; border-radius:50%; background:var(--green); }
+.updated-badge.stale .dot{ background:var(--red); }
+.sec-note{ font-family:'JetBrains Mono',monospace; font-size:.68rem; color:var(--muted); }
+p.sec-desc{ color:var(--muted); font-size:.86rem; line-height:1.6; max-width:640px; margin:0 0 16px; }
+#treemap{ width:100%; }
+#chart-tooltip{ position:fixed; pointer-events:none; z-index:100; background:var(--ink); color:var(--bg); padding:9px 12px; border-radius:6px; font-size:.8rem; line-height:1.5; box-shadow:0 8px 24px rgba(0,0,0,.25); opacity:0; transform:translate(-50%,calc(-100% - 12px)); transition:opacity .15s; white-space:nowrap; }
+#chart-tooltip.visible{ opacity:1; }
+#chart-tooltip .tt-title{ font-weight:700; margin-bottom:2px; }
+#chart-tooltip .tt-amt{ font-family:'JetBrains Mono',monospace; color:var(--amber); }
+#chart-tooltip .tt-pct{ opacity:.65; margin-left:6px; }
+.tile{ stroke:var(--card); stroke-width:2px; cursor:pointer; transition:filter .15s; } .tile:hover{ filter:brightness(1.12); }
+.tile-label{ font-family:'DM Sans',sans-serif; fill:#fff; font-weight:700; pointer-events:none; }
+.tile-sub{ font-family:'JetBrains Mono',monospace; fill:#fff; opacity:.8; pointer-events:none; }
+.empty-state{ padding:40px 24px; text-align:center; background:var(--bg); border:1px dashed var(--line-strong); border-radius:12px; color:var(--muted); }
+.empty-state .es-title{ color:var(--text); font-weight:700; margin-bottom:6px; }
+@keyframes pulse{ 0%,100%{opacity:.5} 50%{opacity:.9} }
+.skel{ background:var(--line); border-radius:4px; animation:pulse 1.4s ease-in-out infinite; }
+.skel-treemap{ display:grid; grid-template-columns:2fr 1.4fr 1fr; gap:3px; height:320px; }
+.skel-treemap .skel:nth-child(1),.skel-treemap .skel:nth-child(4){ grid-row:span 2; }
+.skel-ledger-row{ display:flex; align-items:center; gap:18px; margin-bottom:14px; }
+.skel-ledger-row .skel{ height:30px; flex:1; } .skel-ledger-row .skel.skel-label{ width:190px; height:16px; flex:none; }
+.skel-trend{ height:320px; width:100%; }
+.legend{ display:flex; flex-wrap:wrap; gap:16px; margin-top:18px; }
+.legend-item{ display:flex; align-items:center; gap:8px; font-size:.8rem; color:var(--muted); }
+.swatch{ width:11px; height:11px; border-radius:2px; display:inline-block; }
+.cedi-row{ display:flex; align-items:center; gap:16px; margin-bottom:12px; }
+.cedi-label{ width:210px; flex-shrink:0; font-size:.86rem; }
+.cedi-track{ flex:1; height:28px; background:var(--bg); border-radius:4px; overflow:hidden; }
+.cedi-fill{ height:100%; border-radius:4px; transition:width 1s ease; }
+.cedi-amt{ width:100px; flex-shrink:0; text-align:right; font-family:'JetBrains Mono',monospace; font-size:.78rem; color:var(--muted); }
+.cedi-amt b{ color:var(--text); }
+.trend-line{ fill:none; stroke:var(--amber); stroke-width:2.5px; }
+.trend-area{ fill:url(#trendGrad); opacity:.5; }
+.trend-dot{ fill:var(--amber); stroke:var(--card); stroke-width:2px; cursor:pointer; }
+.trend-axis text{ font-family:'JetBrains Mono',monospace; fill:var(--muted); font-size:11px; }
+.trend-axis line,.trend-axis path{ stroke:var(--line); }
+.trend-callout{ font-family:'JetBrains Mono',monospace; font-size:11px; fill:var(--text); }
+.pc-card{ text-align:center; padding:36px 24px; }
+.pc-figure{ font-family:'JetBrains Mono',monospace; font-weight:700; font-size:clamp(36px,6vw,60px); color:var(--amber); line-height:1; }
+.pc-label{ color:var(--muted); margin-top:12px; } .pc-label span{ color:var(--text); font-weight:500; }
+.pc-secondary{ display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:28px; padding-top:24px; border-top:1px solid var(--line); }
+.pc-stat-num{ font-family:'JetBrains Mono',monospace; font-weight:700; font-size:1.3rem; }
+.pc-stat-label{ font-size:.8rem; color:var(--muted); margin-top:4px; }
+@media(max-width:640px){ .cedi-label{ width:120px; font-size:.78rem; } .cedi-amt{ width:70px; } .pc-secondary{ grid-template-columns:1fr; } .sec-note{ display:none; } }
+</style>
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <a class="brand" href="../../">The Audit Ledger<span class="dot">.</span></a>
+    <div class="nav-group">
+      <div class="nav-label">Government</div>
+      <details class="nav-folder"><summary>Audit Reports</summary>
+        <a class="nav-link" href="../../government/audit-reports/">Overview</a>
+        <a class="nav-link soon" href="../../government/audit-reports/mmda/">MMDA Report <span class="soon-tag">Soon</span></a>
+        <a class="nav-link" href="../../reports/mda-2023/">MDAs 2023 <span class="amt">GH¢2.40bn</span></a>
+      </details>
+      <details class="nav-folder active" open><summary>Ghana Debt</summary>
+        <a class="nav-link active" href="../../government/ghana-debt/">Overview</a>
+        
+      </details>
+      <details class="nav-folder"><summary>State Owned Enterprises</summary>
+        <a class="nav-link" href="../../government/soes/">Overview</a>
+        
+      </details>
+    </div>
+  </aside>
+  <div class="main">
+    <div class="topbar"><div class="crumbs">Ghana &nbsp;/&nbsp; Government &nbsp;/&nbsp; Ghana Debt</div></div>
+    <div class="content">
+      <div class="page-head">
+        <div class="eyebrow">Government — Ghana Debt</div>
+        <h1>Tracking Ghana's debt</h1>
+        <div class="desc">A running ledger of the country's public debt: what's owed, to whom, and how much of every cedi collected goes to servicing it.</div>
+        <div class="updated-badge" id="updated-badge"><span class="dot"></span><span id="updated-text">Checking data freshness…</span></div>
+      </div>
+      <div class="section"><div class="debt-stats">
+        <div class="card"><div class="num gold" id="hero-debt">GH₵686.1bn</div><div class="lbl" id="hero-debt-lbl">Total public debt</div></div>
+        <div class="card"><div class="num" id="hero-ratio">42.9%</div><div class="lbl" id="hero-ratio-lbl">Debt-to-GDP</div></div>
+        <div class="card"><div class="num green" id="hero-change">−1.8pp</div><div class="lbl" id="hero-change-lbl">Change in debt-to-GDP vs. prior quarter</div></div>
+      </div></div>
+      <div class="section" id="composition">
+        <div class="section-head"><h2>The debt stock</h2><div class="sec-note" id="note-composition">LOADING…</div></div>
+        <p class="sec-desc">Sized by amount owed. Domestic debt is split by holder; external debt by creditor type.</p>
+        <div class="card"><div id="treemap"></div><div class="legend" id="legend"></div></div>
+      </div>
+      <div class="section" id="ledger">
+        <div class="section-head"><h2>Where each cedi goes</h2><div class="sec-note" id="note-allocation">LOADING…</div></div>
+        <p class="sec-desc">Share of every GH₵1 of the budget by function.</p>
+        <div class="card"><div id="cedi-ledger"></div></div>
+      </div>
+      <div class="section" id="trend">
+        <div class="section-head"><h2>Debt-to-GDP trend</h2><div class="sec-note" id="note-trend">LOADING…</div></div>
+        <p class="sec-desc">Quarterly debt-to-GDP ratio.</p>
+        <div class="card"><svg id="trend-svg" width="100%" height="320"></svg></div>
+      </div>
+      <div class="section" id="per-capita">
+        <div class="section-head"><h2>Per person</h2><div class="sec-note" id="note-percapita"></div></div>
+        <div class="card pc-card">
+          <div class="pc-figure" id="pc-per-person">GH₵—</div>
+          <div class="pc-label">owed per Ghanaian, based on a population of <span id="pc-population">—</span></div>
+          <div class="pc-secondary">
+            <div><div class="pc-stat-num" id="pc-family">GH₵—</div><div class="pc-stat-label">per household of four</div></div>
+            <div><div class="pc-stat-num" id="pc-total">GH₵—</div><div class="pc-stat-label">total public debt</div></div>
+          </div>
+        </div>
+        <p class="footnote" style="margin-top:12px">Population: <span id="pc-source"></span>. A simple per-capita division of total public debt; it says nothing about who holds the debt or who benefits from borrowing.</p>
+      </div>
+      <div class="source-strip"><span>Source: Ministry of Finance Debt Statistics Bulletin (quarterly) and the 2026 Appropriation Act, via Labari Data.</span></div>
+    </div>
+  </div>
+</div>
+<div id="chart-tooltip"></div>
+<script>
+// ---------- CONFIG ----------
+// Set this to your deployed worker once live, e.g. 'https://ghana-debt.joseph-kuuire.workers.dev'
+const WORKER_URL = 'https://ghana-debt.joseph-kuuire.workers.dev';
+
+// ---------- SAMPLE DATA (real Q4-2025 figures — replace section labels as "SAMPLE" -> "LIVE" once Baserow is wired) ----------
+const sampleComposition = {
+  name: "debt",
+  children: [
+    { name: "Domestic", children: [
+      { name: "Banking system (BoG + banks)", value: 142.10 },
+      { name: "Non-bank sector (pensions, insurers)", value: 177.75 },
+      { name: "Foreign sector holdings", value: 13.45 },
+      { name: "Standard loans", value: 0.45 },
+    ]},
+    { name: "External", children: [
+      { name: "Multilateral (IMF/WB/AfDB)", value: 130.08 },
+      { name: "Bilateral", value: 61.37 },
+      { name: "Eurobonds (ICM)", value: 87.61 },
+      { name: "Commercial", value: 28.30 },
+    ]}
+  ]
+};
+const colorMap = {
+  "Banking system (BoG + banks)": "#B5654C",
+  "Non-bank sector (pensions, insurers)": "#8A4E3B",
+  "Foreign sector holdings": "#D98A6E",
+  "Standard loans": "#C7896B",
+  "Multilateral (IMF/WB/AfDB)": "#4C9A6D",
+  "Bilateral": "#3E6B85",
+  "Eurobonds (ICM)": "#6C87A8",
+  "Commercial": "#5B8A6E"
+};
+
+const sampleLedger = [
+  { label: "Compensation (wages)", amt: 0.254, color: "#6C87A8" },
+  { label: "Other (IGF, ESLA/IPP, arrears)", amt: 0.208, color: "#5C6B80" },
+  { label: "Statutory funds (GETFund, NHIF, DACF)", amt: 0.178, color: "#4C9A6D" },
+  { label: "Debt servicing (interest)", amt: 0.162, color: "#C89B3C" },
+  { label: "Capital expenditure", amt: 0.161, color: "#3E7A57" },
+  { label: "Goods & services", amt: 0.037, color: "#8A93A3" },
+];
+
+const sampleTrend = [
+  { year: "Q4 '24", ratio: 61.6, debt: 728.63 },
+  { year: "Q2 '25", ratio: 42.8, debt: 614.10 },
+  { year: "Q3 '25", ratio: 47.8, debt: 685.81 },
+  { year: "Q4 '25", ratio: 44.7, debt: 641.11 },
+];
+
+// Live data holders — null means "not loaded yet", array/object means loaded.
+// dataStatus tracks per-section state: 'sample' | 'live' | 'empty'
+let debtComposition = sampleComposition;
+let cediLedger = sampleLedger;
+let trendData = sampleTrend;
+const dataStatus = { composition: 'sample', allocation: 'sample', trend: 'sample' };
+
+// ---------- COLOR ASSIGNMENT for live rows ----------
+// Baserow rows come back flat (category/subcategory/amount). This groups them
+// into the {name, children:[{name,children:[{name,value}]}]} shape the treemap needs,
+// and assigns colors from a palette so new subcategories don't break styling.
+const compositionPalette = ["#B5654C","#8A4E3B","#D98A6E","#C7896B","#6C87A8","#4C9A6D","#3E6B85","#5B8A6E"];
+
+// Baserow single-select fields come back as {id, value, color} instead of a
+// plain string. This unwraps either shape safely.
+function fieldText(v){
+  if (v === null || v === undefined) return '';
+  if (typeof v === 'object') return v.value ?? '';
+  return v;
+}
+
+// The worker returns every period; keep only rows from the most recent one.
+function latestOnly(rows, key){
+  const vals = rows.map(r => fieldText(r[key])).filter(Boolean).sort();
+  const latest = vals[vals.length - 1];
+  return latest ? rows.filter(r => fieldText(r[key]) === latest) : rows;
+}
+
+function buildCompositionFromRows(rows){
+  rows = latestOnly(rows, 'period');
+  const byCategory = {};
+  rows.forEach((r, i) => {
+    const cat = fieldText(r.category) || 'Other';
+    const sub = fieldText(r.subcategory) || 'Unlabeled';
+    const val = parseFloat(r.amount_ghs_bn) || 0;
+    if (!byCategory[cat]) byCategory[cat] = [];
+    byCategory[cat].push({ name: sub, value: val });
+    colorMap[sub] = colorMap[sub] || compositionPalette[Object.keys(colorMap).length % compositionPalette.length];
+  });
+  return {
+    name: 'debt',
+    children: Object.keys(byCategory).map(cat => ({ name: cat, children: byCategory[cat] }))
+  };
+}
+
+// Gold is reserved specifically for debt servicing (the section text calls it out
+// by name) — every other function gets a color by rank, so gold never lands on
+// whichever category happens to be largest.
+const DEBT_SERVICE_COLOR = "#C89B3C";
+const otherPalette = ["#6C87A8","#4C9A6D","#3E7A57","#8A93A3","#5C6B80","#B5654C","#D98A6E"];
+
+function isDebtServicing(label){
+  return /debt servic|interest/i.test(label);
+}
+
+function buildLedgerFromRows(rows){
+  const sorted = latestOnly(rows, 'fiscal_year').sort((a,b) => parseFloat(b.share_of_budget) - parseFloat(a.share_of_budget));
+  let otherIdx = 0;
+  return sorted.map((r) => {
+    const label = fieldText(r.function) || 'Other';
+    const color = isDebtServicing(label) ? DEBT_SERVICE_COLOR : otherPalette[otherIdx++ % otherPalette.length];
+    return {
+      label,
+      amt: (parseFloat(r.share_of_budget) || 0) / 100,
+      color,
+    };
+  });
+}
+
+let latestDataDate = new Date('2025-12-31'); // fallback matches sample Q4 2025 data
+let latestTotalDebt = 641.11; // GH₵bn, fallback matches sample Q4 2025 data
+
+// Ghana Statistical Service 2026 mid-year projected population (official GSS figure,
+// more conservative than UN-derived estimates used by third-party trackers)
+const POPULATION = 34378768;
+const POPULATION_LABEL = "34.4 million";
+const POPULATION_SOURCE = "Ghana Statistical Service, 2026 projection";
+
+function buildTrendFromRows(rows){
+  const sorted = rows
+    .filter(r => r.period_date)
+    .sort((a,b) => new Date(a.period_date) - new Date(b.period_date));
+  if (sorted.length){
+    const latest = sorted[sorted.length - 1];
+    latestDataDate = new Date(latest.period_date);
+    if (latest.total_debt_ghs_bn) latestTotalDebt = parseFloat(latest.total_debt_ghs_bn);
+  }
+  return sorted.map(r => ({ year: fieldText(r.period_label), ratio: parseFloat(r.debt_to_gdp_pct) || 0, debt: parseFloat(r.total_debt_ghs_bn) || 0 }));
+}
+
+function renderSkeletons(){
+  document.getElementById('treemap').innerHTML = `
+    <div class="skel-treemap">
+      <div class="skel"></div><div class="skel"></div><div class="skel"></div>
+      <div class="skel"></div><div class="skel"></div><div class="skel"></div>
+    </div>`;
+  document.getElementById('legend').innerHTML = '';
+
+  document.getElementById('cedi-ledger').innerHTML = Array.from({length: 6}).map(() => `
+    <div class="skel-ledger-row">
+      <div class="skel skel-label"></div>
+      <div class="skel"></div>
+    </div>`).join('');
+
+  const trendSvg = document.getElementById('trend-svg');
+  trendSvg.style.display = 'none';
+  const wrap = trendSvg.parentElement;
+  if (!document.getElementById('trend-skel')){
+    const div = document.createElement('div');
+    div.id = 'trend-skel';
+    div.className = 'skel skel-trend';
+    wrap.appendChild(div);
+  }
+}
+
+function clearTrendSkeleton(){
+  const skel = document.getElementById('trend-skel');
+  if (skel) skel.remove();
+}
+
+// ---------- LOAD (worker fetch, explicit empty/error state — no silent masking) ----------
+async function loadData(){
+  renderSkeletons();
+  if (!WORKER_URL){ renderAll(); return; }
+
+  const endpoints = {
+    composition: `${WORKER_URL}/composition`,
+    allocation:  `${WORKER_URL}/allocation`,
+    trend:       `${WORKER_URL}/trend`,
+  };
+
+  const results = await Promise.allSettled([
+    fetch(endpoints.composition).then(r => r.ok ? r.json() : Promise.reject()),
+    fetch(endpoints.allocation).then(r => r.ok ? r.json() : Promise.reject()),
+    fetch(endpoints.trend).then(r => r.ok ? r.json() : Promise.reject()),
+  ]);
+
+  const [compRes, allocRes, trendRes] = results;
+
+  if (compRes.status === 'fulfilled' && Array.isArray(compRes.value) && compRes.value.length){
+    debtComposition = buildCompositionFromRows(compRes.value);
+    dataStatus.composition = 'live';
+  } else if (compRes.status === 'fulfilled'){
+    dataStatus.composition = 'empty'; // fetch succeeded but returned zero rows
+  } else {
+    dataStatus.composition = 'sample'; // fetch failed — keep sample rather than showing a scary error
+  }
+
+  if (allocRes.status === 'fulfilled' && Array.isArray(allocRes.value) && allocRes.value.length){
+    cediLedger = buildLedgerFromRows(allocRes.value);
+    dataStatus.allocation = 'live';
+  } else if (allocRes.status === 'fulfilled'){
+    dataStatus.allocation = 'empty';
+  } else {
+    dataStatus.allocation = 'sample';
+  }
+
+  if (trendRes.status === 'fulfilled' && Array.isArray(trendRes.value) && trendRes.value.length){
+    trendData = buildTrendFromRows(trendRes.value);
+    dataStatus.trend = 'live';
+  } else if (trendRes.status === 'fulfilled'){
+    dataStatus.trend = 'empty';
+  } else {
+    dataStatus.trend = 'sample';
+  }
+
+  renderAll();
+}
+
+function markStatus(id, status){
+  const el = document.getElementById(id);
+  if (!el) return;
+  if (status === 'live'){
+    el.textContent = 'LIVE — MOFEP QUARTERLY BULLETIN';
+    el.style.color = 'var(--green)';
+  } else if (status === 'empty'){
+    el.textContent = 'NO DATA YET — TABLE IS EMPTY';
+    el.style.color = 'var(--rust)';
+  } else {
+    el.textContent = 'SAMPLE DATA';
+    el.style.color = 'var(--ink-dim)';
+  }
+}
+
+function renderUpdatedBadge(){
+  const badge = document.getElementById('updated-badge');
+  const textEl = document.getElementById('updated-text');
+  const formatted = latestDataDate.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+  const daysOld = Math.floor((Date.now() - latestDataDate.getTime()) / 86400000);
+
+  // MoFEP publishes quarterly — flag as possibly stale past ~120 days since the last data point
+  const isStale = daysOld > 120;
+  badge.classList.toggle('stale', isStale);
+
+  const sourceNote = (dataStatus.trend === 'live') ? '' : ' (sample)';
+  textEl.textContent = isStale
+    ? `Data as of ${formatted}${sourceNote} — a newer quarterly bulletin may be available`
+    : `Data as of ${formatted}${sourceNote}`;
+}
+
+function renderHeroStats(){
+  if (!trendData.length) return; // nothing loaded yet, keep static placeholder text
+
+  const latest = trendData[trendData.length - 1];
+  const prior = trendData.length > 1 ? trendData[trendData.length - 2] : null;
+
+  document.getElementById('hero-debt').textContent = 'GH₵' + (latest.debt || latestTotalDebt).toFixed(1) + 'bn';
+  document.getElementById('hero-debt-lbl').textContent = `Total public debt, ${latest.year}`;
+
+  document.getElementById('hero-ratio').textContent = latest.ratio.toFixed(1) + '%';
+
+  if (prior){
+    const change = latest.ratio - prior.ratio;
+    const dir = change < 0 ? 'down' : 'up';
+    document.getElementById('hero-ratio-lbl').textContent = `Debt-to-GDP, ${dir} from ${prior.ratio.toFixed(1)}% last quarter`;
+
+    const changeEl = document.getElementById('hero-change');
+    changeEl.textContent = (change < 0 ? '−' : '+') + Math.abs(change).toFixed(1) + 'pp';
+    changeEl.className = 'num ' + (change < 0 ? 'green' : 'gold'); // improving debt ratio shown in green, worsening in gold as a soft warning
+    document.getElementById('hero-change-lbl').textContent = `Change in debt-to-GDP vs. ${prior.year}`;
+  } else {
+    document.getElementById('hero-ratio-lbl').textContent = 'Debt-to-GDP';
+    document.getElementById('hero-change').textContent = '—';
+    document.getElementById('hero-change-lbl').textContent = 'Not enough history yet for a quarter-over-quarter change';
+  }
+}
+
+function renderPerCapita(){
+  const perPerson = (latestTotalDebt * 1e9) / POPULATION; // GH₵bn -> GH₵, divided by population
+  const perFamily = perPerson * 4;
+
+  const fmt = (n) => 'GH₵' + Math.round(n).toLocaleString('en-GB');
+
+  document.getElementById('pc-per-person').textContent = fmt(perPerson);
+  document.getElementById('pc-family').textContent = fmt(perFamily);
+  document.getElementById('pc-total').textContent = 'GH₵' + latestTotalDebt.toFixed(1) + 'bn';
+  document.getElementById('pc-population').textContent = POPULATION_LABEL;
+  document.getElementById('pc-source').textContent = POPULATION_SOURCE;
+
+  const note = document.getElementById('note-percapita');
+  const usingLive = dataStatus.trend === 'live';
+  note.textContent = usingLive ? 'CALCULATED FROM LIVE DEBT + GSS POPULATION' : 'CALCULATED FROM SAMPLE DEBT + GSS POPULATION';
+  note.style.color = usingLive ? 'var(--green)' : 'var(--ink-dim)';
+}
+
+function renderAll(){
+  markStatus('note-composition', dataStatus.composition);
+  markStatus('note-allocation', dataStatus.allocation);
+  markStatus('note-trend', dataStatus.trend);
+  renderUpdatedBadge();
+  renderHeroStats();
+  renderPerCapita();
+
+  // Composition
+  const treemapEl = document.getElementById('treemap');
+  const legendEl = document.getElementById('legend');
+  if (dataStatus.composition === 'empty'){
+    treemapEl.innerHTML = `<div class="empty-state"><div class="es-title">No composition data yet</div>This section will populate once the debt_composition table in Baserow has rows.</div>`;
+    legendEl.innerHTML = '';
+  } else {
+    drawTreemap();
+  }
+
+  // Allocation
+  const ledgerEl = document.getElementById('cedi-ledger');
+  if (dataStatus.allocation === 'empty'){
+    ledgerEl.innerHTML = `<div class="empty-state"><div class="es-title">No allocation data yet</div>This section will populate once the budget_allocation table in Baserow has rows.</div>`;
+  } else {
+    drawLedger();
+  }
+
+  // Trend
+  const trendSvg = document.getElementById('trend-svg');
+  const trendWrap = trendSvg.parentElement;
+  clearTrendSkeleton();
+  if (dataStatus.trend === 'empty'){
+    trendSvg.style.display = 'none';
+    if (!document.getElementById('trend-empty')){
+      const div = document.createElement('div');
+      div.id = 'trend-empty';
+      div.className = 'empty-state';
+      div.innerHTML = `<div class="es-title">No trend data yet</div>This section will populate once the debt_trend table in Baserow has rows.`;
+      trendWrap.appendChild(div);
+    }
+  } else {
+    trendSvg.style.display = '';
+    const existingEmpty = document.getElementById('trend-empty');
+    if (existingEmpty) existingEmpty.remove();
+    drawTrend();
+  }
+}
+
+// ---------- TOOLTIP ----------
+const tooltipEl = document.getElementById('chart-tooltip');
+let tooltipAutoHide = null;
+
+function showTooltip(evt, html){
+  tooltipEl.innerHTML = html;
+  tooltipEl.classList.add('visible');
+  moveTooltip(evt);
+}
+function moveTooltip(evt){
+  const x = evt.clientX ?? (evt.touches && evt.touches[0] && evt.touches[0].clientX);
+  const y = evt.clientY ?? (evt.touches && evt.touches[0] && evt.touches[0].clientY);
+  if (x == null || y == null) return;
+  // Keep the tooltip on-screen on narrow viewports instead of clipping at the edge
+  const pad = 12;
+  const clampedX = Math.min(Math.max(x, pad), window.innerWidth - pad);
+  tooltipEl.style.left = clampedX + 'px';
+  tooltipEl.style.top = Math.max(y, 70) + 'px';
+}
+function hideTooltip(){
+  tooltipEl.classList.remove('visible');
+  if (tooltipAutoHide) { clearTimeout(tooltipAutoHide); tooltipAutoHide = null; }
+}
+function showTooltipTouch(evt, html){
+  evt.preventDefault();
+  evt.stopPropagation();
+  showTooltip(evt, html);
+  if (tooltipAutoHide) clearTimeout(tooltipAutoHide);
+  tooltipAutoHide = setTimeout(hideTooltip, 3200); // auto-dismiss since there's no "leave" gesture on touch
+}
+// Tapping anywhere outside a chart element dismisses an open tooltip
+document.addEventListener('touchstart', (e) => {
+  if (!e.target.closest('.tile') && !e.target.closest('.trend-dot')) hideTooltip();
+}, { passive: true });
+
+// ---------- TREEMAP ----------
+function drawTreemap(){
+  const container = document.getElementById('treemap');
+  container.innerHTML = '';
+  const width = container.clientWidth;
+  const height = window.innerWidth < 640 ? 380 : 320;
+
+  const root = d3.hierarchy(debtComposition).sum(d => d.value).sort((a,b)=> b.value - a.value);
+  d3.treemap().size([width, height]).paddingInner(2)(root);
+
+  const svg = d3.select(container).append('svg').attr('width', width).attr('height', height);
+  const leaf = svg.selectAll('g').data(root.leaves()).join('g')
+    .attr('transform', d => `translate(${d.x0},${d.y0})`);
+
+  const totalDebt = root.value;
+
+  leaf.append('rect')
+    .attr('class','tile')
+    .attr('width', d => d.x1 - d.x0)
+    .attr('height', d => d.y1 - d.y0)
+    .attr('fill', d => colorMap[d.data.name])
+    .on('mouseenter', function(evt, d){
+      const pct = ((d.value / totalDebt) * 100).toFixed(1);
+      const parent = d.parent && d.parent.data.name !== 'debt' ? d.parent.data.name : '';
+      showTooltip(evt, `
+        <div class="tt-title">${d.data.name}</div>
+        ${parent ? `<div style="opacity:0.65">${parent}</div>` : ''}
+        <div><span class="tt-amt">GH₵${d.data.value.toFixed(1)}bn</span><span class="tt-pct">${pct}% of total debt</span></div>
+      `);
+    })
+    .on('mousemove', moveTooltip)
+    .on('mouseleave', hideTooltip)
+    .on('touchstart', function(evt, d){
+      const pct = ((d.value / totalDebt) * 100).toFixed(1);
+      const parent = d.parent && d.parent.data.name !== 'debt' ? d.parent.data.name : '';
+      showTooltipTouch(evt, `
+        <div class="tt-title">${d.data.name}</div>
+        ${parent ? `<div style="opacity:0.65">${parent}</div>` : ''}
+        <div><span class="tt-amt">GH₵${d.data.value.toFixed(1)}bn</span><span class="tt-pct">${pct}% of total debt</span></div>
+      `);
+    });
+
+  leaf.each(function(d){
+    const w = d.x1 - d.x0, h = d.y1 - d.y0;
+    if (w < 60 || h < 34) return;
+    const g = d3.select(this);
+    g.append('text').attr('class','tile-label').attr('x', 10).attr('y', 22)
+      .attr('font-size', w < 140 ? 12 : 14).text(d.data.name);
+    g.append('text').attr('class','tile-sub').attr('x', 10).attr('y', 40)
+      .attr('font-size', 11).text('GH₵' + d.data.value.toFixed(1) + 'bn');
+  });
+
+  const legend = document.getElementById('legend');
+  legend.innerHTML = '';
+  root.leaves().forEach(d => {
+    legend.innerHTML += `<div class="legend-item"><span class="swatch" style="background:${colorMap[d.data.name]}"></span>${d.data.name}</div>`;
+  });
+}
+
+// ---------- CEDI LEDGER (animated bars) ----------
+function drawLedger(){
+  const el = document.getElementById('cedi-ledger');
+  el.innerHTML = '';
+  cediLedger.forEach(row => {
+    el.innerHTML += `
+      <div class="cedi-row">
+        <div class="cedi-label">${row.label}</div>
+        <div class="cedi-track"><div class="cedi-fill" data-w="${row.amt*100}" style="width:0%; background:${row.color}"></div></div>
+        <div class="cedi-amt"><b>${(row.amt*100).toFixed(0)}p</b> / GH₵1</div>
+      </div>`;
+  });
+  requestAnimationFrame(() => {
+    setTimeout(() => {
+      document.querySelectorAll('.cedi-fill').forEach(f => f.style.width = f.dataset.w + '%');
+    }, 100);
+  });
+}
+
+// ---------- TREND LINE ----------
+function drawTrend(){
+  const svgEl = document.getElementById('trend-svg');
+  svgEl.innerHTML = '';
+  const width = svgEl.parentElement.clientWidth;
+  const height = 320;
+  const margin = {top: 30, right: 20, bottom: 34, left: 44};
+
+  const svg = d3.select(svgEl).attr('viewBox', `0 0 ${width} ${height}`);
+  const defs = svg.append('defs');
+  const grad = defs.append('linearGradient').attr('id','trendGrad').attr('x1','0').attr('y1','0').attr('x2','0').attr('y2','1');
+  grad.append('stop').attr('offset','0%').attr('stop-color','#C89B3C').attr('stop-opacity',0.5);
+  grad.append('stop').attr('offset','100%').attr('stop-color','#C89B3C').attr('stop-opacity',0);
+
+  const x = d3.scalePoint().domain(trendData.map(d=>d.year)).range([margin.left, width-margin.right]).padding(0.5);
+  const y = d3.scaleLinear().domain([35, 80]).range([height-margin.bottom, margin.top]);
+
+  svg.append('g').attr('class','trend-axis').attr('transform', `translate(0,${height-margin.bottom})`)
+    .call(d3.axisBottom(x).tickSize(0)).call(g => g.select('.domain').remove());
+
+  svg.append('g').attr('class','trend-axis').attr('transform', `translate(${margin.left},0)`)
+    .call(d3.axisLeft(y).ticks(4).tickFormat(d=>d+'%').tickSize(-(width-margin.left-margin.right)))
+    .call(g => g.select('.domain').remove());
+  svg.selectAll('.trend-axis line').attr('stroke-dasharray','2,3');
+
+  const line = d3.line().x(d=>x(d.year)).y(d=>y(d.ratio)).curve(d3.curveMonotoneX);
+  const area = d3.area().x(d=>x(d.year)).y0(height-margin.bottom).y1(d=>y(d.ratio)).curve(d3.curveMonotoneX);
+
+  svg.append('path').datum(trendData).attr('class','trend-area').attr('d', area);
+  const path = svg.append('path').datum(trendData).attr('class','trend-line').attr('d', line);
+  const len = path.node().getTotalLength();
+  path.attr('stroke-dasharray', len).attr('stroke-dashoffset', len)
+    .transition().duration(1200).ease(d3.easeCubicOut).attr('stroke-dashoffset', 0);
+
+  svg.selectAll('.trend-dot').data(trendData).join('circle')
+    .attr('class','trend-dot').attr('cx', d=>x(d.year)).attr('cy', d=>y(d.ratio)).attr('r', 4)
+    .on('mouseenter', function(evt, d){
+      showTooltip(evt, `
+        <div class="tt-title">${d.year}</div>
+        <div><span class="tt-amt">${d.ratio}%</span><span class="tt-pct">debt-to-GDP</span></div>
+      `);
+    })
+    .on('mousemove', moveTooltip)
+    .on('mouseleave', hideTooltip)
+    .on('touchstart', function(evt, d){
+      showTooltipTouch(evt, `
+        <div class="tt-title">${d.year}</div>
+        <div><span class="tt-amt">${d.ratio}%</span><span class="tt-pct">debt-to-GDP</span></div>
+      `);
+    });
+
+  // Invisible larger hit-area behind each dot — makes tapping accurate on small screens
+  // without changing the dot's visual size
+  svg.selectAll('.trend-hit').data(trendData).join('circle')
+    .attr('class','trend-hit')
+    .attr('cx', d=>x(d.year)).attr('cy', d=>y(d.ratio)).attr('r', 16)
+    .attr('fill', 'transparent')
+    .style('cursor', 'pointer')
+    .on('mouseenter', function(evt, d){
+      showTooltip(evt, `
+        <div class="tt-title">${d.year}</div>
+        <div><span class="tt-amt">${d.ratio}%</span><span class="tt-pct">debt-to-GDP</span></div>
+      `);
+    })
+    .on('mousemove', moveTooltip)
+    .on('mouseleave', hideTooltip)
+    .on('touchstart', function(evt, d){
+      showTooltipTouch(evt, `
+        <div class="tt-title">${d.year}</div>
+        <div><span class="tt-amt">${d.ratio}%</span><span class="tt-pct">debt-to-GDP</span></div>
+      `);
+    });
+
+  svg.selectAll('.trend-callout').data(trendData).join('text')
+    .attr('class','trend-callout').attr('x', d=>x(d.year)).attr('y', d=>y(d.ratio)-14)
+    .attr('text-anchor','middle').text(d => d.ratio+'%');
+}
+
+loadData();
+window.addEventListener('resize', () => { if (dataStatus.composition !== 'empty') drawTreemap(); if (dataStatus.trend !== 'empty') drawTrend(); });
+
+</script>
+</body>
+</html>

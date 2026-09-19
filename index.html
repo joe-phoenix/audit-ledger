@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Audit Ledger — Ghana's Public Accountability, Visualized</title>
-<meta name="description" content="Government audit and accountability reports from Ghana, turned into clear visual data. Starting with the Auditor-General's reports.">
+<meta name="description" content="Government audit and accountability reports from Ghana, turned into clear visual data. Audit reports, Ghana's debt and state-owned enterprises.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -14,20 +14,22 @@
 
 <div class="shell">
   <aside class="sidebar">
-    <a class="brand" href="./">The Audit Ledger<span class="dot">.</span></a>
+    <a class="brand" href="">The Audit Ledger<span class="dot">.</span></a>
     <div class="nav-group">
-      <div class="nav-label">Overview</div>
-      <a class="nav-link active" href="./">Dashboard</a>
-      <a class="nav-link" href="#about">About</a>
-    </div>
-    <div class="nav-group">
-      <div class="nav-label">Auditor-General — MDAs</div>
-      <a class="nav-link" href="reports/mda-2023/">2023 Report <span class="amt">GH¢2.40bn</span></a>
-    </div>
-    <div class="nav-group">
-      <div class="nav-label">Coming next</div>
-      <a class="nav-link" href="#" style="opacity:.5; pointer-events:none;">District Assemblies</a>
-      <a class="nav-link" href="#" style="opacity:.5; pointer-events:none;">Public Boards &amp; SOEs</a>
+      <div class="nav-label">Government</div>
+      <details class="nav-folder"><summary>Audit Reports</summary>
+        <a class="nav-link" href="government/audit-reports/">Overview</a>
+        <a class="nav-link soon" href="government/audit-reports/mmda/">MMDA Report <span class="soon-tag">Soon</span></a>
+        <a class="nav-link" href="reports/mda-2023/">MDAs 2023 <span class="amt">GH¢2.40bn</span></a>
+      </details>
+      <details class="nav-folder"><summary>Ghana Debt</summary>
+        <a class="nav-link" href="government/ghana-debt/">Overview</a>
+        
+      </details>
+      <details class="nav-folder"><summary>State Owned Enterprises</summary>
+        <a class="nav-link" href="government/soes/">Overview</a>
+        
+      </details>
     </div>
   </aside>
 
@@ -43,28 +45,28 @@
         <div class="desc">Government audit and oversight reports are long, dense, and rarely read outside a small circle. The Audit Ledger turns them into clear visual data — what was found, how much money is involved, and what happened next. No sign-up required.</div>
       </div>
 
-      <div class="section" id="reports">
+      <div class="section" id="government">
         <div class="section-head">
-          <h2>Reports</h2>
-          <div class="subhead">Starting with the Auditor-General's reports on Ministries, Departments and Agencies (MDAs)</div>
+          <h2>Government</h2>
+          <div class="subhead">Public accountability, organised by topic</div>
         </div>
         <div class="grid cols-3">
-          <a class="card report-card" href="reports/mda-2023/">
-            <span class="tag">Auditor-General — MDAs</span>
-            <h3>2023 Annual Report</h3>
-            <p>Financial irregularities across ministries, departments and agencies, with a five-year trend and seven-category breakdown.</p>
+          <a class="card report-card" href="government/audit-reports/">
+            <span class="tag">Audit Reports</span>
+            <h3>Auditor-General reports</h3>
+            <p>How public money was handled, starting with the MMDA report. The 2023 MDA report is already here.</p>
             <div class="figure">GH¢2.40bn</div>
           </a>
-          <div class="card report-card placeholder">
-            <span class="tag">Auditor-General — District Assemblies</span>
-            <h3>Coming next</h3>
-            <p>Local government (MMDA) audit report — more entities, more granular findings.</p>
-          </div>
-          <div class="card report-card placeholder">
-            <span class="tag">Auditor-General — Public Boards &amp; SOEs</span>
-            <h3>Coming next</h3>
-            <p>State-owned enterprises and statutory corporations audit findings.</p>
-          </div>
+          <a class="card report-card" href="government/ghana-debt/">
+            <span class="tag">Ghana Debt</span>
+            <h3>Tracking Ghana's debt</h3>
+            <p>Debt stock by creditor, where each cedi of the budget goes, and the debt-to-GDP trend.</p>
+          </a>
+          <a class="card report-card" href="government/soes/">
+            <span class="tag">State Owned Enterprises</span>
+            <h3>SOE reports</h3>
+            <p>What state-owned enterprises reported and what auditors found. Coming soon.</p>
+          </a>
         </div>
       </div>
 

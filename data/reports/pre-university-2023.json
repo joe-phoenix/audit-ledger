@@ -1,0 +1,151 @@
+{
+  "slug": "pre-university-2023",
+  "series": "pre-university",
+  "year": 2023,
+  "title": "Report of the Auditor-General on the Public Accounts of Ghana: Pre-University Educational Institutions",
+  "shortTitle": "Pre-University Educational Institutions",
+  "period": "Financial year ended 31 December 2023",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_Public_Accounts_of_Ghana,_Pre-University_Educational_Institutions_for_the_financial_year_ended_31_December_2023_.pdf",
+  "status": "verified",
+  "institutionsAudited": 855,
+  "total": 7484080.52,
+  "categories": {
+    "Cash": 3618413.64,
+    "Payroll": 1728913.19,
+    "Procurement/Stores": 1718784.03,
+    "Tax": 417969.66
+  },
+  "trend": {
+    "years": [
+      2021,
+      2022,
+      2023
+    ],
+    "source": "Part II, Summary of Irregularities (p. 8)",
+    "totals": [
+      18457644.29,
+      7636498.27,
+      7484080.52
+    ],
+    "categories": {
+      "Cash": [
+        2287403.83,
+        2626340.2,
+        3618413.64
+      ],
+      "Payroll": [
+        731686.05,
+        2110529.73,
+        1728913.19
+      ],
+      "Procurement/Stores": [
+        1144473.26,
+        2552696.15,
+        1718784.03
+      ],
+      "Contract": [
+        14019349.53,
+        0,
+        0
+      ],
+      "Tax": [
+        274731.62,
+        346932.19,
+        417969.66
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "region",
+    "label": "By region",
+    "source": "Appendix D — National summary of irregularities",
+    "items": [
+      {
+        "name": "Ahafo",
+        "total": 545317.22
+      },
+      {
+        "name": "Ashanti",
+        "total": 1074843.25
+      },
+      {
+        "name": "Bono",
+        "total": 3850.0
+      },
+      {
+        "name": "Bono East",
+        "total": 0
+      },
+      {
+        "name": "Central",
+        "total": 969403.95
+      },
+      {
+        "name": "Eastern",
+        "total": 340840.61
+      },
+      {
+        "name": "Greater Accra",
+        "total": 228884.94
+      },
+      {
+        "name": "North East",
+        "total": 12697.0
+      },
+      {
+        "name": "Northern",
+        "total": 91869.85
+      },
+      {
+        "name": "Oti",
+        "total": 1333890.0
+      },
+      {
+        "name": "Savannah",
+        "total": 123365.62
+      },
+      {
+        "name": "Upper East",
+        "total": 277987.85
+      },
+      {
+        "name": "Upper West",
+        "total": 141130.29
+      },
+      {
+        "name": "Volta",
+        "total": 522163.03
+      },
+      {
+        "name": "Western",
+        "total": 1764001.91
+      },
+      {
+        "name": "Western North",
+        "total": 53835.0
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Unreturned Free SHS textbooks and calculators (62 schools)",
+      "amount": "GH¢1.41m"
+    },
+    {
+      "text": "Rent not collected from a telecoms company at Likpe SHS (US$108,000)",
+      "amount": "GH¢1.26m"
+    },
+    {
+      "text": "Unearned salaries paid (46 schools)",
+      "amount": "GH¢890,856"
+    },
+    {
+      "text": "Debts owed to schools by past students, staff and others (not an irregularity)",
+      "amount": "GH¢91.9m"
+    }
+  ],
+  "notes": [
+    "855 institutions audited; 818 submitted financial statements. Transactional audits were done on the 37 that did not.",
+    "Procurement and stores are reported as one category in this report."
+  ]
+}

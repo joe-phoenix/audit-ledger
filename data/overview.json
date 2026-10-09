@@ -1,0 +1,37 @@
+{
+  "consolidated": {
+    "note": "Total across all six annual Auditor-General reports submitted to Parliament (incl. technical universities/colleges of education and MMDA IGF, not yet on this site).",
+    "source": { "label": "Public Services Commission, citing the Auditor-General (2024)", "url": "https://psc.gov.gh/financial-irregularities-decline-by-gh%C2%A25-2bn-in-latest-auditor-generals-reports/" },
+    "years": [2022, 2023],
+    "totals": [16570000000, 11320000000]
+  },
+  "recoveries": {
+    "status": "secondary-source",
+    "disallowances2020to2023": {
+      "flagged": 38988624925,
+      "recovered": 12717731074,
+      "source": { "label": "Graphic Online, 12 May 2025, citing the Auditor-General's special report to Parliament (Feb 2025)", "url": "https://www.graphic.com.gh/news/general-news/ghana-news-disallowed-expenditure-auditor-general-recovers-ghc12-7bn.html" },
+      "bySector": [
+        { "name": "Public Boards", "total": 10790000000 },
+        { "name": "MDAs", "total": 1860000000 },
+        { "name": "Technical Universities", "total": 35000000 },
+        { "name": "MMDA Internally Generated Funds", "total": 13800000 },
+        { "name": "Pre-University Institutions", "total": 9090000 },
+        { "name": "District Assemblies Common Fund", "total": 7000000 }
+      ],
+      "regionNote": "Greater Accra accounts for GH¢12.46bn (98%) of recoveries, as most public boards and MDAs are headquartered there."
+    },
+    "recoveriesAccount": {
+      "note": "Bank of Ghana account opened June 2022 for unearned salaries and other disallowed amounts. Cumulative recoveries reported via RTI.",
+      "source": { "label": "The Fourth Estate, June 2026 (RTI documents)", "url": "https://www.thefourthestategh.com/2026/06/more-than-ghc280m-in-auditor-general-surcharges-remain-unpaid" },
+      "cumulativeRecovered": 57200000,
+      "outstandingSurcharges": 280500000,
+      "timeline": [
+        { "label": "End 2023", "amount": 19500000 },
+        { "label": "By Nov 2024", "amount": 10000000 },
+        { "label": "2025", "amount": 15000000 },
+        { "label": "By Feb 2026", "amount": 5000000 }
+      ]
+    }
+  }
+}

@@ -1,28 +1,46 @@
 # The Audit Ledger
 
-Government audit and accountability reports from Ghana, turned into visual data. A sibling project to Labari Data — same static-site, no-signup approach, focused specifically on governance/accountability reporting.
+Ghana's Auditor-General reports turned into clear charts: irregularities by type, year, institution and region, and what was recovered. A sibling project to Labari Data. No sign-up, no tracking.
+
+Built with Next.js (App Router, static export) and Recharts. The build output in `out/` is plain static files that can be hosted on GitHub Pages, Netlify or Vercel.
+
+## Run it
+
+```bash
+npm install
+npm run dev        # http://localhost:8420
+npm run build      # static site in out/
+```
 
 ## Structure
 
-- `index.html` — landing page, lists all reports.
-- `reports/<report-slug>/index.html` — one page per report (e.g. `reports/mda-2023/`).
-- `data/<report-slug>.json` — structured source data for that report (totals, category breakdown, per-institution figures). Report pages currently embed their numbers directly in a `<script>` block; the JSON files are the canonical record to transcribe into as reports are read.
+- `data/reports/<slug>.json`: one file per Auditor-General report (totals, type breakdown, multi-year trend, by-institution or by-region breakdown, highlights, notes, source table references).
+- `data/overview.json`: consolidated totals across all reports, plus recovery figures (secondary sources).
+- `lib/data.ts`: loads and types the data; register new report files here.
+- `app/`: pages: overview `/`, `/trends`, `/categories`, `/regions`, `/recoveries`, `/about`, `/reports`, `/reports/[slug]`.
+- `components/`: charts (`Charts.tsx`), explorers with filters, navigation, UI primitives.
+- `public/government/ghana-debt/`: the original static Ghana Debt dashboard (with its live Cloudflare Worker data), served unchanged. Only works under `npm run build` output, not `next dev`.
 
-## Workflow for adding a report
+## Adding a report
 
-1. Download the official PDF from the issuing institution (currently Ghana Audit Service, audit.gov.gh).
-2. Create/update `data/<report-slug>.json` with headline totals first, then category breakdowns, then per-institution rows as they're transcribed. Mark anything not yet transcribed with `"status": "placeholder"` rather than guessing.
-3. Build/update `reports/<report-slug>/index.html` following the visual pattern in `reports/mda-2023/`.
-4. Link it from `index.html`.
-
-## Local preview
-
-```bash
-python3 -m http.server 8420
-```
-
-Then open `http://localhost:8420`.
+1. Download the official PDF from audit.gov.gh and extract text (`pdftotext -layout`).
+2. Copy an existing `data/reports/*.json` and fill it from the report's summary tables. Cite the table/appendix in each `source` field. Check that category, institution and region breakdowns each sum to the report total.
+3. Add it to the `reports` array in `lib/data.ts`. The report page, navigation and overview charts pick it up automatically.
 
 ## Status
 
-- **2023 Auditor-General's Report on MDAs**: headline totals verified (total irregularities, recoverable vs. administrative split, institutions audited). Category-level and per-institution breakdowns still need to be transcribed from the full PDF.
+| Report (FY 2023) | Total | Trend | Breakdown |
+|---|---|---|---|
+| Public Boards, Corporations & SOEs | GH¢8.80bn | 2019–2023 | 19 sector ministries |
+| Ministries, Departments & Agencies | GH¢2.40bn | 2019–2023 | 15 ministries |
+| District Assemblies Common Fund | GH¢49.7m | 2019–2023 | 16 regions |
+| Technical Universities | GH¢45.6m | 2019–2023 | 10 universities |
+| District Assemblies — own revenue (IGF) | GH¢22.2m | 2021–2023 | 16 regions |
+| Colleges of Education | GH¢8.0m | 2023 only | 15 regions |
+| Pre-University Institutions | GH¢7.5m | 2021–2023 | 16 regions |
+
+All six 2023 Auditor-General annual reports are in, verified from the official PDFs. Technical universities and colleges of education come from one report but are shown as two series, because only the universities have a multi-year table. Source quirks are recorded in each file's `notes` (e.g. the IGF report's text total vs table total, and `#REF!` cells for Upper West in its Appendix D).
+
+Not yet added: reports for years before 2023 (their figures appear only via the 2023 reports' comparison tables).
+
+Note: the GH¢8.80bn / −41.6% figure widely cited in the news is the Public Boards report total, not a consolidated total. The consolidated 2023 figure across all six reports is GH¢11.32bn (the six reports here sum to GH¢11.33bn).

@@ -1,0 +1,170 @@
+{
+  "slug": "dacf-2023",
+  "series": "dacf",
+  "year": 2023,
+  "title": "Report of the Auditor-General on the Management and Utilisation of the District Assemblies Common Fund and other Statutory Funds",
+  "shortTitle": "District Assemblies (MMDAs) — Common Fund",
+  "period": "Year ended 31 December 2023",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_Management_and_Utilisation_of_the_District_Assemblies_Common_Fund_and_other_Statutory_Funds_for_the_year_ended_31_December_2023.pdf",
+  "status": "verified",
+  "institutionsAudited": 261,
+  "total": 49653295.18,
+  "categories": {
+    "Contract": 37958000.23,
+    "Cash": 11126045.56,
+    "Tax": 295129.13,
+    "Procurement/Stores": 193620.26,
+    "Sanitation": 80500.0
+  },
+  "trend": {
+    "years": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "source": "Part II, para. 10 (p. 7)",
+    "totals": [
+      124640845.92,
+      77147260.1,
+      66130366.12,
+      53636715.87,
+      49653295.18
+    ],
+    "categories": {
+      "Contract": [
+        86980848.61,
+        45692398.53,
+        57601901.48,
+        40297628.96,
+        37958000.23
+      ],
+      "Cash": [
+        33213320.67,
+        23505854.48,
+        7511747.85,
+        12092429.97,
+        11126045.56
+      ],
+      "Procurement/Stores": [
+        4121790.4,
+        7716366.62,
+        642269.42,
+        751010.75,
+        193620.26
+      ],
+      "Tax": [
+        324886.24,
+        232640.47,
+        374447.37,
+        495646.19,
+        295129.13
+      ],
+      "Sanitation": [
+        0,
+        0,
+        0,
+        0,
+        80500.0
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "region",
+    "label": "By region",
+    "source": "Appendix B — National summary of MMDAs irregularities",
+    "items": [
+      {
+        "name": "Ahafo",
+        "total": 1906991.86
+      },
+      {
+        "name": "Ashanti",
+        "total": 7258679.73
+      },
+      {
+        "name": "Bono",
+        "total": 1523459.56
+      },
+      {
+        "name": "Bono East",
+        "total": 2933651.9
+      },
+      {
+        "name": "Central",
+        "total": 7831189.16
+      },
+      {
+        "name": "Eastern",
+        "total": 2956507.83
+      },
+      {
+        "name": "Greater Accra",
+        "total": 2151708.59
+      },
+      {
+        "name": "North East",
+        "total": 525163.81
+      },
+      {
+        "name": "Northern",
+        "total": 1317877.02
+      },
+      {
+        "name": "Oti",
+        "total": 410342.61
+      },
+      {
+        "name": "Savannah",
+        "total": 1553794.3
+      },
+      {
+        "name": "Upper East",
+        "total": 2512099.99
+      },
+      {
+        "name": "Upper West",
+        "total": 1366965.6
+      },
+      {
+        "name": "Volta",
+        "total": 8893318.01
+      },
+      {
+        "name": "Western",
+        "total": 1361836.01
+      },
+      {
+        "name": "Western North",
+        "total": 5149709.2
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Delayed or abandoned projects across 69 assemblies",
+      "amount": "GH¢29.5m"
+    },
+    {
+      "text": "Completed projects not put to use (12 assemblies)",
+      "amount": "GH¢6.65m"
+    },
+    {
+      "text": "Over-use of Common Fund on administration (13 assemblies)",
+      "amount": "GH¢4.88m"
+    },
+    {
+      "text": "Unsupported payments (29 assemblies)",
+      "amount": "GH¢3.00m"
+    },
+    {
+      "text": "Common Fund deducted at source before reaching assemblies, mostly for Zoomlion sanitation and fumigation services",
+      "amount": "GH¢173.6m of GH¢510m"
+    }
+  ],
+  "notes": [
+    "The Administrator of the DACF disbursed GH¢510m to 261 assemblies in 2023; assemblies received a net GH¢336.4m (65.9%).",
+    "Internally generated funds (IGF) of MMDAs are covered in a separate report and are not included here."
+  ]
+}

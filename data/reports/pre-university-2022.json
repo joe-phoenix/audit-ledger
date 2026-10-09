@@ -1,0 +1,156 @@
+{
+  "slug": "pre-university-2022",
+  "series": "pre-university",
+  "year": 2022,
+  "title": "Report of the Auditor-General on the Public Accounts of Ghana: Colleges of Education and Pre-University Educational Institutions",
+  "shortTitle": "Colleges of Education & Pre-University Institutions",
+  "period": "Financial year ended 31 December 2022",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_Public_Accounts_of_Ghana:_Colleges_of_Education_and_Pre-university_Educational_Institutions_for_the_financial_year_ended_31_December_2022.pdf",
+  "status": "verified",
+  "institutionsAudited": 877,
+  "total": 7636498.27,
+  "categories": {
+    "Cash": 2626340.2,
+    "Procurement/Stores": 2552696.15,
+    "Payroll": 2110529.73,
+    "Tax": 346932.19
+  },
+  "trend": {
+    "years": [
+      2020,
+      2021,
+      2022
+    ],
+    "source": "Part II, Summary of Irregularities (p. 5)",
+    "totals": [
+      41778465.97,
+      18457644.29,
+      7636498.27
+    ],
+    "categories": {
+      "Cash": [
+        13352792.21,
+        2287403.83,
+        2626340.2
+      ],
+      "Procurement/Stores": [
+        13246146.53,
+        1144473.26,
+        2552696.15
+      ],
+      "Payroll": [
+        688955.46,
+        731686.05,
+        2110529.73
+      ],
+      "Contract": [
+        14114076.52,
+        14019349.53,
+        0
+      ],
+      "Tax": [
+        376495.25,
+        274731.62,
+        346932.19
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "region",
+    "label": "By region",
+    "source": "Appendix D — National summary of irregularities",
+    "items": [
+      {
+        "name": "Ahafo",
+        "total": 142578.06
+      },
+      {
+        "name": "Ashanti",
+        "total": 630626.25
+      },
+      {
+        "name": "Bono",
+        "total": 292696.92
+      },
+      {
+        "name": "Bono East",
+        "total": 80400.85
+      },
+      {
+        "name": "Central",
+        "total": 1470133.72
+      },
+      {
+        "name": "Eastern",
+        "total": 446150.29
+      },
+      {
+        "name": "Greater Accra",
+        "total": 461809.33
+      },
+      {
+        "name": "North East",
+        "total": 0
+      },
+      {
+        "name": "Northern",
+        "total": 270320.24
+      },
+      {
+        "name": "Oti",
+        "total": 148952.98
+      },
+      {
+        "name": "Savannah",
+        "total": 6352.99
+      },
+      {
+        "name": "Upper East",
+        "total": 723036.87
+      },
+      {
+        "name": "Upper West",
+        "total": 529111.5
+      },
+      {
+        "name": "Volta",
+        "total": 557003.76
+      },
+      {
+        "name": "Western",
+        "total": 1500325.29
+      },
+      {
+        "name": "Western North",
+        "total": 394216.06
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Debts owed to schools by past students (not an irregularity), blamed on a GES directive not to expel for unpaid fees",
+      "amount": "GH¢228.3m"
+    },
+    {
+      "text": "Textbooks and teaching materials not returned by past students (55 institutions)",
+      "amount": "GH¢1.02m"
+    },
+    {
+      "text": "Revenue not accounted for at one institution",
+      "amount": "GH¢822,822"
+    },
+    {
+      "text": "Outstanding rent and utilities (44 institutions)",
+      "amount": "GH¢655,657"
+    },
+    {
+      "text": "Clothing, textbooks and other items paid for but not supplied (3 institutions)",
+      "amount": "GH¢621,870"
+    }
+  ],
+  "notes": [
+    "In 2022 colleges of education were audited in the same report as pre-university institutions; from 2023 they moved to the technical universities report. 877 institutions audited; 821 submitted financial statements.",
+    "The regional appendix (Appendix D) totals GH¢7,653,715.11, GH¢17,216.84 more than the report's summary total: payroll is GH¢4,773 higher and tax GH¢12,444 higher. Regional bars use the appendix; all other figures use the summary.",
+    "Procurement and stores are reported as one category."
+  ]
+}

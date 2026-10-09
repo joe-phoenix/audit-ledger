@@ -1,0 +1,210 @@
+{
+  "slug": "mda-2022",
+  "series": "mda",
+  "year": 2022,
+  "title": "Report of the Auditor-General on the Public Accounts of Ghana: Ministries, Departments and Other Agencies (MDAs)",
+  "shortTitle": "Ministries, Departments & Agencies",
+  "period": "Year ended 31 December 2022",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_Public_Accounts_of_Ghana_%E2%80%93_Ministries,_Departments_and_other_Agencies_for_the_year_ended_31_December_2022.pdf",
+  "status": "verified",
+  "total": 1412021784.33,
+  "categories": {
+    "Tax": 1247530110.94,
+    "Debts/Loans": 89744544.88,
+    "Cash": 57471599,
+    "Payroll": 14254723.51,
+    "Rent": 2142523,
+    "Contract": 556333,
+    "Procurement/Stores": 321950
+  },
+  "trend": {
+    "years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "source": "Part I, Table 1B (p. 6)",
+    "totals": [
+      5196043399.94,
+      3008187888.15,
+      2053176449.85,
+      1080931937,
+      1412021784.33
+    ],
+    "categories": {
+      "Tax": [
+        4788284799,
+        2666743134.56,
+        694386436.15,
+        989026225,
+        1247530110.94
+      ],
+      "Cash": [
+        388925019.94,
+        276624480.4,
+        34034697.72,
+        45763607,
+        57471599
+      ],
+      "Debts/Loans": [
+        594889,
+        201000,
+        1108660041.95,
+        30758576,
+        89744544.88
+      ],
+      "Payroll": [
+        1875347,
+        469953,
+        4487494.84,
+        5601611,
+        14254723.51
+      ],
+      "Procurement/Stores": [
+        6823337,
+        20604593,
+        10667174.6,
+        511569,
+        321950
+      ],
+      "Rent": [
+        3941756,
+        43467634.19,
+        29576414.36,
+        7710925,
+        2142523
+      ],
+      "Contract": [
+        5598252,
+        77093,
+        171364190.23,
+        1559424,
+        556333
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "institution",
+    "label": "By ministry",
+    "source": "Part I, Table 2 and Table 2 continued (pp. 11–12)",
+    "items": [
+      {
+        "name": "Ministry of Finance (incl. GRA)",
+        "total": 1237051931.94
+      },
+      {
+        "name": "Ministry of Communication",
+        "total": 86335564.88
+      },
+      {
+        "name": "Ministry of Fisheries & Aquaculture",
+        "total": 32170637
+      },
+      {
+        "name": "Ministry of Lands & Natural Resources",
+        "total": 12947115
+      },
+      {
+        "name": "Ministry of Health",
+        "total": 12231056
+      },
+      {
+        "name": "Ministry of the Interior",
+        "total": 11279608
+      },
+      {
+        "name": "Ministry of Food & Agriculture",
+        "total": 6024240
+      },
+      {
+        "name": "Other agencies",
+        "total": 3258973
+      },
+      {
+        "name": "Ministry of Education",
+        "total": 2788684
+      },
+      {
+        "name": "Ministry of Roads & Highways",
+        "total": 2019843
+      },
+      {
+        "name": "Ministry of Gender, Children & Social Protection",
+        "total": 1981411
+      },
+      {
+        "name": "Ministry of Local Government",
+        "total": 1036693.51
+      },
+      {
+        "name": "Ministry of Justice & AG's Dept.",
+        "total": 995190
+      },
+      {
+        "name": "Ministry of Youth & Sports",
+        "total": 873406
+      },
+      {
+        "name": "Ministry of Tourism, Arts & Culture",
+        "total": 360382
+      },
+      {
+        "name": "Ministry of Trade & Industry",
+        "total": 183461
+      },
+      {
+        "name": "Ministry of Foreign Affairs",
+        "total": 167932
+      },
+      {
+        "name": "Ministry of Defence",
+        "total": 102335
+      },
+      {
+        "name": "Ministry of Sanitation & Water Resources",
+        "total": 94803
+      },
+      {
+        "name": "Ministry of Employment & Labour Relations",
+        "total": 83187
+      },
+      {
+        "name": "Ministry of Information",
+        "total": 21767
+      },
+      {
+        "name": "Ministry of Railway Development",
+        "total": 14000
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Owed by 2,557 registered VAT traders",
+      "amount": "GH¢361.7m"
+    },
+    {
+      "text": "Rescheduled tax debt not paid by 18 oil marketing companies",
+      "amount": "GH¢327.6m"
+    },
+    {
+      "text": "Ministry of Communication: debts and loans in US dollars (US$10.04m)",
+      "amount": "GH¢86.1m"
+    },
+    {
+      "text": "Cash irregularities at the Ministry of Fisheries & Aquaculture",
+      "amount": "GH¢31.6m"
+    },
+    {
+      "text": "Farm equipment paid for by the Ministry of Finance and never supplied",
+      "amount": "GH¢601,000"
+    }
+  ],
+  "notes": [
+    "Foreign-currency amounts converted at Bank of Ghana rates on 31 Dec 2022: US$1 = GH¢8.567, £1 = GH¢10.311.",
+    "Table 1A prints cash as GH¢58,471,599 in its total column and stores as GH¢321,650; Tables 1B and 2 give GH¢57,471,599 and GH¢321,950, which reconcile to the report total and are used here.",
+    "The ministry grand totals in Table 2 sum to GH¢436 more than the report total, likely rounding in the source."
+  ]
+}

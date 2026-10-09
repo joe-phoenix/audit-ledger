@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CATEGORIES, getReport, reports } from "@/lib/data";
+import { CATEGORIES, getReport, allReports, seriesReports } from "@/lib/data";
 import { ghs, full, pct } from "@/lib/format";
 import { categoryColor } from "@/components/colors";
 import { RankedBars, StackedYears, YearBars } from "@/components/Charts";
@@ -8,7 +9,7 @@ import { ChartCard, DataTable, PageHead, Section, Stat } from "@/components/ui";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
-  return reports.map((r) => ({ slug: r.slug }));
+  return allReports.map((r) => ({ slug: r.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -20,6 +21,7 @@ export default async function ReportPage({ params }: { params: Promise<{ slug: s
   const r = getReport((await params).slug);
   if (!r) notFound();
 
+  const siblings = [...seriesReports(r.series)].reverse();
   const { years, totals } = r.trend;
   const hasTrend = years.length > 1;
   const prev = totals[totals.length - 2];
@@ -39,6 +41,16 @@ export default async function ReportPage({ params }: { params: Promise<{ slug: s
           <span>Source: <a href={r.sourceUrl} target="_blank" rel="noopener">Ghana Audit Service, full report (PDF)</a></span>
           <span>Publisher: Ghana Audit Service</span>
         </div>
+        {siblings.length > 1 && (
+          <nav className="toolbar" style={{ marginTop: 16, marginBottom: 0 }} aria-label="Report year">
+            <div className="seg">
+              {siblings.map((s) => (
+                <Link key={s.slug} href={`/reports/${s.slug}/`} aria-current={s.slug === r.slug ? "page" : undefined}
+                  className={s.slug === r.slug ? "on" : undefined}>{s.year}</Link>
+              ))}
+            </div>
+          </nav>
+        )}
       </PageHead>
 
       <Section id="headline" title="The headline number">

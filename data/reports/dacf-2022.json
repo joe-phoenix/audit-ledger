@@ -1,0 +1,162 @@
+{
+  "slug": "dacf-2022",
+  "series": "dacf",
+  "year": 2022,
+  "title": "Report of the Auditor-General on the Management and Utilisation of the District Assemblies Common Fund and other Statutory Funds",
+  "shortTitle": "District Assemblies (MMDAs) — Common Fund",
+  "period": "Year ended 31 December 2022",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_Management_and_Utilisation_of_the_District_Assemblies_Common_Fund_and_other_Statutory_Funds_for_the_year_ended_31_December_2022.pdf",
+  "status": "verified",
+  "institutionsAudited": 261,
+  "total": 53636715.87,
+  "categories": {
+    "Contract": 40297628.96,
+    "Cash": 12092429.97,
+    "Procurement/Stores": 751010.75,
+    "Tax": 495646.19
+  },
+  "trend": {
+    "years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "source": "Part II, para. 9 (p. 3)",
+    "totals": [
+      120567896.78,
+      124640845.92,
+      77147260.1,
+      66130366.12,
+      53636715.87
+    ],
+    "categories": {
+      "Contract": [
+        65618865.7,
+        86980848.61,
+        45692398.53,
+        57601901.48,
+        40297628.96
+      ],
+      "Cash": [
+        47139747.82,
+        33213320.67,
+        23505854.48,
+        7511747.85,
+        12092429.97
+      ],
+      "Procurement/Stores": [
+        7356299.95,
+        4121790.4,
+        7716366.62,
+        642269.42,
+        751010.75
+      ],
+      "Tax": [
+        452983.31,
+        324886.24,
+        232640.47,
+        374447.37,
+        495646.19
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "region",
+    "label": "By region",
+    "source": "Appendix B — National summary of irregularities",
+    "items": [
+      {
+        "name": "Ahafo",
+        "total": 528051.21
+      },
+      {
+        "name": "Ashanti",
+        "total": 8278288.27
+      },
+      {
+        "name": "Bono",
+        "total": 1804298.38
+      },
+      {
+        "name": "Bono East",
+        "total": 1287354.38
+      },
+      {
+        "name": "Central",
+        "total": 11984509.32
+      },
+      {
+        "name": "Eastern",
+        "total": 6103298.05
+      },
+      {
+        "name": "Greater Accra",
+        "total": 780932.85
+      },
+      {
+        "name": "North East",
+        "total": 342555.7
+      },
+      {
+        "name": "Northern",
+        "total": 716478.71
+      },
+      {
+        "name": "Oti",
+        "total": 272540.4
+      },
+      {
+        "name": "Savannah",
+        "total": 1125429.93
+      },
+      {
+        "name": "Upper East",
+        "total": 3798593.37
+      },
+      {
+        "name": "Upper West",
+        "total": 1341993.97
+      },
+      {
+        "name": "Volta",
+        "total": 8788446.51
+      },
+      {
+        "name": "Western",
+        "total": 5557129.37
+      },
+      {
+        "name": "Western North",
+        "total": 926815.45
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Delayed or abandoned projects (218 projects, 78 assemblies)",
+      "amount": "GH¢33.1m"
+    },
+    {
+      "text": "Completed projects not in use (33 projects, 19 assemblies)",
+      "amount": "GH¢7.14m"
+    },
+    {
+      "text": "Common Fund over-used on recurrent expenditure (21 assemblies)",
+      "amount": "GH¢7.10m"
+    },
+    {
+      "text": "Unsupported payments (36 assemblies)",
+      "amount": "GH¢1.57m"
+    },
+    {
+      "text": "Zoomlion yet to supply 42 trucks and 157 containers to 69 assemblies, despite fees deducted at source",
+      "amount": "—"
+    }
+  ],
+  "notes": [
+    "The Administrator of the DACF distributed GH¢370m to 261 assemblies in 2022; GH¢108.2m was deducted at source, leaving a net GH¢261.8m (70.8%).",
+    "Internally generated funds (IGF) of MMDAs are covered in a separate report."
+  ]
+}

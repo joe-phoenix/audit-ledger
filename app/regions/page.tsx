@@ -1,13 +1,14 @@
-import { reports, seriesLabel } from "@/lib/data";
+import { allReports, reportYears, seriesLabel } from "@/lib/data";
 import { ghs, full } from "@/lib/format";
 import { seriesColor } from "@/components/colors";
 import { RankedBars, StackedRanked } from "@/components/Charts";
 import { ChartCard, DataTable, PageHead, Section } from "@/components/ui";
+import { YearTabs } from "@/components/YearTabs";
 
 export const metadata = { title: "By region" };
 
-export default function Regions() {
-  const regional = reports.filter((r) => r.breakdown.kind === "region");
+function YearPanel({ year }: { year: number }) {
+  const regional = allReports.filter((r) => r.year === year && r.breakdown.kind === "region").sort((a, b) => b.total - a.total);
   const names = Array.from(new Set(regional.flatMap((r) => r.breakdown.items.map((i) => i.name))));
   const rows = names.map((n) => ({
     name: n,
@@ -18,17 +19,13 @@ export default function Regions() {
 
   return (
     <>
-      <PageHead eyebrow="Explore" title="By region"
-        desc="District assemblies and schools are reported region by region across Ghana's 16 regions. Ministries and public boards are national and are not broken down by region." />
-
-      <Section title="Combined, 2023" sub="District assemblies (Common Fund and own revenue), colleges of education and pre-university schools">
-        <ChartCard foot={`${combined[0].name} and ${combined[1].name} lead, Greater Accra is high mainly because of GH¢11.7m in uncollected assembly revenue.`}>
+      <Section title={`Combined, ${year}`} sub={regional.map((r) => seriesLabel[r.series]).join(" · ")}>
+        <ChartCard foot={`Highest: ${combined[0].name} (${ghs(combined[0].total)}), then ${combined[1].name} (${ghs(combined[1].total)}). Hover a bar for the split by report.`}>
           <StackedRanked data={combined.map((c) => rows.find((x) => x.name === c.name)!)} series={series} />
           <DataTable head={["Region", ...series.map((s) => s.label), "Total"]}
             rows={combined.map((c) => { const r = rows.find((x) => x.name === c.name)!; return [c.name, ...series.map((s) => full(r[s.key])), full(c.total)]; })} />
         </ChartCard>
       </Section>
-
       <div className="grid cols-2">
         {regional.map((r) => (
           <ChartCard key={r.slug} title={seriesLabel[r.series]} sub={`${ghs(r.total)} total · ${r.breakdown.source}`}>
@@ -36,6 +33,17 @@ export default function Regions() {
           </ChartCard>
         ))}
       </div>
+    </>
+  );
+}
+
+export default function Regions() {
+  const years = reportYears.filter((y) => allReports.some((r) => r.year === y && r.breakdown.kind === "region"));
+  return (
+    <>
+      <PageHead eyebrow="Explore" title="By region"
+        desc="District assemblies and schools are reported region by region across Ghana's 16 regions. Ministries and public boards are national and are not broken down by region." />
+      <YearTabs panels={years.map((y) => ({ year: y, node: <YearPanel year={y} /> }))} />
     </>
   );
 }

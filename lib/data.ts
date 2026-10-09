@@ -6,6 +6,7 @@ import technicalUniversities2023 from "@/data/reports/technical-universities-202
 import collegesOfEducation2023 from "@/data/reports/colleges-of-education-2023.json";
 import districtIgf2023 from "@/data/reports/district-assemblies-igf-2023.json";
 import overviewData from "@/data/overview.json";
+import { EARLIER } from "@/data/reports/earlier";
 
 export type Series = "mda" | "public-boards" | "dacf" | "technical-universities" | "district-igf" | "colleges-of-education" | "pre-university";
 
@@ -30,10 +31,25 @@ export interface Report {
   notes: string[];
 }
 
-// Ordered largest-first by 2023 total. Add new report JSON files here.
-export const reports: Report[] = [
+// Every report, any year. Add new report JSON files here.
+export const allReports: Report[] = [
   publicBoards2023, mda2023, dacf2023, technicalUniversities2023, districtIgf2023, collegesOfEducation2023, preUniversity2023,
+  ...EARLIER,
 ] as Report[];
+
+export const LATEST_YEAR = Math.max(...allReports.map((r) => r.year));
+
+/** Latest report per series, ordered largest-first. Overview charts use these: their trend tables already span earlier years. */
+export const reports: Report[] = allReports
+  .filter((r) => r.year === LATEST_YEAR)
+  .sort((a, b) => b.total - a.total);
+
+export const reportYears = Array.from(new Set(allReports.map((r) => r.year))).sort((a, b) => b - a);
+
+/** All years of one series, newest first. */
+export function seriesReports(series: Series) {
+  return allReports.filter((r) => r.series === series).sort((a, b) => b.year - a.year);
+}
 
 export const overview = overviewData;
 
@@ -51,7 +67,7 @@ export const seriesLabel: Record<Series, string> = {
 export const CATEGORIES = ["Debts/Loans", "Tax", "Contract", "Cash", "Procurement/Stores", "Payroll", "Rent", "Sanitation"] as const;
 
 export function getReport(slug: string) {
-  return reports.find((r) => r.slug === slug);
+  return allReports.find((r) => r.slug === slug);
 }
 
 /** Totals per year per series, for every year any report covers. */

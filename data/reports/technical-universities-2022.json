@@ -1,0 +1,153 @@
+{
+  "slug": "technical-universities-2022",
+  "series": "technical-universities",
+  "year": 2022,
+  "title": "Report of the Auditor-General on the Public Accounts of Ghana: Technical Universities",
+  "shortTitle": "Technical Universities",
+  "period": "Year ended 31 December 2022",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_Public_Accounts_of_Ghana_%E2%80%93_Technical_Universities_for_the_year_ended_31_December_2022.pdf",
+  "status": "verified",
+  "institutionsAudited": 10,
+  "total": 20959765,
+  "recoverable": 12014434,
+  "administrative": 8945331,
+  "categories": {
+    "Debts/Loans": 9395315,
+    "Contract": 8603199,
+    "Payroll": 2296905,
+    "Cash": 544486,
+    "Procurement/Stores": 105024,
+    "Tax": 14836
+  },
+  "trend": {
+    "years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "source": "Part I, Table 1b (p. 1)",
+    "totals": [
+      98894466,
+      170614483,
+      13093026,
+      34876924,
+      20959765
+    ],
+    "categories": {
+      "Debts/Loans": [
+        1468196,
+        8094230,
+        3897983,
+        7792954,
+        9395315
+      ],
+      "Cash": [
+        13619737,
+        7925991,
+        3412427,
+        711888,
+        544486
+      ],
+      "Payroll": [
+        1707374,
+        262571,
+        283998,
+        3396381,
+        2296905
+      ],
+      "Procurement/Stores": [
+        2913104,
+        48963278,
+        2156254,
+        2066600,
+        105024
+      ],
+      "Tax": [
+        295952,
+        23242,
+        8671,
+        0,
+        14836
+      ],
+      "Contract": [
+        78890103,
+        105345171,
+        3333692,
+        20909101,
+        8603199
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "institution",
+    "label": "By university",
+    "source": "Part I, Table 2 (p. 3)",
+    "items": [
+      {
+        "name": "Ho Technical University",
+        "total": 7449348
+      },
+      {
+        "name": "Tamale Technical University",
+        "total": 6682581
+      },
+      {
+        "name": "Dr. Hilla Limann (Wa) Technical University",
+        "total": 1587160
+      },
+      {
+        "name": "Cape Coast Technical University",
+        "total": 1505506
+      },
+      {
+        "name": "Takoradi Technical University",
+        "total": 1254996
+      },
+      {
+        "name": "Koforidua Technical University",
+        "total": 993266
+      },
+      {
+        "name": "Accra Technical University",
+        "total": 597949
+      },
+      {
+        "name": "Kumasi Technical University",
+        "total": 563911
+      },
+      {
+        "name": "Bolgatanga Technical University",
+        "total": 325048
+      },
+      {
+        "name": "Sunyani Technical University",
+        "total": 0
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Fees owed by students at Ho Technical University",
+      "amount": "GH¢7.44m"
+    },
+    {
+      "text": "Contract irregularities at Tamale Technical University",
+      "amount": "GH¢6.27m"
+    },
+    {
+      "text": "Payment for a contract outside Tamale Technical University's approved budget",
+      "amount": "GH¢305,108"
+    },
+    {
+      "text": "Unearned salaries and unrefunded study-leave costs across universities",
+      "amount": "GH¢2.30m"
+    }
+  ],
+  "notes": [
+    "Colleges of education were audited with pre-university institutions in 2022, not in this report.",
+    "Stores irregularities are merged into Procurement/Stores here.",
+    "The 2020 total is GH¢13,093,026 here and GH¢13,093,025 in the 2023 report (rounding)."
+  ]
+}

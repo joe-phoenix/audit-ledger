@@ -41,6 +41,8 @@ npm run build      # static site in out/
 
 All six 2023 Auditor-General annual reports are in, verified from the official PDFs. Technical universities and colleges of education come from one report but are shown as two series, because only the universities have a multi-year table. Source quirks are recorded in each file's `notes` (e.g. the IGF report's text total vs table total, and `#REF!` cells for Upper West in its Appendix D).
 
-Not yet added: reports for years before 2023 (their figures appear only via the 2023 reports' comparison tables).
+**2022:** all six reports are in (GH¢16.57bn, matching the official consolidated figure). In 2022 colleges of education were audited with pre-university institutions, so that report sits under the pre-university series.
+
+Not yet added: 2024 reports, and 2019–2021 (their totals appear via the later reports' comparison tables).
 
 Note: the GH¢8.80bn / −41.6% figure widely cited in the news is the Public Boards report total, not a consolidated total. The consolidated 2023 figure across all six reports is GH¢11.32bn (the six reports here sum to GH¢11.33bn).

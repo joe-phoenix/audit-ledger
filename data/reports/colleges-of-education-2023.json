@@ -1,0 +1,142 @@
+{
+  "slug": "colleges-of-education-2023",
+  "series": "colleges-of-education",
+  "year": 2023,
+  "title": "Report of the Auditor-General on the Public Accounts of Ghana: Technical Universities and Colleges of Education",
+  "shortTitle": "Colleges of Education",
+  "period": "Year ended 31 December 2023",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_public_accounts_of_Ghana_-_Technical_Universities_and_Colleges_of_Education_for_the_year_ended_31_December_2023.pdf",
+  "status": "verified",
+  "institutionsAudited": 46,
+  "total": 7975574,
+  "recoverable": 3548097,
+  "administrative": 4427477,
+  "categories": {
+    "Debts/Loans": 2766648,
+    "Procurement/Stores": 2718205,
+    "Contract": 1814137,
+    "Payroll": 608822,
+    "Tax": 41499,
+    "Cash": 26263
+  },
+  "trend": {
+    "years": [
+      2023
+    ],
+    "source": "Part I, Table 1b (p. 1). The report gives no multi-year comparison for colleges of education.",
+    "totals": [
+      7975574
+    ],
+    "categories": {
+      "Debts/Loans": [
+        2766648
+      ],
+      "Procurement/Stores": [
+        2718205
+      ],
+      "Contract": [
+        1814137
+      ],
+      "Payroll": [
+        608822
+      ],
+      "Tax": [
+        41499
+      ],
+      "Cash": [
+        26263
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "region",
+    "label": "By region",
+    "source": "Part I, Table 2b (p. 6)",
+    "items": [
+      {
+        "name": "Ahafo",
+        "total": 216601
+      },
+      {
+        "name": "Ashanti",
+        "total": 732223
+      },
+      {
+        "name": "Bono",
+        "total": 0
+      },
+      {
+        "name": "Bono East",
+        "total": 0
+      },
+      {
+        "name": "Central",
+        "total": 532167
+      },
+      {
+        "name": "Eastern",
+        "total": 2478091
+      },
+      {
+        "name": "Greater Accra",
+        "total": 90996
+      },
+      {
+        "name": "North East",
+        "total": 0
+      },
+      {
+        "name": "Northern",
+        "total": 0
+      },
+      {
+        "name": "Oti",
+        "total": 26263
+      },
+      {
+        "name": "Upper East",
+        "total": 0
+      },
+      {
+        "name": "Upper West",
+        "total": 3439967
+      },
+      {
+        "name": "Volta",
+        "total": 0
+      },
+      {
+        "name": "Western",
+        "total": 0
+      },
+      {
+        "name": "Western North",
+        "total": 459266
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Contracts at Tumu College of Education awarded above the tender committee's threshold without Central Tender Review Committee approval",
+      "amount": "GH¢2.61m"
+    },
+    {
+      "text": "Fees owed by students to colleges of education",
+      "amount": "GH¢2.05m"
+    },
+    {
+      "text": "Outstanding amounts owed to suppliers and service providers (Eastern Region)",
+      "amount": "GH¢1.81m"
+    },
+    {
+      "text": "Funds not accounted for at Dambai College of Education",
+      "amount": "GH¢26,263"
+    }
+  ],
+  "notes": [
+    "46 colleges of education; all but Nusrat Jahan Ahmadiyya College of Education submitted accounts.",
+    "Savannah Region has no college of education in the report's regional table.",
+    "Procurement (GH¢2,613,340) and stores (GH¢104,865) are combined here.",
+    "The summary tables of this report are images in the PDF; figures were read from Part I, pp. 1–6."
+  ]
+}

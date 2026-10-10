@@ -1,0 +1,186 @@
+{
+  "slug": "mda-2023",
+  "series": "mda",
+  "year": 2023,
+  "title": "Report of the Auditor-General on the Public Accounts of Ghana: Ministries, Departments and Other Agencies (MDAs)",
+  "shortTitle": "Ministries, Departments & Agencies",
+  "period": "Year ended 31 December 2023",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_Public_Accounts_of_Ghana:_Ministries,_Departments_and_Other_Agencies_(MDAs)_for_the_year_ended_31_December_2023.pdf",
+  "status": "verified",
+  "total": 2400874200,
+  "categories": {
+    "Tax": 2157871788,
+    "Contract": 120481380,
+    "Cash": 88413180,
+    "Debts/Loans": 15778779,
+    "Payroll": 14455712,
+    "Procurement/Stores": 2059102,
+    "Rent": 1814259
+  },
+  "trend": {
+    "years": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "source": "Part I, Table 1B",
+    "totals": [
+      3008187888,
+      2053176450,
+      1080931937,
+      1412021814,
+      2400874200
+    ],
+    "categories": {
+      "Tax": [
+        2666743135,
+        694386436,
+        989026225,
+        1247530110,
+        2157871788
+      ],
+      "Cash": [
+        276624480,
+        34034698,
+        45763607,
+        57471599,
+        88413180
+      ],
+      "Debts/Loans": [
+        201000,
+        1108660042,
+        30758576,
+        89744545,
+        15778779
+      ],
+      "Payroll": [
+        469953,
+        4487495,
+        5601611,
+        14254754,
+        14455712
+      ],
+      "Procurement/Stores": [
+        20604593,
+        10667175,
+        511569,
+        321950,
+        2059102
+      ],
+      "Rent": [
+        43467634,
+        29576414,
+        7710925,
+        2142523,
+        1814259
+      ],
+      "Contract": [
+        77093,
+        171364190,
+        1559424,
+        556333,
+        120481380
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "institution",
+    "label": "By ministry",
+    "source": "Part I, Table 2 (pp. 22–23)",
+    "items": [
+      {
+        "name": "Ministry of Finance (incl. GRA)",
+        "total": 2157498440.13
+      },
+      {
+        "name": "Ministry of Health",
+        "total": 35906607
+      },
+      {
+        "name": "Ministry of Education",
+        "total": 17110833
+      },
+      {
+        "name": "Ministry of Fisheries & Aquaculture",
+        "total": 131723
+      },
+      {
+        "name": "Ministry of the Interior",
+        "total": 1194263
+      },
+      {
+        "name": "Ministry of Employment & Labour Relations",
+        "total": 42518
+      },
+      {
+        "name": "Ministry of Roads & Highways",
+        "total": 120518578
+      },
+      {
+        "name": "Ministry of Gender, Children & Social Protection",
+        "total": 630096
+      },
+      {
+        "name": "Ministry of Local Government & Rural Development",
+        "total": 655283
+      },
+      {
+        "name": "Ministry of Justice & AG's Department",
+        "total": 156507
+      },
+      {
+        "name": "Ministry of Food & Agriculture",
+        "total": 65614509
+      },
+      {
+        "name": "Ministry of Works & Housing",
+        "total": 647815
+      },
+      {
+        "name": "Ministry of Sanitation & Water Resources",
+        "total": 461002
+      },
+      {
+        "name": "Ministry of Environment, Science, Tech. & Innovation",
+        "total": 107959
+      },
+      {
+        "name": "Other agencies",
+        "total": 198066.61
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Unpaid tax from 9,308 companies and businesses across 21 revenue offices",
+      "amount": "GH¢247.6m + US$1.64m"
+    },
+    {
+      "text": "Tax owed by four oil marketing companies (10.3m litres lifted)",
+      "amount": "GH¢17.9m"
+    },
+    {
+      "text": "Nine cash transactions without payment vouchers or documents",
+      "amount": "GH¢64.5m"
+    },
+    {
+      "text": "Contractor payments with no evidence of work (66 certificates, 29 contractors)",
+      "amount": "GH¢6.2m"
+    },
+    {
+      "text": "Medical supplies issued to a driver and never delivered",
+      "amount": "GH¢1.34m"
+    },
+    {
+      "text": "Salaries paid to 16 people who were never employees of a clinic",
+      "amount": "GH¢837,931"
+    }
+  ],
+  "notes": [
+    "Tax includes US$4,051,389 and €25,817, converted at Bank of Ghana rates (10.034, 10.618).",
+    "The report's own 'Total (GH¢)' column overstates Finance by GH¢6,707,072 against its category columns; the grand-total column, which reconciles to GH¢2,400,874,200, is used here.",
+    "Ministry of Finance includes the Ghana Revenue Authority's unpaid tax."
+  ]
+}

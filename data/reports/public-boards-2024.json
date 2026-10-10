@@ -1,0 +1,173 @@
+{
+  "slug": "public-boards-2024",
+  "series": "public-boards",
+  "year": 2024,
+  "title": "Report of the Auditor-General on the Public Accounts of Ghana: Public Boards, Corporations and other Statutory Institutions",
+  "shortTitle": "Public Boards, Corporations & SOEs",
+  "period": "Period ended 31 December 2024",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_Of_The_Auditor-General_On_The_Public_Accounts_Of_Ghana:_Public_Boards,_Corporations_And_Other_Statutory_Institutions_For_The_Period_Ended_31_December_2024.pdf",
+  "status": "verified",
+  "total": 18415673589,
+  "recoverable": 15573745411,
+  "administrative": 2841928179,
+  "categories": {
+    "Debts/Loans": 12542104044,
+    "Cash": 4584683049,
+    "Contract": 871818832,
+    "Procurement/Stores": 339818310,
+    "Tax": 77057753,
+    "Payroll": 191601
+  },
+  "trend": {
+    "years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "source": "Part I, Table 2 (p. 2)",
+    "totals": [
+      12856172626,
+      17483483538,
+      15059441806,
+      8799263120,
+      18415673589
+    ],
+    "categories": {
+      "Debts/Loans": [
+        10067170560,
+        16355145068,
+        14964300230,
+        8673795784,
+        12542104044
+      ],
+      "Cash": [
+        1802692515,
+        505800397,
+        23513600,
+        7890052,
+        4584683049
+      ],
+      "Payroll": [
+        9574765,
+        8243954,
+        11486154,
+        8724425,
+        191601
+      ],
+      "Procurement/Stores": [
+        857725788,
+        306943215,
+        42710320,
+        53729279,
+        339818310
+      ],
+      "Tax": [
+        29201677,
+        23572832,
+        12856588,
+        1904046,
+        77057753
+      ],
+      "Contract": [
+        89807321,
+        283778072,
+        4574914,
+        53219534,
+        871818832
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "institution",
+    "label": "By sector ministry",
+    "source": "Part I, Table 4 (p. 4)",
+    "items": [
+      {
+        "name": "Ministry of Energy",
+        "total": 15829075457
+      },
+      {
+        "name": "Ministry of Employment & Labour Relations",
+        "total": 1180873741
+      },
+      {
+        "name": "Ministry of Roads & Highways",
+        "total": 615990059
+      },
+      {
+        "name": "Ministry of Health",
+        "total": 591586726
+      },
+      {
+        "name": "Ministry of Transport",
+        "total": 110359114
+      },
+      {
+        "name": "Ministry of Finance",
+        "total": 79375209
+      },
+      {
+        "name": "Ministry of Information",
+        "total": 4220370
+      },
+      {
+        "name": "Ministry of Education",
+        "total": 2459035
+      },
+      {
+        "name": "Ministry of Justice & AG's Dept.",
+        "total": 709938
+      },
+      {
+        "name": "Ministry of Communication & Digitalisation",
+        "total": 543678
+      },
+      {
+        "name": "Ministry of Trade & Industry",
+        "total": 263116
+      },
+      {
+        "name": "Extra-Ministerial Agencies",
+        "total": 98225
+      },
+      {
+        "name": "Ministry of Sanitation & Water Resources",
+        "total": 93205
+      },
+      {
+        "name": "Ministry of Food & Agriculture",
+        "total": 25716
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Revenue collected but under-declared by the Electricity Company of Ghana (ECG)",
+      "amount": "GH¢2.95bn"
+    },
+    {
+      "text": "Owed by ECG to Bui Power Authority",
+      "amount": "US$729.8m"
+    },
+    {
+      "text": "Revenue collected by ECG on behalf of independent power producers and SOEs but not paid over",
+      "amount": "GH¢1.29bn"
+    },
+    {
+      "text": "Long-outstanding loans SSNIT has not recovered",
+      "amount": "GH¢1.06bn + US$5.8m"
+    },
+    {
+      "text": "Not transferred by SSNIT to the National Health Insurance Fund",
+      "amount": "GH¢564.9m"
+    }
+  ],
+  "notes": [
+    "Includes US$763,968,667 converted at GH¢14.70 to US$1 (31 December 2024).",
+    "Irregularities rose 109.3% on 2023. Every type rose except payroll.",
+    "Ministry of Energy bodies account for GH¢15.83bn (86%) of the total.",
+    "Stores (GH¢4.5m in 2024) is merged into Procurement/Stores here."
+  ]
+}

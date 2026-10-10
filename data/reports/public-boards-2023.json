@@ -1,0 +1,186 @@
+{
+  "slug": "public-boards-2023",
+  "series": "public-boards",
+  "year": 2023,
+  "title": "Report of the Auditor-General on the Public Accounts of Ghana: Public Boards, Corporations and other Statutory Institutions",
+  "shortTitle": "Public Boards, Corporations & SOEs",
+  "period": "Period ended 31 December 2023",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_public_accounts_of_Ghana:_Public_Boards,_Corporations_and_other_Statutory_Institutions_for_the_period_ended_31_December_2023.pdf",
+  "status": "verified",
+  "institutionsAudited": 135,
+  "institutionsAuditedPrior": 113,
+  "total": 8799263120,
+  "recoverable": 8732455124,
+  "administrative": 66807996,
+  "categories": {
+    "Debts/Loans": 8673795784,
+    "Procurement/Stores": 53729279,
+    "Contract": 53219534,
+    "Payroll": 8724425,
+    "Cash": 7890052,
+    "Tax": 1904046
+  },
+  "trend": {
+    "years": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "source": "Part I, Table 2 (p. 2)",
+    "totals": [
+      5468398431,
+      12856172626,
+      17483483538,
+      15059441806,
+      8799263120
+    ],
+    "categories": {
+      "Debts/Loans": [
+        4859727984,
+        10067170560,
+        16355145068,
+        14964300230,
+        8673795784
+      ],
+      "Cash": [
+        215025782,
+        1802692515,
+        505800397,
+        23513600,
+        7890052
+      ],
+      "Payroll": [
+        66248946,
+        9574765,
+        8243954,
+        11486154,
+        8724425
+      ],
+      "Procurement/Stores": [
+        40091418,
+        857725788,
+        306943215,
+        42710320,
+        53729279
+      ],
+      "Tax": [
+        199651868,
+        29201677,
+        23572832,
+        12856588,
+        1904046
+      ],
+      "Contract": [
+        87652433,
+        89807321,
+        283778072,
+        4574914,
+        53219534
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "institution",
+    "label": "By sector ministry",
+    "source": "Part I, Table 3 (p. 4)",
+    "items": [
+      {
+        "name": "Ministry of Finance",
+        "total": 8243718632
+      },
+      {
+        "name": "Ministry of Works & Housing",
+        "total": 121693373
+      },
+      {
+        "name": "Ministry of Energy",
+        "total": 119882861
+      },
+      {
+        "name": "Ministry of Transport",
+        "total": 91275492
+      },
+      {
+        "name": "Ministry of Food & Agriculture",
+        "total": 84217771
+      },
+      {
+        "name": "Ministry of Education",
+        "total": 54720516
+      },
+      {
+        "name": "Ministry of Lands & Natural Resources",
+        "total": 27769743
+      },
+      {
+        "name": "Ministry of Information",
+        "total": 21840051
+      },
+      {
+        "name": "Ministry of Health",
+        "total": 20563445
+      },
+      {
+        "name": "Ministry of Justice & AG's Dept.",
+        "total": 4058184
+      },
+      {
+        "name": "Ministry of Tourism, Culture & Creative Arts",
+        "total": 2624475
+      },
+      {
+        "name": "Extra-Ministerial Agencies",
+        "total": 2303575
+      },
+      {
+        "name": "Ministry of Sanitation & Water Resources",
+        "total": 1462382
+      },
+      {
+        "name": "Ministry of Employment & Labour Relations",
+        "total": 1074863
+      },
+      {
+        "name": "Ministry of Youth & Sports",
+        "total": 858514
+      },
+      {
+        "name": "Ministry of Trade & Industry",
+        "total": 607511
+      },
+      {
+        "name": "Ministry of Communication & Digitalisation",
+        "total": 385338
+      },
+      {
+        "name": "Ministry of Environment, Science, Tech. & Innovation",
+        "total": 173094
+      },
+      {
+        "name": "Ministry of Defence",
+        "total": 33300
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Debt owed to the Bank of Ghana by Ghana Cocoa Board (inside the outstanding debts/loans figure)",
+      "amount": "GH¢8.24bn"
+    },
+    {
+      "text": "Recoverable share of all irregularities (debts, cash, payroll, tax, contract)",
+      "amount": "99.24%"
+    },
+    {
+      "text": "Administrative infractions (procurement and contract), not recoverable",
+      "amount": "GH¢66.8m"
+    }
+  ],
+  "notes": [
+    "Includes US$4,585,776, converted at GH¢11.88 to US$1 (31 December 2023).",
+    "This report covers state-owned enterprises, public boards, corporations and statutory institutions.",
+    "Stores irregularities (GH¢2.7m in 2019, GH¢11.6m in 2020, GH¢0.17m in 2021) are merged into Procurement/Stores here."
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "slug": "public-boards-2022",
+  "series": "public-boards",
+  "year": 2022,
+  "title": "Report of the Auditor-General on the Public Accounts of Ghana: Public Boards, Corporations and other Statutory Institutions",
+  "shortTitle": "Public Boards, Corporations & SOEs",
+  "period": "Period ended 31 December 2022",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_Accounts_of_Ghana:_Public_Boards,_Corporations_and_other_Statutory_Institutions_for_the_period_ended_31_December_2022.pdf",
+  "status": "verified",
+  "institutionsAudited": 113,
+  "institutionsAuditedPrior": 101,
+  "total": 15059441805.85,
+  "recoverable": 15012156571.82,
+  "administrative": 47285234.03,
+  "categories": {
+    "Debts/Loans": 14964300230.22,
+    "Procurement/Stores": 42710320.03,
+    "Cash": 23513599.6,
+    "Tax": 12856588,
+    "Payroll": 11486154,
+    "Contract": 4574914
+  },
+  "trend": {
+    "years": [
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "source": "Part I, Table 2 (p. 2)",
+    "totals": [
+      3007258924,
+      5468398431,
+      12856172626,
+      17483483538,
+      15059441805.85
+    ],
+    "categories": {
+      "Debts/Loans": [
+        1801416815,
+        4859727984,
+        10067170560,
+        16355145068,
+        14964300230.22
+      ],
+      "Cash": [
+        1087713932,
+        215025782,
+        1802692515,
+        505800397,
+        23513599.6
+      ],
+      "Payroll": [
+        3163473,
+        66248946,
+        9574765,
+        8243954,
+        11486154
+      ],
+      "Procurement/Stores": [
+        15856100,
+        40091418,
+        857725788,
+        306943215,
+        42710320.03
+      ],
+      "Tax": [
+        4371199,
+        199651868,
+        29201677,
+        23572832,
+        12856588
+      ],
+      "Contract": [
+        94737405,
+        87652433,
+        89807321,
+        283778072,
+        4574914
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "institution",
+    "label": "By sector ministry",
+    "source": "Part I, Table 3 (p. 4)",
+    "items": [
+      {
+        "name": "Ministry of Energy",
+        "total": 14070230898
+      },
+      {
+        "name": "Ministry of Employment & Labour Relations",
+        "total": 478303457
+      },
+      {
+        "name": "Office of Government Machinery",
+        "total": 318736930
+      },
+      {
+        "name": "Ministry of Education",
+        "total": 74315610
+      },
+      {
+        "name": "Ministry of Youth & Sports",
+        "total": 37686153
+      },
+      {
+        "name": "Ministry of Finance",
+        "total": 24999343
+      },
+      {
+        "name": "Ministry of Works & Housing",
+        "total": 18468264
+      },
+      {
+        "name": "Ministry of Trade & Industry",
+        "total": 17692646
+      },
+      {
+        "name": "Ministry of Sanitation & Water Resources",
+        "total": 15715110
+      },
+      {
+        "name": "Ministry of Roads & Highways",
+        "total": 898893
+      },
+      {
+        "name": "Ministry of Communication & Digitalisation",
+        "total": 704880
+      },
+      {
+        "name": "Ministry of Food & Agriculture",
+        "total": 494780
+      },
+      {
+        "name": "Ministry of Tourism, Culture & Creative Arts",
+        "total": 277043
+      },
+      {
+        "name": "Ministry of Information",
+        "total": 251294
+      },
+      {
+        "name": "Ministry of Lands & Natural Resources",
+        "total": 239135
+      },
+      {
+        "name": "Extra-Ministerial Agencies",
+        "total": 234240
+      },
+      {
+        "name": "Ministry of Health",
+        "total": 193129
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Owed to Ghana National Gas Company by its customers",
+      "amount": "US$741.9m"
+    },
+    {
+      "text": "Owed to Bui Power Authority",
+      "amount": "US$515.2m"
+    },
+    {
+      "text": "Owed to Ghana National Petroleum Corporation (GNPC)",
+      "amount": "US$215.8m"
+    },
+    {
+      "text": "Owed to Northern Electricity Distribution Company (NEDCo)",
+      "amount": "GH¢1.40bn"
+    },
+    {
+      "text": "Unrecovered staff advances at Ghana Water Company",
+      "amount": "GH¢14.5m"
+    }
+  ],
+  "notes": [
+    "Includes US$1,477,929,774 converted at GH¢8.5760 to US$1 and £61,748 at GH¢10.3118 to £1 (31 December 2022). Dollar debts make up GH¢12.67bn of the total.",
+    "Ministry of Energy bodies account for GH¢14.07bn (93%) of the total, almost all outstanding debts owed to state energy companies.",
+    "Stores irregularities are merged into Procurement/Stores here."
+  ]
+}

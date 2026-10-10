@@ -1,0 +1,148 @@
+{
+  "slug": "pre-university-2024",
+  "series": "pre-university",
+  "year": 2024,
+  "title": "Report of the Auditor-General on the Public Accounts of Ghana: Pre-University Educational Institutions",
+  "shortTitle": "Pre-University Educational Institutions",
+  "period": "Financial year ended 31 December 2024",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_Of_The_Auditor-General_On_The_Public_Accounts_Of_Ghana,_Pre-University_Educational_Institutions_For_The_Financial_Year_Ended_31_December_2024.pdf",
+  "status": "verified",
+  "institutionsAudited": 832,
+  "total": 23444814.16,
+  "categories": {
+    "Cash": 21075112.88,
+    "Payroll": 1671976.4,
+    "Procurement/Stores": 662129.1,
+    "Tax": 35595.78
+  },
+  "trend": {
+    "years": [
+      2022,
+      2023,
+      2024
+    ],
+    "source": "Part II, Summary of Irregularities",
+    "totals": [
+      7636498.27,
+      7484080.52,
+      23444814.16
+    ],
+    "categories": {
+      "Cash": [
+        2626340.2,
+        3618413.64,
+        21075112.88
+      ],
+      "Payroll": [
+        2110529.73,
+        1728913.19,
+        1671976.4
+      ],
+      "Procurement/Stores": [
+        2552696.15,
+        1718784.03,
+        662129.1
+      ],
+      "Tax": [
+        346932.19,
+        417969.66,
+        35595.78
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "region",
+    "label": "By region",
+    "source": "Appendix D — National summary of irregularities (p. 281)",
+    "items": [
+      {
+        "name": "Ahafo",
+        "total": 4753604.58
+      },
+      {
+        "name": "Ashanti",
+        "total": 2068717.43
+      },
+      {
+        "name": "Bono",
+        "total": 405593.82
+      },
+      {
+        "name": "Bono East",
+        "total": 3888385.18
+      },
+      {
+        "name": "Central",
+        "total": 1100519.6
+      },
+      {
+        "name": "Eastern",
+        "total": 1245195.73
+      },
+      {
+        "name": "Greater Accra",
+        "total": 994336.27
+      },
+      {
+        "name": "Northern",
+        "total": 2699204.93
+      },
+      {
+        "name": "Oti",
+        "total": 1740000.0
+      },
+      {
+        "name": "Savannah",
+        "total": 365008.98
+      },
+      {
+        "name": "Upper East",
+        "total": 974818.66
+      },
+      {
+        "name": "Upper West",
+        "total": 1551255.03
+      },
+      {
+        "name": "Volta",
+        "total": 477425.73
+      },
+      {
+        "name": "Western",
+        "total": 899836.33
+      },
+      {
+        "name": "Western North",
+        "total": 280911.89
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Unpaid utility bills at 58 schools",
+      "amount": "GH¢13.0m"
+    },
+    {
+      "text": "Funds misapplied at 8 schools",
+      "amount": "GH¢4.55m"
+    },
+    {
+      "text": "Contract with Telecel (Vodafone) not enforced (Oti Region)",
+      "amount": "GH¢1.74m"
+    },
+    {
+      "text": "Compensation owed to Prempeh College, delayed",
+      "amount": "GH¢1.05m"
+    },
+    {
+      "text": "Unearned salaries paid (38 schools)",
+      "amount": "GH¢907,299"
+    }
+  ],
+  "notes": [
+    "Irregularities tripled (up 213%) on 2023. From 2024 the 'cash' category also covers receivables and payables, including GH¢13.0m of unpaid utility bills, so it is not directly comparable with earlier years.",
+    "832 institutions audited; 825 submitted financial statements.",
+    "North East Region has no column in the report's regional summary.",
+    "The 2022 figure includes colleges of education, which were audited in the same report that year."
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "slug": "district-assemblies-igf-2023",
+  "series": "district-igf",
+  "year": 2023,
+  "title": "Report of the Auditor-General on the Accounts of District Assemblies",
+  "shortTitle": "District Assemblies — Own Revenue (IGF)",
+  "period": "Financial year ended 31 December 2023",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_Accounts_of_District_Assemblies_for_the_financial_year_ended_31_December_2023.pdf",
+  "status": "verified",
+  "institutionsAudited": 261,
+  "total": 22211707.62,
+  "categories": {
+    "Cash": 18743339.97,
+    "Contract": 2350192.72,
+    "Payroll": 785067.82,
+    "Procurement/Stores": 263029.4,
+    "Tax": 70077.71
+  },
+  "trend": {
+    "years": [
+      2021,
+      2022,
+      2023
+    ],
+    "source": "Part II, Summary of Irregularities (p. 7)",
+    "totals": [
+      13493590.33,
+      19985108.17,
+      22211707.62
+    ],
+    "categories": {
+      "Cash": [
+        9313612.62,
+        12558305.32,
+        18743339.97
+      ],
+      "Payroll": [
+        777627.11,
+        6950672.5,
+        785067.82
+      ],
+      "Contract": [
+        2713657.35,
+        0,
+        2350192.72
+      ],
+      "Procurement/Stores": [
+        555883.1,
+        180631.92,
+        263029.4
+      ],
+      "Tax": [
+        132810.15,
+        295498.43,
+        70077.71
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "region",
+    "label": "By region",
+    "source": "Appendix D — National summary of irregularities",
+    "items": [
+      {
+        "name": "Ahafo",
+        "total": 2180745.11
+      },
+      {
+        "name": "Ashanti",
+        "total": 929546.63
+      },
+      {
+        "name": "Bono",
+        "total": 213060.13
+      },
+      {
+        "name": "Bono East",
+        "total": 289372.6
+      },
+      {
+        "name": "Central",
+        "total": 3277934.62
+      },
+      {
+        "name": "Eastern",
+        "total": 290815.62
+      },
+      {
+        "name": "Greater Accra",
+        "total": 12396518.11
+      },
+      {
+        "name": "North East",
+        "total": 29483.12
+      },
+      {
+        "name": "Northern",
+        "total": 194277.02
+      },
+      {
+        "name": "Oti",
+        "total": 111046.0
+      },
+      {
+        "name": "Savannah",
+        "total": 116228.33
+      },
+      {
+        "name": "Upper East",
+        "total": 260880.49
+      },
+      {
+        "name": "Upper West",
+        "total": 22917.43
+      },
+      {
+        "name": "Volta",
+        "total": 499960.91
+      },
+      {
+        "name": "Western",
+        "total": 918194.8
+      },
+      {
+        "name": "Western North",
+        "total": 480726.7
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Revenue (property rates, business permits) not collected by 31 assemblies",
+      "amount": "GH¢13.9m"
+    },
+    {
+      "text": "74 revenue collectors paid GH¢2.38m in salaries collected only GH¢1.04m",
+      "amount": "GH¢1.34m shortfall"
+    },
+    {
+      "text": "Rent owed by 1,663 tenants of assembly properties",
+      "amount": "GH¢971,174"
+    },
+    {
+      "text": "Completed project not put to use",
+      "amount": "GH¢1.35m"
+    },
+    {
+      "text": "Revenue collected but not accounted for by 105 collectors at 27 assemblies",
+      "amount": "GH¢465,715"
+    }
+  ],
+  "notes": [
+    "Covers assemblies' own revenue (IGF: rates, rents, fees, fines, licences) and general accounts. The District Assemblies Common Fund is a separate report.",
+    "Assemblies collected GH¢612.3m in IGF in 2023, 18.6% of their GH¢3.30bn total income.",
+    "The report's text gives a 2023 total of GH¢22,340,694.50, but its own summary table and Appendix D add up to GH¢22,211,707.62. The table figure is used here.",
+    "Upper West's figures show as #REF! (a spreadsheet error) in Appendix D. Its total of GH¢22,917.43 is derived as the national total minus the other 15 regions, and matches its category rows."
+  ]
+}

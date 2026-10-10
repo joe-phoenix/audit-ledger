@@ -1,0 +1,156 @@
+{
+  "slug": "district-assemblies-igf-2022",
+  "series": "district-igf",
+  "year": 2022,
+  "title": "Report of the Auditor-General on the Accounts of District Assemblies",
+  "shortTitle": "District Assemblies — Own Revenue (IGF)",
+  "period": "Year ended 31 December 2022",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_accounts_of_district_assemblies_for_the_year_ended_31_December_2022.pdf",
+  "status": "verified",
+  "institutionsAudited": 261,
+  "total": 19985108.17,
+  "categories": {
+    "Cash": 12558305.32,
+    "Payroll": 6950672.5,
+    "Tax": 295498.43,
+    "Procurement/Stores": 180631.92
+  },
+  "trend": {
+    "years": [
+      2020,
+      2021,
+      2022
+    ],
+    "source": "Part II, para. 12 (p. 3)",
+    "totals": [
+      12876561.02,
+      13493590.33,
+      19985108.17
+    ],
+    "categories": {
+      "Cash": [
+        11272151.16,
+        9313612.62,
+        12558305.32
+      ],
+      "Payroll": [
+        515501.88,
+        777627.11,
+        6950672.5
+      ],
+      "Contract": [
+        483470.78,
+        2713657.35,
+        0
+      ],
+      "Procurement/Stores": [
+        259842.9,
+        555883.1,
+        180631.92
+      ],
+      "Tax": [
+        345594.3,
+        132810.15,
+        295498.43
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "region",
+    "label": "By region",
+    "source": "Appendix — National summary of irregularities",
+    "items": [
+      {
+        "name": "Ahafo",
+        "total": 409289.21
+      },
+      {
+        "name": "Ashanti",
+        "total": 2021623.22
+      },
+      {
+        "name": "Bono",
+        "total": 531414.39
+      },
+      {
+        "name": "Bono East",
+        "total": 320144.31
+      },
+      {
+        "name": "Central",
+        "total": 1149146.73
+      },
+      {
+        "name": "Eastern",
+        "total": 1319781.66
+      },
+      {
+        "name": "Greater Accra",
+        "total": 9049638.54
+      },
+      {
+        "name": "North East",
+        "total": 55941.52
+      },
+      {
+        "name": "Northern",
+        "total": 131851.45
+      },
+      {
+        "name": "Oti",
+        "total": 146289.2
+      },
+      {
+        "name": "Savannah",
+        "total": 89603.68
+      },
+      {
+        "name": "Upper East",
+        "total": 323125.82
+      },
+      {
+        "name": "Upper West",
+        "total": 58024.6
+      },
+      {
+        "name": "Volta",
+        "total": 502807.37
+      },
+      {
+        "name": "Western",
+        "total": 3329703.23
+      },
+      {
+        "name": "Western North",
+        "total": 546723.24
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Revenue not collected (rent, property rates, business permits) by 86 assemblies",
+      "amount": "GH¢6.28m"
+    },
+    {
+      "text": "Penalties incurred by Accra Metro for not remitting GH¢1.9m of staff pension contributions (2017–2022)",
+      "amount": "GH¢3.30m"
+    },
+    {
+      "text": "Payments not accounted for (46 assemblies)",
+      "amount": "GH¢2.12m"
+    },
+    {
+      "text": "129 revenue collectors paid GH¢2.40m in salaries collected only GH¢1.32m",
+      "amount": "GH¢1.49m shortfall"
+    },
+    {
+      "text": "Revenue collected but not accounted for (44 assemblies)",
+      "amount": "GH¢821,245"
+    }
+  ],
+  "notes": [
+    "Assemblies collected GH¢549.8m in IGF in 2022, 22.6% of their GH¢2.43bn total income.",
+    "The report's detailed cash table sums to GH¢11.07m, while its summary table gives cash irregularities of GH¢12.56m; the summary figure, which reconciles to the regional appendix total, is used here.",
+    "Tax includes other statutory deductions (e.g. pension contributions)."
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "slug": "dacf-2024",
+  "series": "dacf",
+  "year": 2024,
+  "title": "Report of the Auditor-General on the Management and Utilisation of the District Assemblies Common Fund (DACF) and other Statutory Funds",
+  "shortTitle": "District Assemblies (MMDAs) — Common Fund",
+  "period": "Year ended 31 December 2024",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_Of_The_Auditor-General_On_The_Management_And_Utilisation_Of_The_District_Assemblies_Common_Fund_(Dacf)_And_Other_Statutory_Funds_For_The_Year_Ended_31_December_2024.pdf",
+  "status": "verified",
+  "institutionsAudited": 261,
+  "total": 205926921.99,
+  "categories": {
+    "Contract": 184987145.23,
+    "Cash": 17606185.23,
+    "Procurement/Stores": 2198969.36,
+    "Sanitation": 649416.0,
+    "Tax": 485206.17
+  },
+  "trend": {
+    "years": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "source": "Part II, para. 10 (p. 3)",
+    "totals": [
+      124640845.92,
+      77147260.1,
+      66130366.12,
+      53636715.87,
+      49653295.18,
+      205926921.99
+    ],
+    "categories": {
+      "Contract": [
+        86980848.61,
+        45692398.53,
+        57601901.48,
+        40297628.96,
+        37958000.23,
+        184987145.23
+      ],
+      "Cash": [
+        33213320.67,
+        23505854.48,
+        7511747.85,
+        12092429.97,
+        11126045.56,
+        17606185.23
+      ],
+      "Procurement/Stores": [
+        4121790.4,
+        7716366.62,
+        642269.42,
+        751010.75,
+        193620.26,
+        2198969.36
+      ],
+      "Tax": [
+        324886.24,
+        232640.47,
+        374447.37,
+        495646.19,
+        295129.13,
+        485206.17
+      ],
+      "Sanitation": [
+        0,
+        0,
+        0,
+        0,
+        80500.0,
+        649416.0
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "region",
+    "label": "By region",
+    "source": "Appendix B — National summary of irregularities (p. 190)",
+    "items": [
+      {
+        "name": "Ahafo",
+        "total": 1201860.03
+      },
+      {
+        "name": "Ashanti",
+        "total": 12915690.96
+      },
+      {
+        "name": "Bono",
+        "total": 1573278.87
+      },
+      {
+        "name": "Bono East",
+        "total": 1391491.02
+      },
+      {
+        "name": "Central",
+        "total": 19006617.84
+      },
+      {
+        "name": "Eastern",
+        "total": 3655917.14
+      },
+      {
+        "name": "Greater Accra",
+        "total": 17193428.95
+      },
+      {
+        "name": "North East",
+        "total": 1986519.64
+      },
+      {
+        "name": "Northern",
+        "total": 110276834.54
+      },
+      {
+        "name": "Oti",
+        "total": 163040.27
+      },
+      {
+        "name": "Savannah",
+        "total": 395150.75
+      },
+      {
+        "name": "Upper East",
+        "total": 20066043.55
+      },
+      {
+        "name": "Upper West",
+        "total": 1023946.51
+      },
+      {
+        "name": "Volta",
+        "total": 4749982.23
+      },
+      {
+        "name": "Western",
+        "total": 3741158.23
+      },
+      {
+        "name": "Western North",
+        "total": 6576774.58
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Delayed or abandoned projects (61 assemblies)",
+      "amount": "GH¢130.3m"
+    },
+    {
+      "text": "Completed projects not put to use (23 assemblies)",
+      "amount": "GH¢33.0m"
+    },
+    {
+      "text": "Northern Region alone, mostly delayed projects (GH¢90.3m)",
+      "amount": "GH¢110.3m"
+    },
+    {
+      "text": "Common Fund over-used on administrative expenditure (15 assemblies)",
+      "amount": "GH¢8.65m"
+    },
+    {
+      "text": "Common Fund deducted at source for service providers before reaching assemblies",
+      "amount": "GH¢156.1m of GH¢520m"
+    }
+  ],
+  "notes": [
+    "Irregularities quadrupled on 2023 (GH¢49.7m to GH¢205.9m), driven by contract irregularities rising from GH¢38.0m to GH¢185.0m.",
+    "The Administrator of the DACF disbursed GH¢520m to 261 assemblies; they received a net GH¢363.9m (69.98%).",
+    "The regional columns in Appendix B sum to GH¢9,186.88 less than the report total: Oti Region's grand total omits one GH¢9,186.88 procurement item shown in its column."
+  ]
+}

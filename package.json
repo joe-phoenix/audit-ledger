@@ -1,0 +1,21 @@
+{
+  "name": "audit-ledger",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 8420",
+    "build": "next build",
+    "start": "npx serve out -l 8420"
+  },
+  "dependencies": {
+    "next": "^15.5.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "recharts": "^2.15.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "@types/react": "^19.1.12",
+    "typescript": "^5.9.2"
+  }
+}

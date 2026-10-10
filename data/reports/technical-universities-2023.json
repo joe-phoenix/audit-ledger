@@ -1,0 +1,151 @@
+{
+  "slug": "technical-universities-2023",
+  "series": "technical-universities",
+  "year": 2023,
+  "title": "Report of the Auditor-General on the Public Accounts of Ghana: Technical Universities and Colleges of Education",
+  "shortTitle": "Technical Universities",
+  "period": "Year ended 31 December 2023",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_public_accounts_of_Ghana_-_Technical_Universities_and_Colleges_of_Education_for_the_year_ended_31_December_2023.pdf",
+  "status": "verified",
+  "institutionsAudited": 10,
+  "total": 45608946,
+  "recoverable": 39943004,
+  "administrative": 5665942,
+  "categories": {
+    "Debts/Loans": 30055079,
+    "Contract": 13349094,
+    "Payroll": 2065773,
+    "Procurement/Stores": 139000
+  },
+  "trend": {
+    "years": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "source": "Part I, Table 1c (p. 2)",
+    "totals": [
+      170614483,
+      13093025,
+      34876924,
+      20959765,
+      45608946
+    ],
+    "categories": {
+      "Debts/Loans": [
+        8094230,
+        3897983,
+        7792954,
+        9395315,
+        30055079
+      ],
+      "Cash": [
+        7925991,
+        3412427,
+        711888,
+        544486,
+        0
+      ],
+      "Payroll": [
+        262571,
+        283998,
+        3396381,
+        2296905,
+        2065773
+      ],
+      "Procurement/Stores": [
+        48963278,
+        2156254,
+        2066600,
+        105024,
+        139000
+      ],
+      "Tax": [
+        23242,
+        8671,
+        0,
+        14836,
+        0
+      ],
+      "Contract": [
+        105345171,
+        3333692,
+        20909101,
+        8603199,
+        13349094
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "institution",
+    "label": "By university",
+    "source": "Part I, Table 2a (p. 4)",
+    "items": [
+      {
+        "name": "Accra Technical University",
+        "total": 22774734
+      },
+      {
+        "name": "Kumasi Technical University",
+        "total": 11795922
+      },
+      {
+        "name": "Koforidua Technical University",
+        "total": 6315566
+      },
+      {
+        "name": "Dr. Hilla Limann (Wa) Technical University",
+        "total": 3085331
+      },
+      {
+        "name": "Cape Coast Technical University",
+        "total": 509664
+      },
+      {
+        "name": "Bolgatanga Technical University",
+        "total": 446345
+      },
+      {
+        "name": "Tamale Technical University",
+        "total": 405575
+      },
+      {
+        "name": "Sunyani Technical University",
+        "total": 175818
+      },
+      {
+        "name": "Ho Technical University",
+        "total": 53401
+      },
+      {
+        "name": "Takoradi Technical University",
+        "total": 46590
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Fees owed by students at Accra Technical University",
+      "amount": "GH¢14.0m"
+    },
+    {
+      "text": "Owed by GETFund to Kumasi Technical University for a pre-financed classroom project",
+      "amount": "GH¢11.3m"
+    },
+    {
+      "text": "Contract irregularities at Accra Technical University, incl. an unredeemed performance bond",
+      "amount": "GH¢8.2m"
+    },
+    {
+      "text": "Single-source procurement at Accra Technical University without PPA approval",
+      "amount": "GH¢139,000"
+    }
+  ],
+  "notes": [
+    "The same report covers colleges of education, shown on a separate page.",
+    "Stores irregularities (GH¢3,240 in 2019, GH¢258,015 in 2020) are merged into Procurement/Stores here.",
+    "The summary tables of this report are images in the PDF; figures were read from Part I, pp. 1–4."
+  ]
+}

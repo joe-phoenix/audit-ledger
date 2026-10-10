@@ -1,0 +1,145 @@
+{
+  "slug": "colleges-of-education-2024",
+  "series": "colleges-of-education",
+  "year": 2024,
+  "title": "Report of the Auditor-General on the Public Accounts of Ghana: Public Universities and Colleges of Education",
+  "shortTitle": "Colleges of Education",
+  "period": "Year ended 31 December 2024",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_Of_The_Auditor-General_On_The_Public_Accounts_Of_Ghana_%E2%80%93_Public_Universities_And_Colleges_Of_Education_For_The_Year_Ended_31_December_2024.pdf",
+  "status": "verified",
+  "total": 5944404,
+  "recoverable": 5877959,
+  "administrative": 66445,
+  "categories": {
+    "Debts/Loans": 3884673,
+    "Cash": 1463077,
+    "Payroll": 530209,
+    "Procurement/Stores": 66445
+  },
+  "trend": {
+    "years": [
+      2023,
+      2024
+    ],
+    "source": "2023 and 2024 reports, Table 1b. The 2024 report gives no multi-year table for colleges.",
+    "totals": [
+      7975574,
+      5944404
+    ],
+    "categories": {
+      "Debts/Loans": [
+        2766648,
+        3884673
+      ],
+      "Cash": [
+        26263,
+        1463077
+      ],
+      "Payroll": [
+        608822,
+        530209
+      ],
+      "Procurement/Stores": [
+        2718205,
+        66445
+      ],
+      "Contract": [
+        1814137,
+        0
+      ],
+      "Tax": [
+        41499,
+        0
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "region",
+    "label": "By region",
+    "source": "Part I, Table 2b (p. 8)",
+    "items": [
+      {
+        "name": "Ahafo",
+        "total": 174525
+      },
+      {
+        "name": "Ashanti",
+        "total": 20750
+      },
+      {
+        "name": "Bono",
+        "total": 34764
+      },
+      {
+        "name": "Bono East",
+        "total": 0
+      },
+      {
+        "name": "Central",
+        "total": 1291909
+      },
+      {
+        "name": "Eastern",
+        "total": 710250
+      },
+      {
+        "name": "Greater Accra",
+        "total": 60431
+      },
+      {
+        "name": "North East",
+        "total": 350009
+      },
+      {
+        "name": "Northern",
+        "total": 2463443
+      },
+      {
+        "name": "Oti",
+        "total": 0
+      },
+      {
+        "name": "Upper East",
+        "total": 0
+      },
+      {
+        "name": "Upper West",
+        "total": 250928
+      },
+      {
+        "name": "Volta",
+        "total": 0
+      },
+      {
+        "name": "Western",
+        "total": 0
+      },
+      {
+        "name": "Western North",
+        "total": 587397
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Unsupported payments at E. P. College of Education, Bimbilla",
+      "amount": "GH¢1.36m"
+    },
+    {
+      "text": "Overdue student fees at Komenda College of Education",
+      "amount": "GH¢801,827"
+    },
+    {
+      "text": "Overdue student fees at Wiawso College of Education",
+      "amount": "GH¢587,397"
+    },
+    {
+      "text": "Overdue student fees at OLA College of Education",
+      "amount": "GH¢490,082"
+    }
+  ],
+  "notes": [
+    "The 2023 comparison figure is taken from the 2023 report, since the 2024 report gives no trend table for colleges.",
+    "Savannah Region has no college of education in the regional table. The regional rows sum to GH¢2 more than the total (rounding in the source)."
+  ]
+}

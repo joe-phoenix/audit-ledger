@@ -1,36 +1,241 @@
 {
   "consolidated": {
     "note": "Total across all six annual Auditor-General reports submitted to Parliament (incl. technical universities/colleges of education and MMDA IGF, not yet on this site).",
-    "source": { "label": "Public Services Commission, citing the Auditor-General (2024)", "url": "https://psc.gov.gh/financial-irregularities-decline-by-gh%C2%A25-2bn-in-latest-auditor-generals-reports/" },
-    "years": [2022, 2023],
-    "totals": [16570000000, 11320000000]
+    "source": {
+      "label": "Public Services Commission, citing the Auditor-General (2024)",
+      "url": "https://psc.gov.gh/financial-irregularities-decline-by-gh%C2%A25-2bn-in-latest-auditor-generals-reports/"
+    },
+    "years": [
+      2022,
+      2023
+    ],
+    "totals": [
+      16570000000,
+      11320000000
+    ]
   },
   "recoveries": {
-    "status": "secondary-source",
-    "disallowances2020to2023": {
-      "flagged": 38988624925,
-      "recovered": 12717731074,
-      "source": { "label": "Graphic Online, 12 May 2025, citing the Auditor-General's special report to Parliament (Feb 2025)", "url": "https://www.graphic.com.gh/news/general-news/ghana-news-disallowed-expenditure-auditor-general-recovers-ghc12-7bn.html" },
-      "bySector": [
-        { "name": "Public Boards", "total": 10790000000 },
-        { "name": "MDAs", "total": 1860000000 },
-        { "name": "Technical Universities", "total": 35000000 },
-        { "name": "MMDA Internally Generated Funds", "total": 13800000 },
-        { "name": "Pre-University Institutions", "total": 9090000 },
-        { "name": "District Assemblies Common Fund", "total": 7000000 }
-      ],
-      "regionNote": "Greater Accra accounts for GH¢12.46bn (98%) of recoveries, as most public boards and MDAs are headquartered there."
+    "status": "verified",
+    "source": {
+      "label": "Ghana Audit Service, Special Audit Report on the recoveries made from disallowed expenditure in the Auditor-General's reports from 2020 to 2023 and payroll savings as at 31 December 2024 (Feb 2025)",
+      "url": "https://audit.gov.gh/files/audit_reports/Special_Audit_Report_on_the_recoveries_made_from_disallowed_expenditure_in_the_Auditor-General%E2%80%99s_reports_from_2020_to_2023_and_payroll_savings_as_at_31_December,_2024.pdf"
     },
+    "byYear": {
+      "source": "Table 1 (p. 8)",
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "recoverable": [
+        11378221598.55,
+        5159571734.69,
+        16988717225.27,
+        5462114366.61
+      ],
+      "recovered": [
+        6840470464.17,
+        1145275145.76,
+        4029712430.17,
+        702273034.0
+      ]
+    },
+    "flagged": 38988624925.12,
+    "recovered": 12717731074.1,
+    "byType": {
+      "source": "Table 2 (p. 9)",
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "categories": {
+        "Debts/Loans": [
+          5931926146.85,
+          371525215.22,
+          3582794275.51,
+          61608827.65
+        ],
+        "Cash": [
+          564643402.33,
+          490829893.8,
+          77334380.88,
+          114675101.9
+        ],
+        "Tax": [
+          341531703.17,
+          273108005.15,
+          364371919.67,
+          518732846.07
+        ],
+        "Rent": [
+          1050210.35,
+          6851766.84,
+          1231953.92,
+          2750936.83
+        ],
+        "Payroll": [
+          1048791.17,
+          2676248.72,
+          3369118.18,
+          3702318.92
+        ],
+        "Procurement/Stores": [
+          270210.3,
+          284016.0,
+          610782.0,
+          803002.63
+        ]
+      }
+    },
+    "byReport": {
+      "source": "Table 3 (p. 11)",
+      "items": [
+        {
+          "name": "Public Boards & SOEs",
+          "total": 10791707124.79
+        },
+        {
+          "name": "MDAs",
+          "total": 1861119050.45
+        },
+        {
+          "name": "Universities",
+          "total": 34998183.56
+        },
+        {
+          "name": "District Assemblies — Own Revenue",
+          "total": 13812164.59
+        },
+        {
+          "name": "Pre-University",
+          "total": 9090834.17
+        },
+        {
+          "name": "District Assemblies — Common Fund",
+          "total": 7003716.52
+        }
+      ]
+    },
+    "byRegion": {
+      "source": "Table 4 (pp. 11–12)",
+      "items": [
+        {
+          "name": "Greater Accra",
+          "total": 12467231180.4
+        },
+        {
+          "name": "Ashanti",
+          "total": 28488224.62
+        },
+        {
+          "name": "Eastern",
+          "total": 29113865.12
+        },
+        {
+          "name": "Western",
+          "total": 42937603.53
+        },
+        {
+          "name": "Western North",
+          "total": 4417377.55
+        },
+        {
+          "name": "Central",
+          "total": 13914707.41
+        },
+        {
+          "name": "Volta",
+          "total": 10065846.98
+        },
+        {
+          "name": "Oti",
+          "total": 4274570.93
+        },
+        {
+          "name": "Northern",
+          "total": 53321488.03
+        },
+        {
+          "name": "Upper West",
+          "total": 29172607.28
+        },
+        {
+          "name": "Upper East",
+          "total": 17924200.18
+        },
+        {
+          "name": "North East",
+          "total": 2892638.57
+        },
+        {
+          "name": "Savannah",
+          "total": 6778147.2
+        },
+        {
+          "name": "Bono",
+          "total": 3055457.45
+        },
+        {
+          "name": "Bono East",
+          "total": 1304117.32
+        },
+        {
+          "name": "Ahafo",
+          "total": 2839041.53
+        }
+      ]
+    },
+    "payroll": {
+      "source": "Payroll savings and recoveries (p. 13)",
+      "years": [
+        2022,
+        2023,
+        2024
+      ],
+      "savings": [
+        14308999.77,
+        19041171.88,
+        53515529.42
+      ],
+      "recoveries": [
+        5287642.49,
+        44528.07,
+        1880589.61
+      ]
+    },
+    "notes": [
+      "Recoveries are grouped by the year of the audit report in which the amount was first flagged, not the year the money came back.",
+      "GH¢3.60bn of the debt recoveries is VRA receivables moved into the government's inter-utility debt settlement, rather than cash repaid.",
+      "Greater Accra accounts for 98% of recoveries because most public boards and ministries are headquartered there."
+    ],
     "recoveriesAccount": {
       "note": "Bank of Ghana account opened June 2022 for unearned salaries and other disallowed amounts. Cumulative recoveries reported via RTI.",
-      "source": { "label": "The Fourth Estate, June 2026 (RTI documents)", "url": "https://www.thefourthestategh.com/2026/06/more-than-ghc280m-in-auditor-general-surcharges-remain-unpaid" },
+      "source": {
+        "label": "The Fourth Estate, June 2026 (RTI documents)",
+        "url": "https://www.thefourthestategh.com/2026/06/more-than-ghc280m-in-auditor-general-surcharges-remain-unpaid"
+      },
       "cumulativeRecovered": 57200000,
       "outstandingSurcharges": 280500000,
       "timeline": [
-        { "label": "End 2023", "amount": 19500000 },
-        { "label": "By Nov 2024", "amount": 10000000 },
-        { "label": "2025", "amount": 15000000 },
-        { "label": "By Feb 2026", "amount": 5000000 }
+        {
+          "label": "End 2023",
+          "amount": 19500000
+        },
+        {
+          "label": "By Nov 2024",
+          "amount": 10000000
+        },
+        {
+          "label": "2025",
+          "amount": 15000000
+        },
+        {
+          "label": "By Feb 2026",
+          "amount": 5000000
+        }
       ]
     }
   }

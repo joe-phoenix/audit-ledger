@@ -1,0 +1,130 @@
+{
+  "slug": "dacf-2019",
+  "series": "dacf",
+  "year": 2019,
+  "title": "Report of the Auditor-General on the Management and Utilisation of District Assemblies' Common Fund (DACF) and Other Statutory Funds",
+  "shortTitle": "District Assemblies (MMDAs) — Common Fund",
+  "period": "Year ended 31 December 2019",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_Management_and_Utilisation_of_District_Assemblies%E2%80%99_Common_Fund_(DACF)_and_Other_Statutory_Funds_for_the_Year_ended_31_December_2019.pdf",
+  "status": "verified",
+  "institutionsAudited": 260,
+  "total": 124640845.92,
+  "categories": {
+    "Contract": 86980848.61,
+    "Cash": 33213320.67,
+    "Procurement/Stores": 4121790.4,
+    "Tax": 324886.24
+  },
+  "trend": {
+    "years": [
+      2017,
+      2018,
+      2019
+    ],
+    "source": "2021 report, para. 6 (comparison table)",
+    "totals": [
+      40929999.54,
+      120567896.78,
+      124640845.93
+    ],
+    "categories": {
+      "Contract": [
+        31224856.72,
+        65618865.7,
+        86980848.61
+      ],
+      "Cash": [
+        7105071.1,
+        47139747.82,
+        33213320.67
+      ],
+      "Procurement/Stores": [
+        2437094.3,
+        7356299.95,
+        4121790.4
+      ],
+      "Tax": [
+        162977.42,
+        452983.31,
+        324886.25
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "institution",
+    "label": "Largest findings",
+    "source": "Appendix B — National summary of irregularities (no regional split in this report)",
+    "items": [
+      {
+        "name": "Abandoned or delayed projects",
+        "total": 51812103.04
+      },
+      {
+        "name": "Commitments made outside GIFMIS",
+        "total": 17442958.75
+      },
+      {
+        "name": "Completed projects not put to use",
+        "total": 16265504.25
+      },
+      {
+        "name": "Fumigation and sanitation fees deducted at source for services not rendered",
+        "total": 8565010
+      },
+      {
+        "name": "Misapplication of funds",
+        "total": 6664952.83
+      },
+      {
+        "name": "Payments without a contract agreement",
+        "total": 5948169
+      },
+      {
+        "name": "Unsupported payments",
+        "total": 4771293.34
+      },
+      {
+        "name": "Payment for unexecuted contracts / non-existent landfill site",
+        "total": 1933210.01
+      },
+      {
+        "name": "Uncompetitive procurement",
+        "total": 1893091.13
+      },
+      {
+        "name": "Payments without expenditure warrants",
+        "total": 1192736.89
+      },
+      {
+        "name": "Unbudgeted expenditure",
+        "total": 933868.85
+      },
+      {
+        "name": "Stores and fuel not accounted for",
+        "total": 874590.92
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Abandoned or delayed projects (102 assemblies)",
+      "amount": "GH¢51.8m"
+    },
+    {
+      "text": "Expenditure committed outside the GIFMIS system (31 assemblies)",
+      "amount": "GH¢17.4m"
+    },
+    {
+      "text": "Completed projects not put to use (44 assemblies)",
+      "amount": "GH¢16.3m"
+    },
+    {
+      "text": "Fumigation and sanitation fees deducted at source for services not rendered (31 assemblies)",
+      "amount": "GH¢8.57m"
+    }
+  ],
+  "notes": [
+    "The 2019 report's national summary has no regional breakdown, so the breakdown chart shows its largest individual findings instead.",
+    "Appendix B totals GH¢124,829,189.93, with contract irregularities of GH¢87,169,192.62. Later reports give GH¢124,640,845.92 and GH¢86,980,848.61; the later figures are used for totals."
+  ]
+}

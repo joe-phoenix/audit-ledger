@@ -1,0 +1,161 @@
+{
+  "slug": "district-assemblies-igf-2019",
+  "series": "district-igf",
+  "year": 2019,
+  "title": "Report of the Auditor-General on the Accounts of District Assemblies",
+  "shortTitle": "District Assemblies — Own Revenue (IGF)",
+  "period": "Financial year ended 31 December 2019",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_Accounts_of_District_Assemblies_for_the_Financial_Year_ended_31_December_2019.pdf",
+  "status": "verified",
+  "total": 19534611.67,
+  "categories": {
+    "Cash": 16085998.24,
+    "Contract": 2164502.57,
+    "Tax": 534121.78,
+    "Payroll": 504349.18,
+    "Procurement/Stores": 245639.9
+  },
+  "trend": {
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "source": "Part II, Summary of Irregularities (p. 8)",
+    "totals": [
+      30787233.75,
+      72860678.45,
+      12223560.85,
+      29737230.17,
+      19534611.67
+    ],
+    "categories": {
+      "Cash": [
+        30043030.41,
+        72274248.07,
+        8452270.81,
+        26397410.07,
+        16085998.24
+      ],
+      "Procurement/Stores": [
+        410457.24,
+        163619.57,
+        407498.02,
+        573915.1,
+        245639.9
+      ],
+      "Contract": [
+        0,
+        0,
+        2857615.86,
+        1631646.64,
+        2164502.57
+      ],
+      "Tax": [
+        182856.1,
+        159683.93,
+        88114.86,
+        807252.92,
+        534121.78
+      ],
+      "Payroll": [
+        150890.0,
+        263126.88,
+        418061.3,
+        327005.44,
+        504349.18
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "region",
+    "label": "By region",
+    "source": "Appendix — National summary of irregularities",
+    "items": [
+      {
+        "name": "Ahafo",
+        "total": 2461096.98
+      },
+      {
+        "name": "Ashanti",
+        "total": 2319743.16
+      },
+      {
+        "name": "Bono",
+        "total": 330343.48
+      },
+      {
+        "name": "Bono East",
+        "total": 4520570.09
+      },
+      {
+        "name": "Central",
+        "total": 1059594.86
+      },
+      {
+        "name": "Eastern",
+        "total": 1062851.23
+      },
+      {
+        "name": "Greater Accra",
+        "total": 3317180.27
+      },
+      {
+        "name": "North East",
+        "total": 9047.53
+      },
+      {
+        "name": "Northern",
+        "total": 301161.82
+      },
+      {
+        "name": "Oti",
+        "total": 442414.1
+      },
+      {
+        "name": "Savannah",
+        "total": 48004.7
+      },
+      {
+        "name": "Upper East",
+        "total": 584776.05
+      },
+      {
+        "name": "Upper West",
+        "total": 54472.22
+      },
+      {
+        "name": "Volta",
+        "total": 509202.95
+      },
+      {
+        "name": "Western",
+        "total": 2144887.36
+      },
+      {
+        "name": "Western North",
+        "total": 369264.87
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Revenue collected but not accounted for (44 assemblies)",
+      "amount": "GH¢823,537"
+    },
+    {
+      "text": "Value books not accounted for (10 assemblies), plus 407 receipt books at 33 assemblies",
+      "amount": "GH¢163,352"
+    },
+    {
+      "text": "Funds withdrawn and misappropriated at Nzema East Municipal Assembly",
+      "amount": "GH¢144,194"
+    }
+  ],
+  "notes": [
+    "The 2021 report's comparison table swaps this report's payroll (GH¢504,349) and procurement/stores (GH¢245,640) figures for 2019. This page follows the 2019 report.",
+    "Contract irregularities were not reported separately before 2017."
+  ]
+}

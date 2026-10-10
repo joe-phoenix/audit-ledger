@@ -1,0 +1,151 @@
+{
+  "slug": "technical-universities-2019",
+  "series": "technical-universities",
+  "year": 2019,
+  "title": "Report of the Auditor-General on the Public Accounts of Ghana: Technical Universities and Polytechnics",
+  "shortTitle": "Technical Universities & Polytechnics",
+  "period": "Period ended 31 December 2019",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_Public_Accounts_of_Ghana_%E2%80%93_Technical_Universities_and_Polytechnics_for_the_period_ended_31_December_2019.pdf",
+  "status": "verified",
+  "institutionsAudited": 10,
+  "total": 170614483.64,
+  "categories": {
+    "Contract": 105345171.18,
+    "Procurement/Stores": 48963277.53,
+    "Debts/Loans": 8094230,
+    "Cash": 7925991.13,
+    "Payroll": 262570.62,
+    "Tax": 23242.36
+  },
+  "trend": {
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "source": "Part I, Table 1b (pp. 3–4)",
+    "totals": [
+      27419502,
+      57691351,
+      92736184,
+      98894466,
+      170614483
+    ],
+    "categories": {
+      "Debts/Loans": [
+        179431,
+        157833,
+        11776885,
+        1468196,
+        8094230
+      ],
+      "Cash": [
+        13723557,
+        38370533,
+        25110705,
+        13619737,
+        7925991
+      ],
+      "Payroll": [
+        382002,
+        21708,
+        2405000,
+        1707374,
+        262571
+      ],
+      "Procurement/Stores": [
+        543918,
+        476838,
+        7025533,
+        2913104,
+        48963278
+      ],
+      "Tax": [
+        166445,
+        236985,
+        907199,
+        295952,
+        23242
+      ],
+      "Contract": [
+        12424149,
+        18427454,
+        45510862,
+        78890103,
+        105345171
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "institution",
+    "label": "By technical university",
+    "source": "Part I, Table 2 (p. 5)",
+    "items": [
+      {
+        "name": "Koforidua Technical University",
+        "total": 52513973.99
+      },
+      {
+        "name": "Bolgatanga Technical University",
+        "total": 46740516.49
+      },
+      {
+        "name": "Takoradi Technical University",
+        "total": 36528637.39
+      },
+      {
+        "name": "Wa Technical University",
+        "total": 8714770.89
+      },
+      {
+        "name": "Accra Technical University",
+        "total": 7637493.43
+      },
+      {
+        "name": "Ho Technical University",
+        "total": 6743042.6
+      },
+      {
+        "name": "Tamale Technical University",
+        "total": 4326962.75
+      },
+      {
+        "name": "Kumasi Technical University",
+        "total": 4204707.31
+      },
+      {
+        "name": "Cape Coast Technical University",
+        "total": 3357044.76
+      },
+      {
+        "name": "Sunyani Technical University",
+        "total": 934365.66
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Procurement irregularities at Bolgatanga Technical University",
+      "amount": "GH¢45.4m"
+    },
+    {
+      "text": "Contract irregularities at Koforidua Technical University",
+      "amount": "GH¢44.2m"
+    },
+    {
+      "text": "Contract irregularities at Takoradi Technical University",
+      "amount": "GH¢35.9m"
+    },
+    {
+      "text": "Outstanding loans and staff debts at Koforidua Technical University",
+      "amount": "GH¢5.0m"
+    }
+  ],
+  "notes": [
+    "The trend table in this report goes back to 2015. Technical universities were still called polytechnics in some cases in 2019.",
+    "Table 2 has no total column; each university's total is the sum of its row. In the source, the cash column adds up to GH¢8,145,790 (printed total GH¢7,925,991) and the procurement column to GH¢49,827,271 (printed GH¢48,960,038), so the university bars sum to GH¢1.09m more than the report total. All other figures use the report's totals.",
+    "Stores is merged into Procurement/Stores."
+  ]
+}

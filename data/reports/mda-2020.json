@@ -1,0 +1,209 @@
+{
+  "slug": "mda-2020",
+  "series": "mda",
+  "year": 2020,
+  "title": "Report of the Auditor-General on the Public Accounts of Ghana: Ministries, Departments and Other Agencies (MDAs)",
+  "shortTitle": "Ministries, Departments & Agencies",
+  "period": "Year ended 31 December 2020",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_Public_Accounts_of_Ghana_%E2%80%93_Ministries,_Departments_and_Other_Agencies_(MDAs)_for_the_year_ended_31_December_2020.pdf",
+  "status": "verified",
+  "total": 2053176449.85,
+  "categories": {
+    "Debts/Loans": 1108660041.95,
+    "Tax": 694386436.15,
+    "Contract": 171364190.23,
+    "Cash": 34034697.72,
+    "Rent": 29576414.36,
+    "Procurement/Stores": 10667174.6,
+    "Payroll": 4487494.84
+  },
+  "trend": {
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "source": "Part I, Table 1B (p. 7)",
+    "totals": [
+      2165542368.14,
+      892396375.19,
+      5196043399.94,
+      3008187888.15,
+      2053176449.85
+    ],
+    "categories": {
+      "Tax": [
+        42866490.7,
+        655599736.33,
+        4788284799,
+        2666743134.56,
+        694386436.15
+      ],
+      "Cash": [
+        2053622215.68,
+        190560990.86,
+        388925019.94,
+        276624480.4,
+        34034697.72
+      ],
+      "Debts/Loans": [
+        6775974.47,
+        2695601,
+        594889,
+        201000,
+        1108660041.95
+      ],
+      "Payroll": [
+        4281994.51,
+        1776893,
+        1875347,
+        469953,
+        4487494.84
+      ],
+      "Procurement/Stores": [
+        35940445.43,
+        41668682,
+        6823337,
+        20604593,
+        10667174.6
+      ],
+      "Rent": [
+        9049212.49,
+        94472,
+        3941756,
+        43467634.19,
+        29576414.36
+      ],
+      "Contract": [
+        13006034.86,
+        0,
+        5598252,
+        77093,
+        171364190.23
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "institution",
+    "label": "By ministry",
+    "source": "Part I, Table 2 continued (p. 14)",
+    "items": [
+      {
+        "name": "Ministry of Health",
+        "total": 1087551870.75
+      },
+      {
+        "name": "Ministry of Finance (incl. GRA)",
+        "total": 692649065.98
+      },
+      {
+        "name": "Ministry of Roads & Highways",
+        "total": 162791998.85
+      },
+      {
+        "name": "Ministry of Education",
+        "total": 21903228.16
+      },
+      {
+        "name": "Ministry of Communication",
+        "total": 19351227.41
+      },
+      {
+        "name": "Special Development Initiatives",
+        "total": 12016115.75
+      },
+      {
+        "name": "Ministry of Foreign Affairs",
+        "total": 41606871.06
+      },
+      {
+        "name": "Ministry of the Interior",
+        "total": 3614840.31
+      },
+      {
+        "name": "Ministry of Fisheries & Aquaculture",
+        "total": 2417016.82
+      },
+      {
+        "name": "Ministry of Food & Agriculture",
+        "total": 1728443.42
+      },
+      {
+        "name": "Ministry of Employment & Labour Relations",
+        "total": 1552519.37
+      },
+      {
+        "name": "Ministry of Justice & AG's Dept.",
+        "total": 1501388.0
+      },
+      {
+        "name": "Ministry of Lands & Natural Resources",
+        "total": 598849.22
+      },
+      {
+        "name": "Ministry of Tourism",
+        "total": 419330.2
+      },
+      {
+        "name": "Ministry of Works & Housing",
+        "total": 321893.67
+      },
+      {
+        "name": "Ministry of Local Government",
+        "total": 280503.35
+      },
+      {
+        "name": "Ministry of Defence",
+        "total": 213827.85
+      },
+      {
+        "name": "Ministry of Gender, Children & Social Protection",
+        "total": 202496.51
+      },
+      {
+        "name": "Ministry of Trade & Industry",
+        "total": 111109.67
+      },
+      {
+        "name": "Other agencies",
+        "total": 68762.81
+      },
+      {
+        "name": "Ministry of Youth & Sports",
+        "total": 46393.0
+      },
+      {
+        "name": "Ministry of Information",
+        "total": 20032.85
+      },
+      {
+        "name": "Ministry of Transport",
+        "total": 5250.0
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Owed by 49 Budget Management Centres to various suppliers",
+      "amount": "GH¢1.04bn"
+    },
+    {
+      "text": "Contract irregularities at the Ministry of Roads & Highways",
+      "amount": "GH¢162.8m"
+    },
+    {
+      "text": "Rent owed to the Ministry of Foreign Affairs in foreign currency",
+      "amount": "GH¢28.9m"
+    },
+    {
+      "text": "Avoidable pension penalty paid by the Controller & Accountant-General's Department",
+      "amount": "GH¢654,716"
+    }
+  ],
+  "notes": [
+    "Ministry totals include US$ and € amounts converted at the rates implied by Table 1A (about GH¢5.63/US$ and GH¢7.06/€). After conversion they sum to GH¢2.2m less than the report total.",
+    "The Ministry of Health's GH¢1.09bn is mostly debts and loans: GH¢1.04bn owed by 49 Budget Management Centres to suppliers."
+  ]
+}

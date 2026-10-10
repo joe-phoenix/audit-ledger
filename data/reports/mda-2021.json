@@ -1,0 +1,198 @@
+{
+  "slug": "mda-2021",
+  "series": "mda",
+  "year": 2021,
+  "title": "Report of the Auditor-General on the Public Accounts of Ghana: Ministries, Departments and Other Agencies (MDAs)",
+  "shortTitle": "Ministries, Departments & Agencies",
+  "period": "Year ended 31 December 2021",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_Public_Accounts_of_Ghana_-_Ministries,_Departments_and_other_Agencies_for_the_year_ended_31_December_2021.pdf",
+  "status": "verified",
+  "total": 1080931937,
+  "categories": {
+    "Tax": 989026225,
+    "Cash": 45763607,
+    "Debts/Loans": 30758576,
+    "Rent": 7710925,
+    "Payroll": 5601611,
+    "Contract": 1559424,
+    "Procurement/Stores": 511569
+  },
+  "trend": {
+    "years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021
+    ],
+    "source": "Part I, Table 1B (p. 5)",
+    "totals": [
+      892396375.19,
+      5196043399.94,
+      3008187888.15,
+      2053176449.85,
+      1080931937
+    ],
+    "categories": {
+      "Tax": [
+        655599736.33,
+        4788284799,
+        2666743134.56,
+        694386436.15,
+        989026225
+      ],
+      "Cash": [
+        190560990.86,
+        388925019.94,
+        276624480.4,
+        34034697.72,
+        45763607
+      ],
+      "Debts/Loans": [
+        2695601,
+        594889,
+        201000,
+        1108660041.95,
+        30758576
+      ],
+      "Payroll": [
+        1776893,
+        1875347,
+        469953,
+        4487494.84,
+        5601611
+      ],
+      "Procurement/Stores": [
+        41668682,
+        6823337,
+        20604593,
+        10667174.6,
+        511569
+      ],
+      "Rent": [
+        94472,
+        3941756,
+        43467634.19,
+        29576414.36,
+        7710925
+      ],
+      "Contract": [
+        0,
+        5598252,
+        77093,
+        171364190.23,
+        1559424
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "institution",
+    "label": "By ministry",
+    "source": "Part I, Table 2 and Table 2 continued (pp. 11–12)",
+    "items": [
+      {
+        "name": "Ministry of Finance (incl. GRA)",
+        "total": 999567221
+      },
+      {
+        "name": "Ministry of Justice & AG's Dept.",
+        "total": 33008590
+      },
+      {
+        "name": "Ministry of Food & Agriculture",
+        "total": 13202967
+      },
+      {
+        "name": "Ministry of Health",
+        "total": 11855902
+      },
+      {
+        "name": "Ministry of Works & Housing",
+        "total": 10269895
+      },
+      {
+        "name": "Ministry of Education",
+        "total": 3725640
+      },
+      {
+        "name": "Ministry of Gender, Children & Social Protection",
+        "total": 2671301
+      },
+      {
+        "name": "Ministry of Energy",
+        "total": 2450687
+      },
+      {
+        "name": "Ministry of Roads & Highways",
+        "total": 1480417
+      },
+      {
+        "name": "Ministry of the Interior",
+        "total": 1223655
+      },
+      {
+        "name": "Ministry of Local Government",
+        "total": 811161
+      },
+      {
+        "name": "Ministry of Employment & Labour Relations",
+        "total": 293959
+      },
+      {
+        "name": "Ministry of Fisheries & Aquaculture",
+        "total": 220256
+      },
+      {
+        "name": "Ministry of Defence",
+        "total": 204278
+      },
+      {
+        "name": "Ministry of Lands & Natural Resources",
+        "total": 127398
+      },
+      {
+        "name": "Ministry of Youth & Sports",
+        "total": 59221
+      },
+      {
+        "name": "Other agencies",
+        "total": 52249
+      },
+      {
+        "name": "Ministry of Trade & Industry",
+        "total": 39235
+      },
+      {
+        "name": "Ministry of Transport",
+        "total": 26135
+      },
+      {
+        "name": "Ministry of Chieftaincy & Religious Affairs",
+        "total": 21213
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Tax irregularities, almost all at the Ghana Revenue Authority",
+      "amount": "GH¢989.0m"
+    },
+    {
+      "text": "Debts and advances at the Ministry of Justice & Attorney-General's Department",
+      "amount": "GH¢31.2m"
+    },
+    {
+      "text": "Loans and advances to public sector workers not recovered by the Ministry of Finance",
+      "amount": "GH¢11.0m"
+    },
+    {
+      "text": "Rent owed in US dollars to the Ministry of Works & Housing (US$993,600)",
+      "amount": "GH¢5.97m"
+    }
+  ],
+  "notes": [
+    "Report total uses the sum of the categories in Table 1B (GH¢1,080,931,937); Table 1A prints GH¢1,080,913,824.",
+    "Foreign-currency items (US$ rent and cash, yen payroll) are converted using the cedi equivalents in Table 1A.",
+    "Ministry totals in Table 2 sum to GH¢379,443 more than the report total."
+  ]
+}

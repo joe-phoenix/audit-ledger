@@ -1,0 +1,149 @@
+{
+  "slug": "technical-universities-2021",
+  "series": "technical-universities",
+  "year": 2021,
+  "title": "Report of the Auditor-General on the Public Accounts of Ghana: Technical Universities",
+  "shortTitle": "Technical Universities",
+  "period": "Year ended 31 December 2021",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_Public_Accounts_of_Ghana_%E2%80%93_Technical_Universities_for_the_year_ended_31_December_2021.pdf",
+  "status": "verified",
+  "institutionsAudited": 10,
+  "total": 34876923.58,
+  "categories": {
+    "Contract": 20909101.04,
+    "Debts/Loans": 7792953.52,
+    "Payroll": 3396381.37,
+    "Procurement/Stores": 2066599.83,
+    "Cash": 711887.82
+  },
+  "trend": {
+    "years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021
+    ],
+    "source": "Part I, Table 1b (p. 1)",
+    "totals": [
+      92736184,
+      98894466,
+      170614483,
+      13093026,
+      34876924
+    ],
+    "categories": {
+      "Debts/Loans": [
+        11776885,
+        1468196,
+        8094230,
+        3897983,
+        7792954
+      ],
+      "Cash": [
+        25110705,
+        13619737,
+        7925991,
+        3412427,
+        711888
+      ],
+      "Payroll": [
+        2405000,
+        1707374,
+        262571,
+        283998,
+        3396381
+      ],
+      "Procurement/Stores": [
+        7025533,
+        2913104,
+        48963278,
+        2156254,
+        2066600
+      ],
+      "Tax": [
+        907199,
+        295952,
+        23242,
+        8671,
+        0
+      ],
+      "Contract": [
+        45510862,
+        78890103,
+        105345171,
+        3333692,
+        20909101
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "institution",
+    "label": "By technical university",
+    "source": "Part I, Table 2 (p. 2)",
+    "items": [
+      {
+        "name": "Koforidua Technical University",
+        "total": 21142821.29
+      },
+      {
+        "name": "Ho Technical University",
+        "total": 4472995.46
+      },
+      {
+        "name": "Bolgatanga Technical University",
+        "total": 3529793.52
+      },
+      {
+        "name": "Kumasi Technical University",
+        "total": 2513076.65
+      },
+      {
+        "name": "Cape Coast Technical University",
+        "total": 2144092.08
+      },
+      {
+        "name": "Takoradi Technical University",
+        "total": 583123.82
+      },
+      {
+        "name": "Wa Technical University",
+        "total": 371842.32
+      },
+      {
+        "name": "Tamale Technical University",
+        "total": 69617.87
+      },
+      {
+        "name": "Sunyani Technical University",
+        "total": 49560.57
+      },
+      {
+        "name": "Accra Technical University",
+        "total": 0
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Contract irregularities at Koforidua Technical University",
+      "amount": "GH¢20.9m"
+    },
+    {
+      "text": "Outstanding student and staff debts at Ho Technical University",
+      "amount": "GH¢4.23m"
+    },
+    {
+      "text": "Outstanding debts at Bolgatanga Technical University",
+      "amount": "GH¢2.73m"
+    },
+    {
+      "text": "Procurement irregularities at Cape Coast Technical University",
+      "amount": "GH¢1.90m"
+    }
+  ],
+  "notes": [
+    "This report is a scanned document; figures were read from the rendered summary pages.",
+    "Stores is merged into Procurement/Stores."
+  ]
+}

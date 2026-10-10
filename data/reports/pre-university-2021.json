@@ -1,0 +1,157 @@
+{
+  "slug": "pre-university-2021",
+  "series": "pre-university",
+  "year": 2021,
+  "title": "Report of the Auditor-General on the Public Accounts of Ghana: Pre-University Educational Institutions",
+  "shortTitle": "Pre-University Educational Institutions",
+  "period": "Financial year ended 31 December 2021",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_Public_Accounts_of_Ghana,_Pre-University_Educational_Institutions_for_the_financial_year_ended_31_December_2021.pdf",
+  "status": "verified",
+  "institutionsAudited": 806,
+  "total": 18457644.29,
+  "categories": {
+    "Contract": 14019349.53,
+    "Cash": 2287403.83,
+    "Procurement/Stores": 1144473.26,
+    "Payroll": 731686.05,
+    "Tax": 274731.62
+  },
+  "trend": {
+    "years": [
+      2019,
+      2020,
+      2021
+    ],
+    "source": "Part II, Summary of Irregularities (p. 7)",
+    "totals": [
+      23492458.34,
+      41778465.97,
+      18457644.29
+    ],
+    "categories": {
+      "Cash": [
+        6713698.31,
+        13352792.21,
+        2287403.83
+      ],
+      "Procurement/Stores": [
+        13547650.41,
+        13246146.53,
+        1144473.26
+      ],
+      "Payroll": [
+        746087.6,
+        688955.46,
+        731686.05
+      ],
+      "Contract": [
+        1523213.32,
+        14114076.52,
+        14019349.53
+      ],
+      "Tax": [
+        961808.7,
+        376495.25,
+        274731.62
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "region",
+    "label": "By region",
+    "source": "Appendix D — National summary of irregularities (p. 172)",
+    "items": [
+      {
+        "name": "Ahafo",
+        "total": 525552.67
+      },
+      {
+        "name": "Ashanti",
+        "total": 399447.55
+      },
+      {
+        "name": "Bono",
+        "total": 154147.0
+      },
+      {
+        "name": "Bono East",
+        "total": 39186.95
+      },
+      {
+        "name": "Central",
+        "total": 989986.77
+      },
+      {
+        "name": "Eastern",
+        "total": 496051.72
+      },
+      {
+        "name": "Greater Accra",
+        "total": 773365.34
+      },
+      {
+        "name": "North East",
+        "total": 15549.26
+      },
+      {
+        "name": "Northern",
+        "total": 44337.04
+      },
+      {
+        "name": "Oti",
+        "total": 78267.58
+      },
+      {
+        "name": "Savannah",
+        "total": 14196.03
+      },
+      {
+        "name": "Upper East",
+        "total": 95246.7
+      },
+      {
+        "name": "Upper West",
+        "total": 14038987.64
+      },
+      {
+        "name": "Volta",
+        "total": 413251.81
+      },
+      {
+        "name": "Western",
+        "total": 144646.86
+      },
+      {
+        "name": "Western North",
+        "total": 235423.37
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Abandoned school projects (5 institutions, all in Upper West)",
+      "amount": "GH¢9.85m"
+    },
+    {
+      "text": "Completed projects and assets not put to use",
+      "amount": "GH¢2.23m"
+    },
+    {
+      "text": "Delayed projects",
+      "amount": "GH¢1.94m"
+    },
+    {
+      "text": "Textbooks and teaching materials not returned by past students (39 institutions)",
+      "amount": "GH¢1.01m"
+    },
+    {
+      "text": "Unearned salaries paid (50 institutions)",
+      "amount": "GH¢662,046"
+    }
+  ],
+  "notes": [
+    "806 institutions audited; 752 submitted financial statements.",
+    "Upper West's GH¢14.0m is almost all contract irregularities (GH¢13.5m).",
+    "The appendix pages of this report are scanned images; regional figures were read from the rendered page."
+  ]
+}

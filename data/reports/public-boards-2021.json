@@ -1,0 +1,197 @@
+{
+  "slug": "public-boards-2021",
+  "series": "public-boards",
+  "year": 2021,
+  "title": "Report of the Auditor-General on the Public Accounts of Ghana: Public Boards, Corporations and other Statutory Institutions",
+  "shortTitle": "Public Boards, Corporations & SOEs",
+  "period": "Period ended 31 December 2021",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_Public_Accounts_of_Ghana_%E2%80%93_Public_Boards,_Corporations_and_Other_Statutory_Institutions_for_the_period_ended_31_December_2021.pdf",
+  "status": "verified",
+  "institutionsAudited": 101,
+  "institutionsAuditedPrior": 83,
+  "total": 17483483539.25,
+  "categories": {
+    "Debts/Loans": 16355145068.44,
+    "Cash": 505800397.26,
+    "Procurement/Stores": 306943215.08,
+    "Contract": 283778072.38,
+    "Tax": 23572831.78,
+    "Payroll": 8243954.31
+  },
+  "trend": {
+    "years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021
+    ],
+    "source": "Part I, Table 2 (p. 3)",
+    "totals": [
+      12002880339,
+      3007258924,
+      5468398431,
+      12856172626,
+      17483483539.25
+    ],
+    "categories": {
+      "Debts/Loans": [
+        11813109116,
+        1801416815,
+        4859727984,
+        10067170560,
+        16355145068.44
+      ],
+      "Cash": [
+        149208182,
+        1087713932,
+        215025782,
+        1802692515,
+        505800397.26
+      ],
+      "Payroll": [
+        2540432,
+        3163473,
+        66248946,
+        9574765,
+        8243954.31
+      ],
+      "Procurement/Stores": [
+        15377810,
+        15856100,
+        40091418,
+        857725788,
+        306943215.08
+      ],
+      "Tax": [
+        6394113,
+        4371199,
+        199651868,
+        29201677,
+        23572831.78
+      ],
+      "Contract": [
+        16250686,
+        94737405,
+        87652433,
+        89807321,
+        283778072.38
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "institution",
+    "label": "By sector ministry",
+    "source": "Part I, Table 3 (p. 4), converted to cedis at the report's rates",
+    "items": [
+      {
+        "name": "Ministry of Energy",
+        "total": 7922590832.42
+      },
+      {
+        "name": "Ministry of Employment & Labour Relations",
+        "total": 5414436977.92
+      },
+      {
+        "name": "Ministry of Food & Agriculture",
+        "total": 3781341297.55
+      },
+      {
+        "name": "Ministry of Finance",
+        "total": 180387116.54
+      },
+      {
+        "name": "Ministry of Communication",
+        "total": 54407723.52
+      },
+      {
+        "name": "Ministry of Education",
+        "total": 33089037.47
+      },
+      {
+        "name": "Ministry of Works & Housing",
+        "total": 22812468.0
+      },
+      {
+        "name": "Ministry of Health",
+        "total": 22704173.45
+      },
+      {
+        "name": "Ministry of Sanitation & Water Resources",
+        "total": 12390818.5
+      },
+      {
+        "name": "Ministry of Information",
+        "total": 12367785.36
+      },
+      {
+        "name": "Ministry of Lands & Natural Resources",
+        "total": 9812236.97
+      },
+      {
+        "name": "Ministry of Transport",
+        "total": 7258387.2
+      },
+      {
+        "name": "Ministry of Youth & Sports",
+        "total": 3395781.74
+      },
+      {
+        "name": "Ministry of Trade & Industry",
+        "total": 2456326.69
+      },
+      {
+        "name": "Ministry of Local Government",
+        "total": 1734372.83
+      },
+      {
+        "name": "Ministry of Justice & AG's Dept.",
+        "total": 894783.39
+      },
+      {
+        "name": "Ministry of Tourism, Culture & Creative Arts",
+        "total": 666871.25
+      },
+      {
+        "name": "Ministry of the Interior",
+        "total": 611570.18
+      },
+      {
+        "name": "Extra-Ministerial Agencies",
+        "total": 116822.27
+      },
+      {
+        "name": "Ministry of Environment, Science, Tech. & Innovation",
+        "total": 5700.0
+      },
+      {
+        "name": "Ministry of Railway Development",
+        "total": 2456.0
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Owed by customers of the Volta River Authority (VRA) for power, including COVID-19 power relief",
+      "amount": "GH¢4.76bn"
+    },
+    {
+      "text": "Owed by customers of the Northern Electricity Distribution Company (NEDCo)",
+      "amount": "GH¢1.28bn"
+    },
+    {
+      "text": "Debts and loans under the Ministry of Employment & Labour Relations",
+      "amount": "GH¢5.19bn"
+    },
+    {
+      "text": "Debts and loans under the Ministry of Food & Agriculture (incl. US$179.6m)",
+      "amount": "GH¢3.49bn"
+    }
+  ],
+  "notes": [
+    "Includes US$522.2m at GH¢6.0061, €1.48m at GH¢6.8281 and £729,161 at GH¢8.1272 (31 December 2021).",
+    "Table 3 has no total column and mixes currencies; each ministry's figure is its row converted to cedis at those rates.",
+    "Debts include GH¢6.04bn due from customers for power sales, a line added in 2021.",
+    "Stores is merged into Procurement/Stores."
+  ]
+}

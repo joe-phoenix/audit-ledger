@@ -1,0 +1,192 @@
+{
+  "slug": "mda-2019",
+  "series": "mda",
+  "year": 2019,
+  "title": "Report of the Auditor-General on the Public Accounts of Ghana: Ministries, Departments and Other Agencies (MDAs)",
+  "shortTitle": "Ministries, Departments & Agencies",
+  "period": "Year ended 31 December 2019",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_Public_Accounts_of_Ghana_%E2%80%93_Ministries,_Departments_and_Other_Agencies_(MDAs)_for_the_Year_ended_31_December_2019.pdf",
+  "status": "verified",
+  "total": 3008187888.15,
+  "categories": {
+    "Tax": 2666743134.56,
+    "Cash": 276624480.4,
+    "Rent": 43467634.19,
+    "Procurement/Stores": 20604593,
+    "Payroll": 469953,
+    "Debts/Loans": 201000,
+    "Contract": 77093
+  },
+  "trend": {
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "source": "Part I, Table 1B (p. 13)",
+    "totals": [
+      505179134.55,
+      2165542368.14,
+      892396375.19,
+      5196043399.94,
+      3008187888.15
+    ],
+    "categories": {
+      "Tax": [
+        305417021.42,
+        42866490.7,
+        655599736.33,
+        4788284799,
+        2666743134.56
+      ],
+      "Cash": [
+        47629013.32,
+        2053622215.68,
+        190560990.86,
+        388925019.94,
+        276624480.4
+      ],
+      "Debts/Loans": [
+        77857099.61,
+        6775974.47,
+        2695601,
+        594889,
+        201000
+      ],
+      "Payroll": [
+        1595071.13,
+        4281994.51,
+        1776893,
+        1875347,
+        469953
+      ],
+      "Procurement/Stores": [
+        20623604.46,
+        35940445.43,
+        41668682,
+        6823337,
+        20604593
+      ],
+      "Rent": [
+        115505.93,
+        9049212.49,
+        94472,
+        3941756,
+        43467634.19
+      ],
+      "Contract": [
+        51941818.68,
+        13006034.86,
+        0,
+        5598252,
+        77093
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "institution",
+    "label": "By ministry",
+    "source": "Part I, Table 2 continued (p. 22)",
+    "items": [
+      {
+        "name": "Ministry of Finance (incl. GRA)",
+        "total": 2854139358.56
+      },
+      {
+        "name": "Ministry of Foreign Affairs",
+        "total": 60669019.51
+      },
+      {
+        "name": "Ministry of Tourism",
+        "total": 26205117.0
+      },
+      {
+        "name": "Ministry of Fisheries & Aquaculture",
+        "total": 19089732.08
+      },
+      {
+        "name": "Ministry of Health",
+        "total": 18528652.0
+      },
+      {
+        "name": "Ministry of the Interior",
+        "total": 11383622.0
+      },
+      {
+        "name": "Ministry of Food & Agriculture",
+        "total": 7337038.0
+      },
+      {
+        "name": "Ministry of Transport",
+        "total": 3035263.0
+      },
+      {
+        "name": "Ministry of Youth & Sports",
+        "total": 2711426.0
+      },
+      {
+        "name": "Ministry of Trade & Industry",
+        "total": 1703344.0
+      },
+      {
+        "name": "Ministry of Education",
+        "total": 1141023.0
+      },
+      {
+        "name": "Ministry of Justice & AG's Dept.",
+        "total": 553276.0
+      },
+      {
+        "name": "Ministry of Communication",
+        "total": 479277.0
+      },
+      {
+        "name": "Ministry of Employment & Labour Relations",
+        "total": 465099.0
+      },
+      {
+        "name": "Judicial Service",
+        "total": 396360.0
+      },
+      {
+        "name": "Ministry of Works & Housing",
+        "total": 192976.0
+      },
+      {
+        "name": "Ministry of Gender, Children & Social Protection",
+        "total": 85688.0
+      },
+      {
+        "name": "Other agencies",
+        "total": 71617.0
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Tax owed in US dollars (US$141.9m), almost all at the Ghana Revenue Authority",
+      "amount": "GH¢806.1m"
+    },
+    {
+      "text": "Cash irregularities at the Ministry of Finance",
+      "amount": "GH¢193.3m"
+    },
+    {
+      "text": "Rent owed to the Ministry of Foreign Affairs in foreign currency",
+      "amount": "GH¢42.5m"
+    },
+    {
+      "text": "Cash irregularities at the Ministry of Fisheries & Aquaculture",
+      "amount": "GH¢18.8m"
+    },
+    {
+      "text": "Tax exemptions granted without parliamentary approval (Tema Freezone)",
+      "amount": "GH¢7.1m"
+    }
+  ],
+  "notes": [
+    "Foreign-currency amounts converted at the rates implied by Table 1A (about GH¢5.68/US$ and GH¢6.37/€)."
+  ]
+}

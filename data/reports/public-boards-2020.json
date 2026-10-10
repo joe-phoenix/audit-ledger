@@ -1,0 +1,184 @@
+{
+  "slug": "public-boards-2020",
+  "series": "public-boards",
+  "year": 2020,
+  "title": "Report of the Auditor-General on the Public Accounts of Ghana: Public Boards, Corporations and other Statutory Institutions",
+  "shortTitle": "Public Boards, Corporations & SOEs",
+  "period": "Period ended 31 December 2020",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_Public_Accounts_of_Ghana_%E2%80%93_Public_Boards_Corporations_and_other_Statutory_Institutions_for_the_period_ended_31_December_2020.pdf",
+  "status": "verified",
+  "institutionsAudited": 83,
+  "total": 12856172626,
+  "categories": {
+    "Debts/Loans": 10067170560,
+    "Cash": 1802692515,
+    "Procurement/Stores": 857725788,
+    "Contract": 89807321,
+    "Tax": 29201677,
+    "Payroll": 9574765
+  },
+  "trend": {
+    "years": [
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "source": "2021 report, Table 2 (this report's own comparison table is garbled in the PDF)",
+    "totals": [
+      12002880339,
+      3007258924,
+      5468398431,
+      12856172626
+    ],
+    "categories": {
+      "Debts/Loans": [
+        11813109116,
+        1801416815,
+        4859727984,
+        10067170560
+      ],
+      "Cash": [
+        149208182,
+        1087713932,
+        215025782,
+        1802692515
+      ],
+      "Payroll": [
+        2540432,
+        3163473,
+        66248946,
+        9574765
+      ],
+      "Procurement/Stores": [
+        15377810,
+        15856100,
+        40091418,
+        857725788
+      ],
+      "Tax": [
+        6394113,
+        4371199,
+        199651868,
+        29201677
+      ],
+      "Contract": [
+        16250686,
+        94737405,
+        87652433,
+        89807321
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "institution",
+    "label": "By sector ministry",
+    "source": "Part I, Table 3 (p. 4), converted to cedis at the report's rates",
+    "items": [
+      {
+        "name": "Ministry of Energy",
+        "total": 10393162713.37
+      },
+      {
+        "name": "Ministry of Employment & Labour Relations",
+        "total": 728106315.03
+      },
+      {
+        "name": "Ministry of Communication",
+        "total": 612995771.07
+      },
+      {
+        "name": "Ministry of Roads & Highways",
+        "total": 447827569.96
+      },
+      {
+        "name": "Ministry of Food & Agriculture",
+        "total": 214002821.92
+      },
+      {
+        "name": "Ministry of Trade & Industry",
+        "total": 174071788.18
+      },
+      {
+        "name": "Ministry of Education",
+        "total": 105988897.06
+      },
+      {
+        "name": "Ministry of Transport",
+        "total": 72903774.85
+      },
+      {
+        "name": "Ministry of Works & Housing",
+        "total": 47826088.03
+      },
+      {
+        "name": "Ministry of Information",
+        "total": 25985512.71
+      },
+      {
+        "name": "Ministry of Local Government",
+        "total": 16399709.46
+      },
+      {
+        "name": "Ministry of Lands & Natural Resources",
+        "total": 6433011.24
+      },
+      {
+        "name": "Ministry of Justice & AG's Dept.",
+        "total": 4578055.87
+      },
+      {
+        "name": "Ministry of Sanitation & Water Resources",
+        "total": 3057794.2
+      },
+      {
+        "name": "Ministry of Finance",
+        "total": 1756491.56
+      },
+      {
+        "name": "Extra-Ministerial Agencies",
+        "total": 512880.04
+      },
+      {
+        "name": "Ministry of Health",
+        "total": 170840.35
+      },
+      {
+        "name": "Ministry of the Interior",
+        "total": 145679.28
+      },
+      {
+        "name": "Ministry of Environment, Science, Tech. & Innovation",
+        "total": 128636.82
+      },
+      {
+        "name": "Ministry of Tourism, Culture & Creative Arts",
+        "total": 118273.0
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Debts and loans under the Ministry of Energy (incl. US$665.9m)",
+      "amount": "GH¢9.60bn"
+    },
+    {
+      "text": "Procurement irregularities under the Ministry of Roads & Highways",
+      "amount": "GH¢353.8m"
+    },
+    {
+      "text": "Cash irregularities under the Ministry of Communication (incl. US$95.1m)",
+      "amount": "GH¢607.8m"
+    },
+    {
+      "text": "Procurement irregularities under the Ministry of Energy (US$73.2m)",
+      "amount": "GH¢421.5m"
+    }
+  ],
+  "notes": [
+    "Includes US$918.3m at GH¢5.7602, €647,815 at GH¢7.0643 and £464,963 at GH¢7.8742 (31 December 2020).",
+    "The text layer of this report's summary pages is doubled up, so totals by type come from the 2021 report's trend table and ministry rows were read from the rendered page.",
+    "Table 3 has no total column; each ministry's figure is its row converted to cedis.",
+    "Stores is merged into Procurement/Stores."
+  ]
+}

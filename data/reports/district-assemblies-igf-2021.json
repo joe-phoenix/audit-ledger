@@ -1,0 +1,156 @@
+{
+  "slug": "district-assemblies-igf-2021",
+  "series": "district-igf",
+  "year": 2021,
+  "title": "Report of the Auditor-General on the Accounts of District Assemblies",
+  "shortTitle": "District Assemblies — Own Revenue (IGF)",
+  "period": "Financial year ended 31 December 2021",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_accounts_of_District_Assemblies_for_the_financial_year_ended_31_December_2021.pdf",
+  "status": "verified",
+  "institutionsAudited": 260,
+  "total": 13493590.33,
+  "categories": {
+    "Cash": 9313612.62,
+    "Contract": 2713657.35,
+    "Payroll": 777627.11,
+    "Procurement/Stores": 555883.1,
+    "Tax": 132810.15
+  },
+  "trend": {
+    "years": [
+      2019,
+      2020,
+      2021
+    ],
+    "source": "Part II, Summary of Irregularities",
+    "totals": [
+      19534611.67,
+      12876561.02,
+      13493590.33
+    ],
+    "categories": {
+      "Cash": [
+        16085998.24,
+        11272151.16,
+        9313612.62
+      ],
+      "Payroll": [
+        245639.9,
+        515501.88,
+        777627.11
+      ],
+      "Contract": [
+        2164502.57,
+        483470.78,
+        2713657.35
+      ],
+      "Procurement/Stores": [
+        504349.18,
+        259842.9,
+        555883.1
+      ],
+      "Tax": [
+        534121.78,
+        345594.3,
+        132810.15
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "region",
+    "label": "By region",
+    "source": "Appendix E — National summary of irregularities (p. 155)",
+    "items": [
+      {
+        "name": "Ahafo",
+        "total": 12946.2
+      },
+      {
+        "name": "Ashanti",
+        "total": 2046952.98
+      },
+      {
+        "name": "Bono",
+        "total": 962227.73
+      },
+      {
+        "name": "Bono East",
+        "total": 113794.36
+      },
+      {
+        "name": "Central",
+        "total": 1113341.99
+      },
+      {
+        "name": "Eastern",
+        "total": 2242970.66
+      },
+      {
+        "name": "Greater Accra",
+        "total": 4736685.83
+      },
+      {
+        "name": "North East",
+        "total": 13592.5
+      },
+      {
+        "name": "Northern",
+        "total": 291744.44
+      },
+      {
+        "name": "Oti",
+        "total": 140435.31
+      },
+      {
+        "name": "Savannah",
+        "total": 84450.0
+      },
+      {
+        "name": "Upper East",
+        "total": 258846.04
+      },
+      {
+        "name": "Upper West",
+        "total": 112838.96
+      },
+      {
+        "name": "Volta",
+        "total": 327435.79
+      },
+      {
+        "name": "Western",
+        "total": 624861.48
+      },
+      {
+        "name": "Western North",
+        "total": 410466.06
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Revenue not collected by 63 assemblies",
+      "amount": "GH¢4.12m"
+    },
+    {
+      "text": "Abandoned or delayed projects",
+      "amount": "GH¢2.23m"
+    },
+    {
+      "text": "Inefficient revenue collection (31 assemblies)",
+      "amount": "GH¢1.63m"
+    },
+    {
+      "text": "Payment vouchers not presented for audit (11 assemblies)",
+      "amount": "GH¢989,119"
+    },
+    {
+      "text": "Revenue misappropriated (43 assemblies)",
+      "amount": "GH¢646,095"
+    }
+  ],
+  "notes": [
+    "The regional table has an unlabelled column between Upper East and Upper West holding GH¢11.00; it is excluded so the regions add up to the report total.",
+    "For 2019 this report's comparison table swaps the payroll and stores figures relative to the 2019 report itself (GH¢245,640 and GH¢504,349)."
+  ]
+}

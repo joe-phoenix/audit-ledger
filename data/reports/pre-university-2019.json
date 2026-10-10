@@ -1,0 +1,147 @@
+{
+  "slug": "pre-university-2019",
+  "series": "pre-university",
+  "year": 2019,
+  "title": "Report of the Auditor-General on the Public Accounts of Ghana: Pre-University Educational Institutions",
+  "shortTitle": "Pre-University Educational Institutions",
+  "period": "Financial year ended 31 December 2019",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_Public_Accounts_of_Ghana,_Pre-University_Educational_Institutions_for_the_financial_year_ended_31_December_2019.pdf",
+  "status": "verified",
+  "total": 23492458.34,
+  "categories": {
+    "Procurement/Stores": 13547650.41,
+    "Cash": 6713698.31,
+    "Contract": 1523213.32,
+    "Tax": 961808.7,
+    "Payroll": 746087.6
+  },
+  "trend": {
+    "years": [
+      2017,
+      2018,
+      2019
+    ],
+    "source": "Part I, Trend of Financial Irregularities (p. 4)",
+    "totals": [
+      28701965.43,
+      12748242.11,
+      23492458.34
+    ],
+    "categories": {
+      "Cash": [
+        4805823.43,
+        4468206.51,
+        6713698.31
+      ],
+      "Procurement/Stores": [
+        8744835.78,
+        6365154.04,
+        13547650.41
+      ],
+      "Contract": [
+        13937825.04,
+        1202517.08,
+        1523213.32
+      ],
+      "Payroll": [
+        553621.71,
+        398947.46,
+        746087.6
+      ],
+      "Tax": [
+        659859.47,
+        313417.02,
+        961808.7
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "region",
+    "label": "By region",
+    "source": "Appendix A — National summary of irregularities (p. 209)",
+    "items": [
+      {
+        "name": "Ahafo",
+        "total": 427106.04
+      },
+      {
+        "name": "Ashanti",
+        "total": 998889.76
+      },
+      {
+        "name": "Bono East",
+        "total": 394754.66
+      },
+      {
+        "name": "Bono",
+        "total": 78343.89
+      },
+      {
+        "name": "Central",
+        "total": 5071408.4
+      },
+      {
+        "name": "Eastern",
+        "total": 1877592.94
+      },
+      {
+        "name": "Greater Accra",
+        "total": 2527305.14
+      },
+      {
+        "name": "North East",
+        "total": 148926.52
+      },
+      {
+        "name": "Northern",
+        "total": 857072.46
+      },
+      {
+        "name": "Oti",
+        "total": 237263.45
+      },
+      {
+        "name": "Savannah",
+        "total": 3151.8
+      },
+      {
+        "name": "Upper East",
+        "total": 6698891.72
+      },
+      {
+        "name": "Upper West",
+        "total": 2068528.05
+      },
+      {
+        "name": "Volta",
+        "total": 643529.93
+      },
+      {
+        "name": "Western North",
+        "total": 551769.22
+      },
+      {
+        "name": "Western",
+        "total": 907924.36
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Procurement and stores irregularities in Upper East Region",
+      "amount": "GH¢5.20m"
+    },
+    {
+      "text": "Cash irregularities in Central Region",
+      "amount": "GH¢2.92m"
+    },
+    {
+      "text": "Contract irregularities in Upper East Region",
+      "amount": "GH¢1.38m"
+    }
+  ],
+  "notes": [
+    "The trend table has no total row; yearly totals are the sum of its categories.",
+    "This report's regional table orders the columns differently (Bono East before Bono, Western North before Western); figures are mapped to the correct regions."
+  ]
+}

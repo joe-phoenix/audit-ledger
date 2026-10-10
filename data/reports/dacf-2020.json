@@ -1,0 +1,154 @@
+{
+  "slug": "dacf-2020",
+  "series": "dacf",
+  "year": 2020,
+  "title": "Report of the Auditor-General on the Management and Utilisation of District Assemblies' Common Fund (DACF) and Other Statutory Funds",
+  "shortTitle": "District Assemblies (MMDAs) — Common Fund",
+  "period": "Year ended 31 December 2020",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_Management_and_Utilisation_of_District_Assemblies%E2%80%99_Common_Fund_(DACF)_and_Other_Statutory_Funds_for_the_Year_ended_31_December_2020.pdf",
+  "status": "verified",
+  "total": 77147260.1,
+  "categories": {
+    "Contract": 45692398.53,
+    "Cash": 23505854.48,
+    "Procurement/Stores": 7716366.62,
+    "Tax": 232640.47
+  },
+  "trend": {
+    "years": [
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "source": "2021 report, para. 6 (this report's summary pages are scanned images)",
+    "totals": [
+      40929999.54,
+      120567896.78,
+      124640845.93,
+      77147260.1
+    ],
+    "categories": {
+      "Contract": [
+        31224856.72,
+        65618865.7,
+        86980848.61,
+        45692398.53
+      ],
+      "Cash": [
+        7105071.1,
+        47139747.82,
+        33213320.67,
+        23505854.48
+      ],
+      "Procurement/Stores": [
+        2437094.3,
+        7356299.95,
+        4121790.4,
+        7716366.62
+      ],
+      "Tax": [
+        162977.42,
+        452983.31,
+        324886.25,
+        232640.47
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "region",
+    "label": "By region",
+    "source": "Appendix — National summary of MMDAs irregularities",
+    "items": [
+      {
+        "name": "Ahafo",
+        "total": 2474721.65
+      },
+      {
+        "name": "Ashanti",
+        "total": 17654002.29
+      },
+      {
+        "name": "Bono",
+        "total": 5798620.78
+      },
+      {
+        "name": "Bono East",
+        "total": 4270532.78
+      },
+      {
+        "name": "Central",
+        "total": 9795694.72
+      },
+      {
+        "name": "Eastern",
+        "total": 6261351.23
+      },
+      {
+        "name": "Greater Accra",
+        "total": 9889705.47
+      },
+      {
+        "name": "North East",
+        "total": 967785.94
+      },
+      {
+        "name": "Northern",
+        "total": 1262737.03
+      },
+      {
+        "name": "Oti",
+        "total": 1763156.04
+      },
+      {
+        "name": "Savannah",
+        "total": 2383048.12
+      },
+      {
+        "name": "Upper East",
+        "total": 847456.39
+      },
+      {
+        "name": "Upper West",
+        "total": 2972585.78
+      },
+      {
+        "name": "Volta",
+        "total": 5349698.6
+      },
+      {
+        "name": "Western",
+        "total": 2298660.36
+      },
+      {
+        "name": "Western North",
+        "total": 3157502.92
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Abandoned or delayed projects (62 assemblies)",
+      "amount": "GH¢35.4m"
+    },
+    {
+      "text": "Completed projects not put to use (25 assemblies)",
+      "amount": "GH¢8.66m"
+    },
+    {
+      "text": "Payments made outside the GIFMIS system (15 assemblies)",
+      "amount": "GH¢7.38m"
+    },
+    {
+      "text": "Misapplication of funds (28 assemblies)",
+      "amount": "GH¢5.60m"
+    },
+    {
+      "text": "Unsubstantiated payments (77 assemblies)",
+      "amount": "GH¢4.85m"
+    }
+  ],
+  "notes": [
+    "This report is a scanned document; figures come from its text-layer appendix. A second national summary table in the appendix totals GH¢78.39m (Eastern Region GH¢7.50m instead of GH¢6.26m); the table that matches the report total is used."
+  ]
+}

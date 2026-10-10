@@ -55,6 +55,8 @@ All six 2023 Auditor-General annual reports are in, verified from the official P
 | Public Universities (incl. technical) | GH¢17.5m | n/a (wider scope) |
 | Colleges of Education | GH¢5.9m | −25% |
 
-Not yet added: 2019–2021 (their totals appear via the later reports' comparison tables).
+**2019–2021:** 15 more reports, so every year from 2019 to 2024 has its own report pages. 2020 has only three (MDAs, public boards, Common Fund), because the Audit Service didn't publish full pre-university, technical-university or IGF reports for that year. The 2019 Common Fund report has no regional split, so its breakdown shows the largest findings instead. Several of these reports are scans; their tables were read from rendered pages and checked against the report totals, with any mismatch recorded in `notes`.
+
+Trend charts now reach back to 2015–2017, using the comparison tables in the older reports.
 
 Note: the GH¢8.80bn / −41.6% figure widely cited in the news is the Public Boards report total, not a consolidated total. The consolidated 2023 figure across all six reports is GH¢11.32bn (the six reports here sum to GH¢11.33bn).

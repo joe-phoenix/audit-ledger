@@ -1,0 +1,178 @@
+{
+  "slug": "public-boards-2019",
+  "series": "public-boards",
+  "year": 2019,
+  "title": "Report of the Auditor-General on the Public Accounts of Ghana: Public Boards, Corporations and other Statutory Institutions",
+  "shortTitle": "Public Boards, Corporations & SOEs",
+  "period": "Period ended 31 December 2019",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_of_the_Auditor-General_on_the_Public_Accounts_of_Ghana_%E2%80%93_Public_Boards_Corporations_and_other_Statutory_Institutions_for_the_period_ended_31_December_2019.pdf",
+  "status": "verified",
+  "total": 5468398431,
+  "categories": {
+    "Debts/Loans": 4859727984,
+    "Cash": 215025782,
+    "Tax": 199651868,
+    "Contract": 87652433,
+    "Payroll": 66248946,
+    "Procurement/Stores": 40091418
+  },
+  "trend": {
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "source": "Part I, Table 2 (p. 3)",
+    "totals": [
+      3311963314,
+      718085208,
+      12002880339,
+      3007258924,
+      5468398431
+    ],
+    "categories": {
+      "Debts/Loans": [
+        2705086348,
+        302233654,
+        11813109116,
+        1801416815,
+        4859727984
+      ],
+      "Cash": [
+        222227944,
+        246015992,
+        149208182,
+        1087713932,
+        215025782
+      ],
+      "Payroll": [
+        1424941,
+        494728,
+        2540432,
+        3163473,
+        66248946
+      ],
+      "Procurement/Stores": [
+        627167,
+        139336752,
+        15377810,
+        15856100,
+        40091418
+      ],
+      "Tax": [
+        377410669,
+        24291448,
+        6394113,
+        4371199,
+        199651868
+      ],
+      "Contract": [
+        5186245,
+        5782634,
+        16250686,
+        94737405,
+        87652433
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "institution",
+    "label": "By sector ministry",
+    "source": "Part I, Table 3 (p. 6), converted to cedis at the report's rates",
+    "items": [
+      {
+        "name": "Ministry of Employment & Labour Relations",
+        "total": 4570175080.0
+      },
+      {
+        "name": "Ministry of Energy",
+        "total": 473570814.0
+      },
+      {
+        "name": "Ministry of Education",
+        "total": 179849227.3
+      },
+      {
+        "name": "Ministry of Trade & Industry",
+        "total": 111704863.78
+      },
+      {
+        "name": "Ministry of Works & Housing",
+        "total": 60751544.0
+      },
+      {
+        "name": "Ministry of Food & Agriculture",
+        "total": 22698805.0
+      },
+      {
+        "name": "Ministry of Finance",
+        "total": 12479187.0
+      },
+      {
+        "name": "Ministry of Transport",
+        "total": 11997542.0
+      },
+      {
+        "name": "Ministry of Communication",
+        "total": 8119890.08
+      },
+      {
+        "name": "Ministry of Youth & Sports",
+        "total": 6323623.67
+      },
+      {
+        "name": "Ministry of Lands & Natural Resources",
+        "total": 5840251.0
+      },
+      {
+        "name": "Ministry of Sanitation & Water Resources",
+        "total": 2027499.0
+      },
+      {
+        "name": "Ministry of Information",
+        "total": 1378389.12
+      },
+      {
+        "name": "Extra-Ministerial Agencies",
+        "total": 200170.0
+      },
+      {
+        "name": "Ministry of Tourism, Culture & Creative Arts",
+        "total": 147519.0
+      },
+      {
+        "name": "Ministry of the Interior",
+        "total": 138983.18
+      },
+      {
+        "name": "Ministry of Health",
+        "total": 64425.0
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Debts and loans under the Ministry of Employment & Labour Relations",
+      "amount": "GH¢4.48bn"
+    },
+    {
+      "text": "Tax irregularities under the Ministry of Energy",
+      "amount": "GH¢193.8m"
+    },
+    {
+      "text": "Contract irregularities under the Ministry of Education",
+      "amount": "GH¢86.8m"
+    },
+    {
+      "text": "Cash irregularities under the Ministry of Employment & Labour Relations",
+      "amount": "GH¢89.0m"
+    }
+  ],
+  "notes": [
+    "Includes US$4.87m at GH¢5.68, €299,202 at GH¢6.37 and £1,564 at GH¢7.46 (31 December 2019).",
+    "Table 3 has no total column; each ministry's figure is its row converted to cedis. Table 1 shows €146,094 of tax that does not appear in Table 3.",
+    "Stores is merged into Procurement/Stores."
+  ]
+}

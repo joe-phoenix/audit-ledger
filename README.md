@@ -43,6 +43,18 @@ All six 2023 Auditor-General annual reports are in, verified from the official P
 
 **2022:** all six reports are in (GH¢16.57bn, matching the official consolidated figure). In 2022 colleges of education were audited with pre-university institutions, so that report sits under the pre-university series.
 
-Not yet added: 2024 reports, and 2019–2021 (their totals appear via the later reports' comparison tables).
+**2024:** all six reports are in, GH¢20.74bn in total (up 83%), and the overview pages now show 2024. From 2024 the universities report covers all 20 public universities, so the "Universities" series continues the technical-university trend with a change in scope. Colleges of education are shown separately.
+
+| Report (FY 2024) | Total | Change on 2023 |
+|---|---|---|
+| Public Boards, Corporations & SOEs | GH¢18.42bn | +109% |
+| Ministries, Departments & Agencies | GH¢2.06bn | −15% |
+| District Assemblies Common Fund | GH¢205.9m | +315% |
+| Pre-University Institutions | GH¢23.4m | +213% |
+| District Assemblies — own revenue (IGF) | GH¢18.9m | −15% |
+| Public Universities (incl. technical) | GH¢17.5m | n/a (wider scope) |
+| Colleges of Education | GH¢5.9m | −25% |
+
+Not yet added: 2019–2021 (their totals appear via the later reports' comparison tables).
 
 Note: the GH¢8.80bn / −41.6% figure widely cited in the news is the Public Boards report total, not a consolidated total. The consolidated 2023 figure across all six reports is GH¢11.32bn (the six reports here sum to GH¢11.33bn).

@@ -1,4 +1,4 @@
-import { CATEGORIES, combinedCategories, reports, seriesLabel } from "@/lib/data";
+import { CATEGORIES, LATEST_YEAR, combinedCategories, seriesSummaries, seriesLabel } from "@/lib/data";
 import { full } from "@/lib/format";
 import { categoryColor, seriesColor } from "@/components/colors";
 import { RankedBars } from "@/components/Charts";
@@ -19,6 +19,7 @@ const DEFINITIONS: Record<string, string> = {
 };
 
 export default function Categories() {
+  const reports = seriesSummaries();
   const years = Array.from(new Set(reports.flatMap((r) => r.trend.years))).sort();
   const present = CATEGORIES.filter((c) => reports.some((r) => r.trend.categories[c]?.some(Boolean)));
   const rowsByCategory = Object.fromEntries(present.map((c) => [c, years.map((y) => {
@@ -27,7 +28,7 @@ export default function Categories() {
     return row;
   })]));
   const series = reports.map((r) => ({ key: r.series, label: seriesLabel[r.series], color: seriesColor(r.series) }));
-  const mix = combinedCategories(2023).map((c) => ({ ...c, color: categoryColor(c.name) }));
+  const mix = combinedCategories(LATEST_YEAR).map((c) => ({ ...c, color: categoryColor(c.name) }));
   const mixNoDebt = mix.filter((c) => c.name !== "Debts/Loans");
 
   return (
@@ -35,7 +36,7 @@ export default function Categories() {
       <PageHead eyebrow="Explore" title="By type of irregularity"
         desc="The Auditor-General groups findings into types such as cash, tax, payroll and contracts. This page adds them up across reports." />
 
-      <Section title="2023 mix, all reports combined">
+      <Section title={`${LATEST_YEAR} mix, all reports combined`}>
         <div className="grid cols-2">
           <ChartCard title="All types" sub="Debts and loans dwarf everything else">
             <RankedBars items={mix} />
@@ -46,7 +47,7 @@ export default function Categories() {
         </div>
       </Section>
 
-      <Section title="One type over time" sub="Choose a type to see which reports it came from, 2019–2023">
+      <Section title="One type over time" sub={`Choose a type to see which reports it came from, ${years[0]}–${years.at(-1)}`}>
         <ChartCard>
           <CategoryExplorer categories={present.map((c) => ({ name: c, color: categoryColor(c) }))} rowsByCategory={rowsByCategory} series={series} />
           <DataTable head={["Type", ...years.map(String)]}

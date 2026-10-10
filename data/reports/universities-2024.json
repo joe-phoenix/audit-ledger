@@ -1,0 +1,165 @@
+{
+  "slug": "universities-2024",
+  "series": "technical-universities",
+  "year": 2024,
+  "title": "Report of the Auditor-General on the Public Accounts of Ghana: Public Universities and Colleges of Education",
+  "shortTitle": "Public Universities (incl. Technical)",
+  "period": "Year ended 31 December 2024",
+  "sourceUrl": "https://audit.gov.gh/files/audit_reports/Report_Of_The_Auditor-General_On_The_Public_Accounts_Of_Ghana_%E2%80%93_Public_Universities_And_Colleges_Of_Education_For_The_Year_Ended_31_December_2024.pdf",
+  "status": "verified",
+  "institutionsAudited": 20,
+  "total": 17512667,
+  "recoverable": 17189171,
+  "administrative": 323496,
+  "categories": {
+    "Payroll": 10549562,
+    "Cash": 6399984,
+    "Procurement/Stores": 323496,
+    "Debts/Loans": 203361,
+    "Contract": 18548,
+    "Tax": 17716
+  },
+  "trend": {
+    "years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "source": "Part I, Table 1c (p. 2)",
+    "totals": [
+      13093025,
+      34876924,
+      20959765,
+      45608946,
+      17512667
+    ],
+    "categories": {
+      "Debts/Loans": [
+        3897983,
+        7792954,
+        9395315,
+        30055079,
+        203361
+      ],
+      "Cash": [
+        3412427,
+        711888,
+        544486,
+        0,
+        6399984
+      ],
+      "Payroll": [
+        283998,
+        3396381,
+        2296905,
+        2065773,
+        10549562
+      ],
+      "Procurement/Stores": [
+        2156254,
+        2066600,
+        105024,
+        139000,
+        323496
+      ],
+      "Tax": [
+        8671,
+        0,
+        14836,
+        0,
+        17716
+      ],
+      "Contract": [
+        3333692,
+        20909101,
+        8603199,
+        13349094,
+        18548
+      ]
+    }
+  },
+  "breakdown": {
+    "kind": "institution",
+    "label": "By university",
+    "source": "Part I, Table 2a (p. 5)",
+    "items": [
+      {
+        "name": "University of Education, Winneba",
+        "total": 6399984
+      },
+      {
+        "name": "University of Energy & Natural Resources (UENR)",
+        "total": 4246239
+      },
+      {
+        "name": "GIMPA",
+        "total": 2075214
+      },
+      {
+        "name": "University of Ghana",
+        "total": 1684017
+      },
+      {
+        "name": "Koforidua Technical University",
+        "total": 817619
+      },
+      {
+        "name": "University of Professional Studies, Accra (UPSA)",
+        "total": 594593
+      },
+      {
+        "name": "Dr. Hilla Limann Technical University",
+        "total": 444790
+      },
+      {
+        "name": "Kumasi Technical University",
+        "total": 395522
+      },
+      {
+        "name": "C. K. Tedam University of Technology & Applied Sciences",
+        "total": 359760
+      },
+      {
+        "name": "Ho Technical University",
+        "total": 239234
+      },
+      {
+        "name": "Cape Coast Technical University",
+        "total": 130575
+      },
+      {
+        "name": "Takoradi Technical University",
+        "total": 91542
+      },
+      {
+        "name": "Accra Technical University",
+        "total": 33576
+      }
+    ]
+  },
+  "highlights": [
+    {
+      "text": "Unbudgeted honorarium paid by the University of Education, Winneba",
+      "amount": "GH¢5.85m"
+    },
+    {
+      "text": "Bond defaulters and unearned salaries at UENR",
+      "amount": "GH¢4.25m"
+    },
+    {
+      "text": "Unearned salaries and study-leave bond defaults at GIMPA",
+      "amount": "GH¢2.08m"
+    },
+    {
+      "text": "Contract awarded with invalid tax and SSNIT certificates (C. K. Tedam University)",
+      "amount": "GH¢323,496"
+    }
+  ],
+  "notes": [
+    "From 2024 this report covers all 20 public universities, not only the 10 technical universities. The Auditor-General's own trend table continues the technical-university figures for 2020–2023, so the years are not strictly like-for-like.",
+    "Universities with no irregularities are not listed. The per-university rows sum to GH¢2 less than the total (rounding in the source).",
+    "Stores is merged into Procurement/Stores."
+  ]
+}

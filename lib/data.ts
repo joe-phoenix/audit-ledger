@@ -57,7 +57,7 @@ export const seriesLabel: Record<Series, string> = {
   "public-boards": "Public Boards & SOEs",
   mda: "MDAs",
   dacf: "District Assemblies — Common Fund",
-  "technical-universities": "Technical Universities",
+  "technical-universities": "Universities",
   "district-igf": "District Assemblies — Own Revenue",
   "colleges-of-education": "Colleges of Education",
   "pre-university": "Pre-University",
@@ -70,26 +70,72 @@ export function getReport(slug: string) {
   return allReports.find((r) => r.slug === slug);
 }
 
+export const allSeries = Array.from(new Set(allReports.map((r) => r.series)));
+
+/**
+ * One series' history, merged across every report in it. Each report's comparison table
+ * covers several years; where tables overlap, the newest report's figure wins.
+ */
+export function seriesHistory(series: Series) {
+  const points = new Map<number, { total: number; categories: Record<string, number> }>();
+  for (const r of [...seriesReports(series)].reverse()) {
+    r.trend.years.forEach((y, i) => {
+      points.set(y, {
+        total: r.trend.totals[i],
+        categories: Object.fromEntries(Object.entries(r.trend.categories).map(([c, v]) => [c, v[i] ?? 0])),
+      });
+    });
+  }
+  return points;
+}
+
+/** Series that have a figure for this year, largest first. */
+export function seriesInYear(year: number) {
+  return allSeries
+    .map((s) => ({ series: s, total: seriesHistory(s).get(year)?.total }))
+    .filter((x): x is { series: Series; total: number } => x.total != null)
+    .sort((a, b) => b.total - a.total);
+}
+
 /** Totals per year per series, for every year any report covers. */
 export function seriesTrend() {
-  const years = Array.from(new Set(reports.flatMap((r) => r.trend.years))).sort();
+  const hist = new Map(allSeries.map((s) => [s, seriesHistory(s)]));
+  const years = Array.from(new Set([...hist.values()].flatMap((h) => [...h.keys()]))).sort();
   return years.map((year) => {
     const row: Record<string, number | null> & { year: number } = { year };
-    for (const r of reports) {
-      const i = r.trend.years.indexOf(year);
-      row[r.series] = i === -1 ? null : r.trend.totals[i];
-    }
+    for (const [s, h] of hist) row[s] = h.get(year)?.total ?? null;
     return row;
   });
 }
 
-/** Category totals summed across every report for one year. */
+/** Category totals summed across every series for one year. */
 export function combinedCategories(year: number) {
   const sums: Record<string, number> = {};
-  for (const r of reports) {
-    const i = r.trend.years.indexOf(year);
-    if (i === -1) continue;
-    for (const [cat, vals] of Object.entries(r.trend.categories)) sums[cat] = (sums[cat] ?? 0) + (vals[i] ?? 0);
+  for (const s of allSeries) {
+    const p = seriesHistory(s).get(year);
+    if (!p) continue;
+    for (const [cat, v] of Object.entries(p.categories)) sums[cat] = (sums[cat] ?? 0) + v;
   }
   return CATEGORIES.filter((c) => sums[c]).map((c) => ({ name: c, total: sums[c] }));
+}
+
+/** Each series as one merged record: its latest report plus its full multi-year trend. */
+export function seriesSummaries() {
+  return allSeries
+    .map((s) => {
+      const latest = seriesReports(s)[0];
+      const h = seriesHistory(s);
+      const years = [...h.keys()].sort();
+      const cats = Array.from(new Set(years.flatMap((y) => Object.keys(h.get(y)!.categories))));
+      return {
+        ...latest,
+        trend: {
+          ...latest.trend,
+          years,
+          totals: years.map((y) => h.get(y)!.total),
+          categories: Object.fromEntries(cats.map((c) => [c, years.map((y) => h.get(y)!.categories[c] ?? 0)])),
+        },
+      };
+    })
+    .sort((a, b) => b.year - a.year || b.total - a.total);
 }

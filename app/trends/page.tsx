@@ -1,4 +1,4 @@
-import { reports, seriesLabel } from "@/lib/data";
+import { seriesSummaries, seriesLabel } from "@/lib/data";
 import { ghs, full } from "@/lib/format";
 import { seriesColor } from "@/components/colors";
 import { YearBars } from "@/components/Charts";
@@ -8,6 +8,7 @@ import { ChartCard, DataTable, PageHead, Section } from "@/components/ui";
 export const metadata = { title: "Trends over years" };
 
 export default function Trends() {
+  const reports = seriesSummaries();
   const series = reports.map((r) => ({ key: r.series, label: seriesLabel[r.series], color: seriesColor(r.series), years: r.trend.years, totals: r.trend.totals }));
   const years = Array.from(new Set(reports.flatMap((r) => r.trend.years))).sort();
   return (

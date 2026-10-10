@@ -34,7 +34,7 @@ export function Sidebar() {
       </div>
       <div className="nav-group">
         <div className="nav-label">More</div>
-        <a className="nav-link" href="/government/ghana-debt/">Ghana Debt</a>
+        <a className="nav-link" href={`${process.env.NEXT_PUBLIC_BASE_PATH}/government/ghana-debt/`}>Ghana Debt</a>
         <Link className={cls("/about/")} href="/about/">About the data</Link>
       </div>
     </aside>

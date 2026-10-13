@@ -38,8 +38,11 @@ export default function Recoveries() {
         </div>
         <div className="card" style={{ marginTop: 16 }}>
           <div className="chart-title">Share recovered</div>
-          <div className="bar-track" style={{ marginTop: 10 }} role="img" aria-label={`${share.toFixed(1)}% recovered`}>
-            <div className="bar-fill" style={{ width: `${share}%`, background: "var(--s3)" }}><span>{share.toFixed(1)}% recovered</span></div>
+          <div className="bar-row" style={{ marginTop: 10 }}>
+            <div className="bar-track" aria-hidden="true">
+              <div className="bar-fill" style={{ width: `${share}%`, background: "var(--s3)" }} />
+            </div>
+            <span className="bar-out">{share.toFixed(1)}% recovered</span>
           </div>
         </div>
       </Section>

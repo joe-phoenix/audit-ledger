@@ -24,9 +24,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      # Served at the root of auditledger.labaridata.com, so no BASE_PATH.
       - run: npm run build
-        env:
-          BASE_PATH: /audit-ledger
       - run: touch out/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:

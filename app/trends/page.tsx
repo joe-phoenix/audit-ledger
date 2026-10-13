@@ -23,7 +23,7 @@ export default function Trends() {
       </Section>
 
       <Section title="Each report in cedis" sub="Small multiples, each on its own scale">
-        <div className="grid cols-2">
+        <div className="grid pair">
           {reports.map((r) => {
             const first = r.trend.totals[0], last = r.trend.totals.at(-1)!;
             return (

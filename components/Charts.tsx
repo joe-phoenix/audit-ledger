@@ -98,17 +98,20 @@ export function StackedYears({ data, series, height = 320 }: { data: Record<stri
 }
 
 /** Simple year bars for one total, with the latest year emphasised. */
+/** Short bar label: the axis already says GH¢, so "18.4bn" instead of "GH¢18.42bn". */
+const compact = (n: number) => ghs(n, 1).replace("GH¢", "");
+
 export function YearBars({ years, totals, height = 260 }: { years: number[]; totals: number[]; height?: number }) {
   const data = years.map((y, i) => ({ year: y, total: totals[i] }));
   return (
     <ResponsiveContainer width="100%" height={height}>
-      <BarChart data={data} margin={{ top: 22, right: 8, left: 0, bottom: 0 }} barCategoryGap="30%">
+      <BarChart data={data} margin={{ top: 22, right: 20, left: 0, bottom: 0 }} barCategoryGap="30%">
         <CartesianGrid vertical={false} stroke="var(--grid)" />
         <XAxis dataKey="year" {...axisProps} />
         <YAxis {...axisProps} tickFormatter={(v) => ghs(v, 0)} width={72} />
         <Tooltip content={<Tip />} cursor={{ fill: "var(--line)", opacity: 0.5 }} />
         <Bar dataKey="total" name="Total irregularities" radius={[4, 4, 0, 0]} isAnimationActive={false}
-          label={{ position: "top", formatter: (v: number) => ghs(v), fill: "var(--slate)", fontSize: 11, fontFamily: "JetBrains Mono, monospace" }}>
+          label={{ position: "top", formatter: compact, fill: "var(--slate)", fontSize: 10, fontFamily: "JetBrains Mono, monospace" }}>
           {data.map((d, i) => <Cell key={d.year} fill={i === data.length - 1 ? "var(--s1)" : "color-mix(in srgb, var(--s1) 45%, var(--card))"} />)}
         </Bar>
       </BarChart>

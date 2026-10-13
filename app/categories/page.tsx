@@ -4,8 +4,10 @@ import { categoryColor, seriesColor } from "@/components/colors";
 import { RankedBars } from "@/components/Charts";
 import { CategoryExplorer } from "@/components/CategoryExplorer";
 import { ChartCard, DataTable, PageHead, Section } from "@/components/ui";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = { title: "By irregularity type" };
+export const metadata = pageMeta("/categories/", "Ghana audit irregularities by type",
+  "Cash, tax, payroll, procurement, contract and debt irregularities in Ghana's public sector, added up across the Auditor-General's annual reports.");
 
 const DEFINITIONS: Record<string, string> = {
   "Debts/Loans": "Money owed to institutions that has not been collected: loans, staff and trade debtors, inter-agency debts.",

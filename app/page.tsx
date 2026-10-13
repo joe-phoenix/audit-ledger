@@ -19,7 +19,9 @@ export default function Home() {
   return (
     <>
       <PageHead eyebrow="Accountability & governance — Ghana" title="Public money, made legible"
-        desc="Every year the Auditor-General reports how public institutions handled money, and where it went wrong. These reports run to hundreds of pages. The Audit Ledger turns them into charts you can read in minutes." />
+        desc="Every year the Auditor-General reports how public institutions handled money, and where it went wrong. These reports run to hundreds of pages. The Audit Ledger turns them into charts you can read in minutes.">
+        <p className="powered-by">Powered by <strong>Labari Data</strong></p>
+      </PageHead>
 
       <Section id="headline" title="The headline numbers" sub={`${Y} financial year`}>
         <div className="grid cols-3">

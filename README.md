@@ -2,6 +2,8 @@
 
 Ghana's Auditor-General reports turned into clear charts: irregularities by type, year, institution and region, and what was recovered. A sibling project to Labari Data. No sign-up, no tracking.
 
+**Live at [auditledger.labaridata.com](https://auditledger.labaridata.com/)**
+
 Built with Next.js (App Router, static export) and Recharts. The build output in `out/` is plain static files that can be hosted on GitHub Pages, Netlify or Vercel.
 
 ## Run it
@@ -11,6 +13,14 @@ npm install
 npm run dev        # http://localhost:8420
 npm run build      # static site in out/
 ```
+
+## Deployment
+
+Every push to `main` builds the site and deploys it to GitHub Pages (`.github/workflows/`). It is served at the root of the custom domain **auditledger.labaridata.com**, so the build sets no `BASE_PATH`. The old `joe-phoenix.github.io/audit-ledger/` address redirects there.
+
+DNS for `labaridata.com` is on Cloudflare: `auditledger` is a CNAME to `joe-phoenix.github.io`. Keep it on **DNS only** (grey cloud); if Cloudflare proxies it, GitHub can't renew the HTTPS certificate.
+
+To serve the site from a sub-path instead (e.g. a plain `github.io/<repo>/` URL), set `BASE_PATH=/<repo>` for the build step.
 
 ## Structure
 

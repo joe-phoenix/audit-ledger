@@ -254,4 +254,5 @@ main:focus{ outline:none; }
 .grid.pair{ grid-template-columns: repeat(2, minmax(0,1fr)); }
 @media (max-width:720px){ .grid.pair{ grid-template-columns: 1fr; } }
 .powered-by{ margin:12px 0 0; font-size:.82rem; color:var(--muted); }
-.powered-by strong{ color:var(--navy); font-weight:600; }
+.powered-by a{ color:var(--navy); font-weight:600; }
+.powered-by a:hover{ color:var(--blue); }

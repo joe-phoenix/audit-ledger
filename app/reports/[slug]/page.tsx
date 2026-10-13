@@ -6,6 +6,7 @@ import { ghs, full, pct } from "@/lib/format";
 import { categoryColor } from "@/components/colors";
 import { RankedBars, StackedYears, YearBars } from "@/components/Charts";
 import { ChartCard, DataTable, PageHead, Section, Stat } from "@/components/ui";
+import { SITE_URL, jsonLd, pageMeta } from "@/lib/seo";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -14,7 +15,8 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const r = getReport((await params).slug);
-  return r ? { title: `${r.shortTitle} ${r.year}`, description: `${ghs(r.total)} in irregularities. ${r.title}, ${r.period}.` } : {};
+  return r ? pageMeta(`/reports/${r.slug}/`, `${r.shortTitle}: ${r.year} Auditor-General report`,
+    `${ghs(r.total)} in financial irregularities found by Ghana's Auditor-General in ${r.shortTitle} for ${r.year}. Charts and tables by type, ${r.breakdown.kind === "region" ? "region" : "institution"} and year, from the ${r.title}.`) : {};
 }
 
 export default async function ReportPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -33,8 +35,28 @@ export default async function ReportPage({ params }: { params: Promise<{ slug: s
   const breakdown = [...r.breakdown.items].sort((a, b) => b.total - a.total);
   const isRegion = r.breakdown.kind === "region";
 
+  const url = `${SITE_URL}/reports/${r.slug}/`;
+  const dataset = {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "@id": `${url}#dataset`,
+    name: `${r.title} (${r.year}): financial irregularities`,
+    description: `Financial irregularities of ${ghs(r.total)} reported by Ghana's Auditor-General for ${r.shortTitle}, ${r.period.toLowerCase()}. Totals by type of irregularity, a multi-year trend (${years[0]}–${years.at(-1)}) and a breakdown by ${r.breakdown.kind}, transcribed from the official report and checked against its totals.`,
+    url,
+    isAccessibleForFree: true,
+    inLanguage: "en",
+    keywords: ["Ghana", "Auditor-General", "public accounts", "financial irregularities", "public finance", "governance", "accountability", r.shortTitle],
+    temporalCoverage: `${years[0]}/${r.year}`,
+    spatialCoverage: { "@type": "Place", name: "Ghana" },
+    creator: { "@type": "Organization", name: "Labari Data", url: "https://labaridata.com" },
+    isBasedOn: { "@type": "Report", name: r.title, url: r.sourceUrl, publisher: { "@type": "GovernmentOrganization", name: "Ghana Audit Service", url: "https://audit.gov.gh" } },
+    includedInDataCatalog: { "@type": "DataCatalog", name: "The Audit Ledger", url: `${SITE_URL}/` },
+    variableMeasured: ["Total irregularities (GH¢)", ...Object.keys(r.categories)],
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(dataset)} />
       <PageHead eyebrow={`Auditor-General — ${r.period}`} title={r.shortTitle}
         badge={<span className="badge good">Verified from PDF</span>} desc={r.title}>
         <div className="source-strip">

@@ -1,16 +1,32 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Breadcrumbs, MobileNav, Sidebar, ThemeToggle } from "@/components/Nav";
+import { OG_IMAGE, SITE_NAME, SITE_URL, jsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: { default: "The Audit Ledger", template: "%s · The Audit Ledger" },
+  title: { default: SITE_NAME, template: `%s · ${SITE_NAME}` },
   description: "Ghana's Auditor-General reports turned into clear charts: irregularities by type, year, institution and region, and what was recovered.",
-  metadataBase: new URL("https://auditledger.labaridata.com"),
-  openGraph: {
-    siteName: "The Audit Ledger", type: "website", locale: "en_GH",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "The Audit Ledger: Ghana's Auditor-General reports, visualised" }],
-  },
-  twitter: { card: "summary_large_image", images: ["/og.png"] },
+  metadataBase: new URL(SITE_URL),
+  applicationName: SITE_NAME,
+  keywords: ["Ghana", "Auditor-General report", "Ghana Audit Service", "public finance", "public accounts", "financial irregularities", "governance", "accountability", "transparency", "open data", "public sector audit", "SOEs", "MMDAs", "District Assemblies Common Fund"],
+  authors: [{ name: "Labari Data", url: "https://labaridata.com" }],
+  publisher: "Labari Data",
+  category: "Government and public finance data",
+  openGraph: { siteName: SITE_NAME, type: "website", locale: "en_GH", images: [OG_IMAGE] },
+  twitter: { card: "summary_large_image", images: [OG_IMAGE.url] },
+};
+
+const siteLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "Organization", "@id": "https://labaridata.com/#org", name: "Labari Data", url: "https://labaridata.com" },
+    {
+      "@type": "WebSite", "@id": `${SITE_URL}/#website`, name: SITE_NAME, url: `${SITE_URL}/`, inLanguage: "en-GH",
+      description: "Ghana's Auditor-General reports on the public accounts, turned into charts and tables: financial irregularities by type, year, institution and region.",
+      publisher: { "@id": "https://labaridata.com/#org" },
+      about: ["Public finance in Ghana", "Government audit", "Public sector governance and accountability"],
+    },
+  ],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -19,6 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(siteLd)} />
         <script dangerouslySetInnerHTML={{ __html: `try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}` }} />
       </head>
       <body>

@@ -4,8 +4,10 @@ import { seriesColor } from "@/components/colors";
 import { RankedBars, StackedRanked } from "@/components/Charts";
 import { ChartCard, DataTable, PageHead, Section } from "@/components/ui";
 import { YearTabs } from "@/components/YearTabs";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = { title: "By region" };
+export const metadata = pageMeta("/regions/", "Ghana audit irregularities by region",
+  "Financial irregularities in district assemblies and schools across Ghana's 16 regions, from the Auditor-General's annual reports.");
 
 function YearPanel({ year }: { year: number }) {
   const regional = allReports.filter((r) => r.year === year && r.breakdown.kind === "region").sort((a, b) => b.total - a.total);

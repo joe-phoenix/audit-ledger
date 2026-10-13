@@ -3,8 +3,10 @@ import { allReports, reportYears, seriesLabel } from "@/lib/data";
 import { ghs } from "@/lib/format";
 import { seriesColor } from "@/components/colors";
 import { PageHead, Section } from "@/components/ui";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = { title: "All reports" };
+export const metadata = pageMeta("/reports/", `All Ghana Auditor-General reports, ${Math.min(...reportYears)}–${Math.max(...reportYears)}`,
+  `Every Auditor-General annual report on Ghana's public accounts from ${Math.min(...reportYears)} to ${Math.max(...reportYears)}, one page each: ministries, public boards and SOEs, district assemblies, universities and pre-university schools.`);
 
 export default function Reports() {
   return (

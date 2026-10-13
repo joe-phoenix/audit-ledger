@@ -3,8 +3,10 @@ import { full, ghs } from "@/lib/format";
 import { categoryColor } from "@/components/colors";
 import { RankedBars, StackedYears } from "@/components/Charts";
 import { ChartCard, DataTable, PageHead, Section, Stat } from "@/components/ui";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = { title: "Recoveries" };
+export const metadata = pageMeta("/recoveries/", "How much stolen and misused public money Ghana has recovered",
+  "Recoveries of irregular public funds flagged by Ghana's Auditor-General: what was recovered, what is still outstanding, by year of the audit report.");
 
 export default function Recoveries() {
   const r = overview.recoveries;

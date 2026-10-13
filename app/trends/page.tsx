@@ -4,8 +4,10 @@ import { seriesColor } from "@/components/colors";
 import { YearBars } from "@/components/Charts";
 import { TrendExplorer } from "@/components/TrendExplorer";
 import { ChartCard, DataTable, PageHead, Section } from "@/components/ui";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = { title: "Trends over years" };
+export const metadata = pageMeta("/trends/", "Trends in Ghana's audit irregularities over the years",
+  "How financial irregularities found by Ghana's Auditor-General have changed year by year, for ministries, public boards and SOEs, district assemblies, universities and schools.");
 
 export default function Trends() {
   const reports = seriesSummaries();

@@ -1,7 +1,9 @@
 import { reports } from "@/lib/data";
 import { PageHead, Section } from "@/components/ui";
+import { pageMeta } from "@/lib/seo";
 
-export const metadata = { title: "About the data" };
+export const metadata = pageMeta("/about/", "About the data and methodology",
+  "Where The Audit Ledger's figures come from: Ghana Audit Service reports, how each table was transcribed and checked, and the known quirks in the sources.");
 
 export default function About() {
   return (

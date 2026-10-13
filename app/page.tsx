@@ -4,6 +4,13 @@ import { ghs, full } from "@/lib/format";
 import { categoryColor, seriesColor } from "@/components/colors";
 import { RankedBars, StackedYears } from "@/components/Charts";
 import { ChartCard, DataTable, PageHead, Section, Stat } from "@/components/ui";
+import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
+
+export const metadata: Metadata = {
+  ...pageMeta("/", "Ghana public finance and audit data, visualised", "Ghana's Auditor-General reports turned into clear charts: financial irregularities in ministries, SOEs, district assemblies and schools by type, year, institution and region, and what was recovered. Open public finance and governance data."),
+  title: { absolute: "The Audit Ledger: Ghana public finance and audit data, visualised" },
+};
 
 export default function Home() {
   const Y = LATEST_YEAR;

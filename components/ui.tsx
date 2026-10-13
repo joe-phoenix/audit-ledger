@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { ReactNode } from "react";
 
 export function Section({ id, title, sub, right, children }: { id?: string; title: string; sub?: string; right?: ReactNode; children: ReactNode }) {
@@ -12,12 +13,13 @@ export function Section({ id, title, sub, right, children }: { id?: string; titl
   );
 }
 
-export function Stat({ label, value, delta, tone }: { label: string; value: string; delta?: ReactNode; tone?: "bad" | "good" }) {
+export function Stat({ label, value, delta, tone, href }: { label: string; value: string; delta?: ReactNode; tone?: "bad" | "good"; href?: string }) {
   return (
     <div className="card stat-card">
       <div className="label">{label}</div>
       <div className={`value${tone ? ` tone-${tone}` : ""}`}>{value}</div>
       {delta && <div className="delta">{delta}</div>}
+      {href && <Link className="stat-link" href={href}>See the breakdown <span aria-hidden="true">→</span></Link>}
     </div>
   );
 }

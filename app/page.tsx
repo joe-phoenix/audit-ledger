@@ -24,11 +24,13 @@ export default function Home() {
       <Section id="headline" title="The headline numbers" sub={`${Y} financial year`}>
         <div className="grid cols-3">
           <Stat label={`All Auditor-General reports, ${Y}`} value={ghs(cur)} tone="bad"
-            delta={<>{cur > prev ? "Up" : "Down"} from {ghs(prev)} in {Y - 1} ({cur > prev ? "+" : ""}{((cur / prev - 1) * 100).toFixed(0)}%), sum of the six annual reports</>} />
+            delta={<>{cur > prev ? "Up" : "Down"} from {ghs(prev)} in {Y - 1} ({cur > prev ? "+" : ""}{((cur / prev - 1) * 100).toFixed(0)}%), sum of the {allReports.filter((r) => r.year === Y).length} annual reports</>} href="/reports/" />
           <Stat label={`Largest single area: ${top.name}`} value={ghs(top.total)}
-            delta={`${((top.total / cur) * 100).toFixed(0)}% of all ${Y} irregularities, in the ${seriesLabel[top.report.series]} report`} />
+            delta={`${((top.total / cur) * 100).toFixed(0)}% of all ${Y} irregularities, in the ${seriesLabel[top.report.series]} report`}
+            href={`/reports/${top.report.slug}/`} />
           {debts && <Stat label="Debts and loans not collected" value={ghs(debts.total)}
-            delta={`${((debts.total / cur) * 100).toFixed(0)}% of the total. Money owed to public bodies, mostly between state agencies.`} />}
+            delta={`${((debts.total / cur) * 100).toFixed(0)}% of the total. Money owed to public bodies, mostly between state agencies.`}
+            href="/categories/" />}
         </div>
       </Section>
 

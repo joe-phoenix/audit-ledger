@@ -256,3 +256,5 @@ main:focus{ outline:none; }
 .powered-by{ margin:12px 0 0; font-size:.82rem; color:var(--muted); }
 .powered-by a{ color:var(--navy); font-weight:600; }
 .powered-by a:hover{ color:var(--blue); }
+.theme-src{ font-size:.78rem; white-space:nowrap; text-decoration:none; margin-left:4px; }
+.theme-src:hover{ text-decoration:underline; }

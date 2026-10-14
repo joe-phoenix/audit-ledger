@@ -9,6 +9,7 @@ import { ghs } from "@/lib/format";
 const explore = [
   { href: "/", label: "Overview" },
   { href: "/trends/", label: "Trends over years" },
+  { href: "/themes/", label: "Recurring themes" },
   { href: "/categories/", label: "By irregularity type" },
   { href: "/regions/", label: "By region" },
   { href: "/recoveries/", label: "Recoveries" },

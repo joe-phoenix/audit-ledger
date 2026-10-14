@@ -17,6 +17,9 @@ function useNarrow() {
   return narrow;
 }
 
+/** Axis labels: one decimal for billions that are not whole, so 1.5bn and 16.5bn are not rounded to 2bn and 17bn. */
+const axisTick = (v: number) => ghs(v, Math.abs(v) >= 9.995e8 && v % 1e9 !== 0 ? 1 : 0);
+
 const axisProps = {
   stroke: "var(--axis)",
   tick: { fill: "var(--muted)", fontSize: 12, fontFamily: "JetBrains Mono, monospace" },
@@ -85,7 +88,7 @@ export function StackedYears({ data, series, height = 320 }: { data: Record<stri
       <BarChart data={data} margin={{ top: 8, right: 8, left: 0, bottom: 0 }} barCategoryGap="28%">
         <CartesianGrid vertical={false} stroke="var(--grid)" />
         <XAxis dataKey="year" {...axisProps} />
-        <YAxis {...axisProps} tickFormatter={(v) => ghs(v, 0)} width={72} />
+        <YAxis {...axisProps} tickFormatter={axisTick} width={72} />
         <Tooltip content={<Tip showTotal />} cursor={{ fill: "var(--line)", opacity: 0.5 }} />
         <Legend content={() => <LegendRow series={series} />} verticalAlign="top" />
         {series.map((s, i) => (
@@ -108,7 +111,7 @@ export function YearBars({ years, totals, height = 260 }: { years: number[]; tot
       <BarChart data={data} margin={{ top: 22, right: 20, left: 0, bottom: 0 }} barCategoryGap="30%">
         <CartesianGrid vertical={false} stroke="var(--grid)" />
         <XAxis dataKey="year" {...axisProps} />
-        <YAxis {...axisProps} tickFormatter={(v) => ghs(v, 0)} width={72} />
+        <YAxis {...axisProps} tickFormatter={axisTick} width={72} />
         <Tooltip content={<Tip />} cursor={{ fill: "var(--line)", opacity: 0.5 }} />
         <Bar dataKey="total" name="Total irregularities" radius={[4, 4, 0, 0]} isAnimationActive={false}
           label={{ position: "top", formatter: compact, fill: "var(--slate)", fontSize: 10, fontFamily: "JetBrains Mono, monospace" }}>
@@ -126,7 +129,7 @@ export function YearLines({ data, series, height = 320 }: { data: Record<string,
       <LineChart data={data} margin={{ top: 8, right: 16, left: 0, bottom: 0 }}>
         <CartesianGrid vertical={false} stroke="var(--grid)" />
         <XAxis dataKey="year" {...axisProps} />
-        <YAxis {...axisProps} tickFormatter={(v) => ghs(v, 0)} width={72} />
+        <YAxis {...axisProps} tickFormatter={axisTick} width={72} />
         <Tooltip content={<Tip />} cursor={{ stroke: "var(--axis)", strokeDasharray: "3 3" }} />
         <Legend content={() => <LegendRow series={series} />} verticalAlign="top" />
         {series.map((s) => (
@@ -154,7 +157,7 @@ export function StackedRanked({ data, series }: { data: Record<string, number | 
     <ResponsiveContainer width="100%" height={data.length * 30 + 60}>
       <BarChart data={data} layout="vertical" margin={{ top: 0, right: 16, left: 0, bottom: 0 }} barCategoryGap={5}>
         <CartesianGrid horizontal={false} stroke="var(--grid)" />
-        <XAxis type="number" {...axisProps} tickFormatter={(v) => ghs(v, 0)} />
+        <XAxis type="number" {...axisProps} tickFormatter={axisTick} />
         <YAxis type="category" dataKey="name" width={110} {...axisProps} tick={{ ...axisProps.tick, fontFamily: "DM Sans, sans-serif" }} interval={0} />
         <Tooltip content={<Tip showTotal />} cursor={{ fill: "var(--line)", opacity: 0.5 }} />
         <Legend content={() => <LegendRow series={series} />} verticalAlign="top" />

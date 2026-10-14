@@ -1,0 +1,40 @@
+{
+  "note": "Figures quoted in report highlights that are not part of the category tables. Each point names the report it comes from.",
+  "abandonedProjects": {
+    "label": "Delayed or abandoned projects, District Assemblies Common Fund",
+    "points": [
+      { "year": 2019, "amount": 51800000, "report": "dacf-2019", "detail": "102 assemblies" },
+      { "year": 2020, "amount": 35400000, "report": "dacf-2020", "detail": "62 assemblies" },
+      { "year": 2021, "amount": 42200000, "report": "dacf-2021", "detail": "95 assemblies" },
+      { "year": 2022, "amount": 33100000, "report": "dacf-2022", "detail": "218 projects, 78 assemblies" },
+      { "year": 2023, "amount": 29500000, "report": "dacf-2023", "detail": "69 assemblies" },
+      { "year": 2024, "amount": 130300000, "report": "dacf-2024", "detail": "61 assemblies" }
+    ]
+  },
+  "unusedProjects": {
+    "label": "Completed projects not put to use, District Assemblies Common Fund",
+    "points": [
+      { "year": 2019, "amount": 16300000, "report": "dacf-2019", "detail": "44 assemblies" },
+      { "year": 2020, "amount": 8660000, "report": "dacf-2020", "detail": "25 assemblies" },
+      { "year": 2021, "amount": 13300000, "report": "dacf-2021", "detail": "31 assemblies" },
+      { "year": 2022, "amount": 7140000, "report": "dacf-2022", "detail": "33 projects, 19 assemblies" },
+      { "year": 2023, "amount": 6650000, "report": "dacf-2023", "detail": "12 assemblies" },
+      { "year": 2024, "amount": 33000000, "report": "dacf-2024", "detail": "23 assemblies" }
+    ]
+  },
+  "deductedAtSource": {
+    "label": "Common Fund deducted at source before reaching assemblies",
+    "points": [
+      { "year": 2023, "amount": 173600000, "of": 510000000, "report": "dacf-2023", "detail": "mostly Zoomlion sanitation and fumigation services" },
+      { "year": 2024, "amount": 156100000, "of": 520000000, "report": "dacf-2024", "detail": "for service providers" }
+    ]
+  },
+  "revenueCollectors": {
+    "label": "Revenue collectors paid more in salary than they collected, district assemblies' own revenue",
+    "points": [
+      { "year": 2022, "collectors": 129, "salaries": 2400000, "collected": 1320000, "report": "district-assemblies-igf-2022" },
+      { "year": 2023, "collectors": 74, "salaries": 2380000, "collected": 1040000, "report": "district-assemblies-igf-2023" },
+      { "year": 2024, "collectors": 245, "salaries": 11740000, "collected": 4780000, "report": "district-assemblies-igf-2024", "detail": "55 assemblies" }
+    ]
+  }
+}
